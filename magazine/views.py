@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.views.generic import CreateView
 from .forms import SignUpForm
 from django.urls import reverse_lazy
+from django.views.generic import ListView
 
 
 class SignUpView(CreateView):
