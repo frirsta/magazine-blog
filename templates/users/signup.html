@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>SIGNUP PAGE</h1>
+<form class="signup-form" method="POST">
+    {{ form.username.label_tag }}
+    <input type="text" class="form-group {% if form.username.errors %}is_invalid{% endif %}" id="signup_username">
+</form>
+{% endblock content %}
