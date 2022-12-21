@@ -1,3 +1,16 @@
-* {
-    background-color: aqua;
+.social-media{
+
+}
+
+.social-media-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.social-media-container li a {
+color: #000;
+font-size: 30px;
 }
