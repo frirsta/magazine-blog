@@ -1,11 +1,28 @@
 {% extends 'base.html' %}
 {% block content %}
 <h1>home page</h1>
-{% for post in objects_list %}
+<div class="container-fluid hero">
+    <h1 class="logo">MAGAZINE</h1>
+    <h2>Interior & Lifestyle</h2>
+  </div>
+  <hr>
+  <div class="row blog-post-container">
+    {% for post in object_list %}
+  
+    <div class="col-4 post-container">
+      <div class="card-body">
+        <span class="blog-author-date">
+          {{ post.author }} | {{ post.created_on }}
+         </span>
+         <div class="title-description-container">
+        <h2 class="card-title">{{ post.title }}</h2>
+        <h3>{{ post.article_description }}</h3>
+        </div>
+      </div>
 
-{% if post.image %}
+    </div>
+    {% endfor %}
+  </div>
+  
+  {% endblock content %}
 
-{% endif %}
-
-{% endfor %}
-{% endblock content %}
