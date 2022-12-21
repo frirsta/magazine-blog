@@ -11,6 +11,18 @@ body {
     background: linear-gradient(to bottom, #FFF0F5 0%, #FFFFFF 50%, #FFF0F5 100%);
 }
 
+h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* buttons */
+.btn {
+    border-radius: 0px;
+    margin-bottom: 15px;
+}
+
+
 /* logo & hero */
 .logo {
     font-size: 200px;
@@ -71,3 +83,36 @@ body {
 .title-description-container {}
 
 .post-title {}
+
+/* signup form */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-form {
+    width: 700px;
+    margin: 50px;
+}
+
+.form-group {
+    margin: 20px auto;
+}
+
+input {
+    background-color: unset;
+}
+
+.input-area {
+    border-radius: 0px;
+    border: transparent;
+    border-bottom: 1px solid #000;
+}
+
+.form-control {
+    background-color: transparent;
+}
+
+.invalid-feedback {}
