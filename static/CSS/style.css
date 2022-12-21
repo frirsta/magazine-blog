@@ -1,7 +1,29 @@
-.social-media{
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&display=swap');
+
+
+body {
+    box-sizing: border-box;
+    font-family: 'Cormorant Garamond', serif;
+    background: #FFF0F5;
+    background: -moz-linear-gradient(top, #FFF0F5 0%, #FFFFFF 50%, #FFF0F5 100%);
+    background: -webkit-linear-gradient(top, #FFF0F5 0%, #FFFFFF 50%, #FFF0F5 100%);
+    background: linear-gradient(to bottom, #FFF0F5 0%, #FFFFFF 50%, #FFF0F5 100%);
+}
+
+/* logo & hero */
+.logo {
+    font-size: 200px;
+}
+
+.hero {
+    background: url("/static/img/hero/hero.jpg") no-repeat center center;
+    height: 600px;
+    text-align: center;
 
 }
 
+/* footer */
 .social-media-container {
     display: flex;
     flex-direction: row;
@@ -11,6 +33,41 @@
 }
 
 .social-media-container li a {
-color: #000;
-font-size: 30px;
+    color: #000;
+    font-size: 30px;
 }
+
+/* home post */
+
+.blog-post-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.post-container {
+    margin: 20px;
+    position: relative;
+    text-align: center;
+    padding: 0;
+    color: #FFFFFF;
+    transition: .2s;
+}
+
+.post-image-link {
+    text-decoration: none;
+    color: #000;
+}
+
+.post-image {
+    width: 400px;
+    height: 600px;
+}
+
+.author-created {}
+
+.title-description-container {}
+
+.post-title {}

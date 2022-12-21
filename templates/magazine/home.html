@@ -1,28 +1,38 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block content %}
-<h1>home page</h1>
-<div class="container-fluid hero">
-    <h1 class="logo">MAGAZINE</h1>
-    <h2>Interior & Lifestyle</h2>
-  </div>
-  <hr>
-  <div class="row blog-post-container">
-    {% for post in object_list %}
-  
-    <div class="col-4 post-container">
-      <div class="card-body">
-        <span class="blog-author-date">
-          {{ post.author }} | {{ post.created_on }}
-         </span>
-         <div class="title-description-container">
-        <h2 class="card-title">{{ post.title }}</h2>
-        <h3>{{ post.article_description }}</h3>
+<div class="hero">
+  <h1 class="logo">
+    MAGAZINE
+  </h1>
+  <h2>Interior & Lifestyle</h2>
+</div>
+<div class="blog-post-container">
+  {% for post in object_list %}
+
+  <div class="post-container">
+    <a class="post-image-link" href="#">
+      {% if post.image %}
+      <img src="{{ post.image.url }}" alt="{{ post.title }}" class="post-image">
+
+      {% else %}
+      <a class="post-image-link" href="#">
+        <img src="{% static 'img/default-post.jpg' %}" alt="{{ post.title }}" class="post-image">
+
+        {% endif %}
+
+        <div class="author-created">
+          <span class="">
+            {{ post.author }} | {{ post.post_creates }}
+          </span>
+          <div class="title-description-container">
+            <h2 class="post-title">{{ post.title }}</h2>
+            <h3>{{ post.article_description }}</h3>
+          </div>
         </div>
-      </div>
-
-    </div>
-    {% endfor %}
+      </a>
+    </a>
   </div>
-  
-  {% endblock content %}
-
+  {% endfor %}
+</div>
+{% endblock content %}
