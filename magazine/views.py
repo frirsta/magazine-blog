@@ -1,6 +1,8 @@
 from django.shortcuts import render, redirect
 from django.views.generic import CreateView, ListView
-from .forms import SignUpForm
+from django.contrib import messages
+from django.contrib.auth import authenticate, login
+from .forms import SignUpForm, LoginForm
 from django.urls import reverse_lazy
 from .models import Post
 
@@ -21,3 +23,22 @@ class SignUpView(CreateView):
     success_url = reverse_lazy('magazine:home')
     form_class = SignUpForm
     success_message = 'signup success'
+
+
+def login(request):
+    if request.user.is_authenticated:
+        redirect('magazine:home')
+    if request.method == 'POST':
+        form = LoginForm(request.POST)
+        if form.is_valid():
+            username = form.cleaned_data['username']
+            password = form.cleaned_data['password']
+            user = authenticate(username=username, password=password)
+            if user is not None:
+                login(request, user)
+                return redirect('magazine:home')
+            else:
+                messages.error(request, 'Invalid username or Password')
+    else:
+        form = LoginForm()
+    return render(request, 'users/login.html', {'form': form})
