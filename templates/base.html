@@ -27,13 +27,25 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">Blog</a>
               </li>
+              {% if request.user.is_authenticated %}
+              <div class="authenticated-users">
               <li class="nav-item">
-                <a class="nav-link" href="#">Login</a>
+                <a class="nav-link" href="#">Profile</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'magazine:signup' %}">Signup</a>
-
+                <a class="nav-link" href="{% url 'magazine:logout' %}">Log out</a>
               </li>
+            </div>
+              {% else %}
+              <div class="not-authenticated-users">
+              <li class="nav-item">
+                <a class="nav-link {% if request.path == '/users/login' %}active{% endif %}" href="{% url 'magazine:login' %}">Log in</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link {% if request.path == '/users/signup' %}active{% endif %}" href="{% url 'magazine:signup' %}">Sign up</a>
+              </li>
+              </div>
+              {% endif %}
             </ul>
           </div>
         </div>
