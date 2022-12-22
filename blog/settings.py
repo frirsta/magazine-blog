@@ -140,3 +140,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 AUTH_USER_MODEL = 'magazine.User'
+
+# login url
+LOGIN_URL = '/users/login/'
+ACCOUNT_EMAIL_VERIFICATION = 'none'

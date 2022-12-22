@@ -1,9 +1,9 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<h1>SIGNUP PAGE</h1>
+<h1>Login PAGE</h1>
 <div class="form-container">
-    <form class="signup-form" method="POST">
+    <form class="login-form" method="POST">
         {% csrf_token %}
         <div class="form-group">
             {{ form.username.label_tag }}
@@ -23,7 +23,7 @@
             {% endif %}
         </div>
 
-        <button type="submit" class="btn btn-outline-dark">Signup</button>
+        <button type="submit" class="btn btn-outline-dark">Login</button>
     </form>
 </div>
 {% endblock content %}

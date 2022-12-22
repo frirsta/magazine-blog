@@ -4,7 +4,7 @@ from django.contrib import messages
 from django.contrib.auth import authenticate, login
 from .forms import SignUpForm, LoginForm
 from django.urls import reverse_lazy
-from .models import Post
+from .models import Post, User
 
 
 class HomePageView(ListView):
@@ -25,14 +25,15 @@ class SignUpView(CreateView):
     success_message = 'signup success'
 
 
-def login(request):
+def loginUser(request):
     if request.user.is_authenticated:
-        redirect('magazine:home')
+        return redirect('magazine:home')
     if request.method == 'POST':
         form = LoginForm(request.POST)
         if form.is_valid():
             username = form.cleaned_data['username']
             password = form.cleaned_data['password']
+
             user = authenticate(username=username, password=password)
             if user is not None:
                 login(request, user)
