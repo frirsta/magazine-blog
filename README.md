@@ -4,6 +4,10 @@
 * pip3 install dj_database_url==0.5.0 psycopg2
 * pip3 freeze --local > requirements.txt
 
+
+## Credits
+* https://dontrepeatyourself.org/post/django-blog-tutorial-part-1-project-configuration/
+
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 Welcome frirsta,

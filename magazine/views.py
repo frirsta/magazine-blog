@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.views.generic import CreateView, ListView
 from django.contrib import messages
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import authenticate, login, logout
 from .forms import SignUpForm, LoginForm
 from django.urls import reverse_lazy
 from .models import Post, User
@@ -43,3 +43,8 @@ def loginUser(request):
     else:
         form = LoginForm()
     return render(request, 'users/login.html', {'form': form})
+
+
+def logoutUser(request):
+    logout(request)
+    return render(request, 'users/login.html')
