@@ -1,9 +1,9 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<h1>Login PAGE</h1>
+<h1>Log in</h1>
 <div class="form-container">
-    <form class="login-form" method="POST">
+    <form class="form" method="POST">
         {% csrf_token %}
         <div class="form-group">
             {{ form.username.label_tag }}
