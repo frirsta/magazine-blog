@@ -26,6 +26,7 @@ h1 {
 /* logo & hero */
 .logo {
     font-size: 200px;
+    margin-top: 0px;
 }
 
 .hero {
