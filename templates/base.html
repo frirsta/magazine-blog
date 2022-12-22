@@ -1,91 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/215e1e67e2.js" crossorigin="anonymous"></script>
-    <meta name="description" content="Magazine, where people share and get inspired by interior designs.">
-    <meta name="keywords" content="interior design, interior, interior articles, design, trends">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="/static/CSS/style.css">
-        <link type="image/png" sizes="32x32" rel="icon" href="/static/img/favicon/favicon.ico">
-    <title>Magazine</title>
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="{% url 'magazine:home' %}">MAGAZINE</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
-              </li>
-              {% if request.user.is_authenticated %}
-              <div class="authenticated-users">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Profile</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="{% url 'magazine:logout' %}">Log out</a>
-              </li>
-            </div>
-              {% else %}
-              <div class="not-authenticated-users">
-              <li class="nav-item">
-                <a class="nav-link {% if request.path == '/users/login' %}active{% endif %}" href="{% url 'magazine:login' %}">Log in</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link {% if request.path == '/users/signup' %}active{% endif %}" href="{% url 'magazine:signup' %}">Sign up</a>
-              </li>
-              </div>
-              {% endif %}
-            </ul>
-          </div>
-        </div>
-      </nav>
 
-    {% block content %}
-    {% endblock content %}
-    <footer>
-        <div class="card text-center">
-            <div class="card-header">
-              Magazine
-            </div>
-            <div id="social-media">
-              <ul class="social-media-container footer-links">
-                <li>
-                  <a href="https://www.instagram.com/" rel="noopener" target="_blank"
-                    aria-label="Visit our instagram page (opens in a new tab)"><i class="fa-brands fa-instagram"></i></a>
-                </li>
-                <li>
-                  <a href="https://www.facebook.com/" rel="noopener" target="_blank"
-                    aria-label="Visit our facebook page (opens in a new tab)"><i class="fa-brands fa-facebook"></i></a>
-                </li>
-                <li>
-                  <a href="https://www.twitter.com/" rel="noopener" target="_blank"
-                    aria-label="Visit our twitter page (opens in a new tab)"><i class="fa-brands fa-twitter"></i></a>
-                </li>
-                <li>
-                  <a href="https://www.youtube.com/" rel="noopener" target="_blank"
-                    aria-label="Visit our youtube page (opens in a new tab)"><i class="fa-brands fa-youtube"></i></a>
-                </li>
-    
-              </ul>
-            </div>
-            <div class="card-footer">
-                &copy;Copyright 2022<br>
-                Website created by Frirsta. App icon by <a href="https://icons8.com/">Icon8</a>
-        
-              </div>
-          </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/215e1e67e2.js" crossorigin="anonymous"></script>
+  <meta name="description" content="Magazine, where people share and get inspired by interior designs.">
+  <meta name="keywords" content="interior design, interior, interior articles, design, trends">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="/static/CSS/style.css">
+  <link type="image/png" sizes="32x32" rel="icon" href="/static/img/favicon/favicon.ico">
+  <title>Magazine</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="{% url 'magazine:home' %}">MAGAZINE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          {% if request.user.is_authenticated %}
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'magazine:logout' %}">Log out</a>
+          </li>
+
+          {% else %}
+
+          <li class="nav-item">
+            <a class="nav-link {% if request.path == '/users/login' %}active{% endif %}"
+              href="{% url 'magazine:login' %}">Log in</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link {% if request.path == '/users/signup' %}active{% endif %}"
+              href="{% url 'magazine:signup' %}">Sign up</a>
+          </li>
+
+          {% endif %}
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  {% block content %}
+  {% endblock content %}
+  <footer>
+    <div class="card text-center">
+      <div class="card-header">
+        Magazine
+      </div>
+      <div id="social-media">
+        <ul class="social-media-container footer-links">
+          <li>
+            <a href="https://www.instagram.com/" rel="noopener" target="_blank"
+              aria-label="Visit our instagram page (opens in a new tab)"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/" rel="noopener" target="_blank"
+              aria-label="Visit our facebook page (opens in a new tab)"><i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com/" rel="noopener" target="_blank"
+              aria-label="Visit our twitter page (opens in a new tab)"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/" rel="noopener" target="_blank"
+              aria-label="Visit our youtube page (opens in a new tab)"><i class="fa-brands fa-youtube"></i></a>
+          </li>
+
+        </ul>
+      </div>
+      <div class="card-footer">
+        &copy;Copyright 2022<br>
+        Website created by Frirsta. App icon by <a href="https://icons8.com/">Icon8</a>
+
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+  </script>
 </body>
+
 </html>

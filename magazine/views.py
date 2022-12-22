@@ -1,10 +1,11 @@
 from django.shortcuts import render, redirect
 from django.views.generic import CreateView, ListView
+from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
 from .forms import SignUpForm, LoginForm
 from django.urls import reverse_lazy
-from .models import Post, User
+from .models import Post, User, UserProfile
 
 
 class HomePageView(ListView):
@@ -48,3 +49,8 @@ def loginUser(request):
 def logoutUser(request):
     logout(request)
     return render(request, 'users/login.html')
+
+
+@login_required
+def profile_page(request):
+    return render(request, 'users/profile.html')

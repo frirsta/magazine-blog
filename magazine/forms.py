@@ -13,3 +13,11 @@ class SignUpForm(UserCreationForm):
 class LoginForm(forms.Form):
     username = forms.CharField()
     password = forms.CharField()
+
+
+class UserProfileForm(forms.Form):
+    image = forms.ImageField(required=False)
+    bio = forms.CharField(widget=forms.Textarea())
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
