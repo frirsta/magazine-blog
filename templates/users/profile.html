@@ -2,4 +2,21 @@
 {% load static %}
 {% block content %}
 <h2>Profile page</h2>
+<div class="profile-container">
+   
+    <div class="profile-picture">
+        {% if user.profile.image %}
+            <img src="{{ profile.image.url }}" alt="{{ user.username }}">
+        {% else %}
+            <img src="{% static 'img/default-profile.png' %}" alt="{{ user.username }}">
+        {% endif %}
+    </div>
+    <h3>{{ user.username }}</h3>
+    <p>{{ user.bio }}</p>
+    <div class="profile-links">
+        <a href="#">Edit Bio</a>
+        <a href="#">Change Password</a>
+        <a href="#">My Posts</a>
+    </div>
+</div>
 {% endblock content %}
