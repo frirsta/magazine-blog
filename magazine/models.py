@@ -11,6 +11,7 @@ class User(AbstractUser):
     first_name = models.CharField(max_length=150, blank=True)
     last_name = models.CharField(max_length=150, blank=True)
     account_created = models.DateField(auto_now_add=True)
+    USERNAME_FIELD = 'username'
 
 
 class Post(models.Model):
@@ -34,7 +35,7 @@ class UserProfile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     first_name = models.CharField(max_length=150, blank=True)
     last_name = models.CharField(max_length=150, blank=True)
-    image = models.ImageField(upload_to='', blank=True, null=True)
+    image = models.ImageField(upload_to='profile', blank=True, null=True)
     bio = models.TextField()
 
     def __str__(self):

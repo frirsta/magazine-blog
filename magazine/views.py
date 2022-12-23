@@ -48,7 +48,7 @@ def loginUser(request):
 
 def logoutUser(request):
     logout(request)
-    return render(request, 'users/login.html')
+    return redirect('magazine:login')
 
 
 @login_required
