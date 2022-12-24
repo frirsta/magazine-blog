@@ -21,7 +21,7 @@ class HomePageView(ListView):
 
 class SignUpView(CreateView):
     template_name = 'users/signup.html'
-    success_url = reverse_lazy('magazine:home')
+    success_url = reverse_lazy('magazine:login')
     form_class = SignUpForm
     success_message = 'signup success'
 
