@@ -5,7 +5,7 @@ from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
 from .forms import SignUpForm, LoginForm
 from django.urls import reverse_lazy
-from .models import Post, User, UserProfile
+from .models import Post, User, Profile
 
 
 class HomePageView(ListView):

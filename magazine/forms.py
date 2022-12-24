@@ -15,7 +15,7 @@ class LoginForm(forms.Form):
     password = forms.CharField()
 
 
-class UserProfileForm(forms.Form):
+class ProfileForm(forms.Form):
     image = forms.ImageField(required=False)
     bio = forms.CharField(widget=forms.Textarea())
 
