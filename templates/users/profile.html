@@ -13,9 +13,9 @@
         {% endif %}
     </div>
     <h3>{{ user.username }}</h3>
-    <p>{{ user.bio }}</p>
+    <p>{{ user.profile.bio }}</p>
     <div class="profile-links">
-        <a href="#">Edit Bio</a>
+        <p><a class="btn btn-outline-dark" href="{% url 'magazine:edit_profile' %}">Edit Profile</a></p>
         <p><a class="btn btn-outline-dark" href="{% url 'magazine:password_change' %}">Change Password</a></p>
         <a href="#">My Posts</a>
     </div>

@@ -1,9 +1,9 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.views.generic import CreateView, ListView
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
-from .forms import SignUpForm, LoginForm
+from .forms import SignUpForm, LoginForm, ProfileForm
 from django.urls import reverse_lazy
 from .models import Post, User, Profile
 
@@ -52,5 +52,31 @@ def logoutUser(request):
 
 
 @login_required
-def profile_page(request):
-    return render(request, 'users/profile.html')
+def profile_page(request, username):
+    user = get_object_or_404(User, username=username)
+    profile = get_object_or_404(Profile, user=user)
+    return render(request, 'users/profile.html', {'profile': profile, 'user': user})
+
+
+# Rouizi
+@login_required
+def edit_profile(request):
+    if request.method == 'POST':
+        form = ProfileForm(request.user.username, request.POST, request.FILES)
+        if form.is_valid():
+            bio = form.cleaned_data["bio"]
+            username = form.cleaned_data["username"]
+            image = form.cleaned_data["image"]
+
+            user = User.objects.get(id=request.user.id)
+            profile = Profile.objects.get(user=user)
+            user.username = username
+            user.save()
+            profile.bio = bio
+            if image:
+                profile.image = image
+            profile.save()
+            return redirect("magazine:profile", username=user.username)
+    else:
+        form = ProfileForm(request.user.username)
+    return render(request, "users/edit_profile.html", {"form": form})
