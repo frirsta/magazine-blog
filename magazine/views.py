@@ -19,6 +19,15 @@ class HomePageView(ListView):
     paginate_by = 6
 
 
+class PostsView(ListView):
+    """
+    This class shows all posts, and adds the newest post on top of the page.
+    The posts are ordered by date in decreasing order.
+    """
+    template_name = 'magazine/posts.html'
+    queryset = Post.objects.all()
+
+
 class SignUpView(CreateView):
     template_name = 'users/signup.html'
     success_url = reverse_lazy('magazine:login')
@@ -51,6 +60,7 @@ def logoutUser(request):
     return redirect('magazine:login')
 
 
+# Rouizi
 @login_required
 def profile_page(request, username):
     user = get_object_or_404(User, username=username)
