@@ -16,7 +16,7 @@
     <p>{{ user.bio }}</p>
     <div class="profile-links">
         <a href="#">Edit Bio</a>
-        <a href="#">Change Password</a>
+        <p><a class="btn btn-outline-dark" href="{% url 'magazine:password_change' %}">Change Password</a></p>
         <a href="#">My Posts</a>
     </div>
 </div>
