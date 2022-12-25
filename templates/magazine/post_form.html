@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<h1>Create Post</h1>
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+
+
+    <div class="form-group">
+        {{ form.title.label_tag }}
+        <input type="text" class="form-control input-area {% if form.title.errors %}is_invalid{% endif %}"
+            id="id_title" name="title" value="{{ form.title.value|default:'' }}">
+
+        {% if form.title.errors %}
+        <div class="invalid-feedback">{{ form.title.errors }}</div>
+        {% endif %}
+    </div>
+
+    <div class="form-group">
+        {{ form.article_description.label_tag }}
+        <input type="text" class="form-control input-area {% if form.article_description.errors %}is_invalid{% endif %}"
+            id="id_article_description" name="article_description" value="{{ form.article_description.value|default:'' }}">
+
+        {% if form.article_description.errors %}
+        <div class="invalid-feedback">{{ form.article_description.errors }}</div>
+        {% endif %}
+    </div>
+    <div class="form-group">
+        {{ form.content.label_tag }}
+        <textarea type="text" class="form-control input-area {% if form.content.errors %}is_invalid{% endif %}"
+            id="id_content" name="content" value="{{ form.content.value|default:'' }}" rows="10"></textarea>
+
+        {% if form.content.errors %}
+        <div class="invalid-feedback">{{ form.content.errors }}</div>
+        {% endif %}
+    </div>
+    <div class="form-group">
+        {{ form.image.label_tag }}
+        <input type="file" class="{% if form.image.errors %}is-invalid{% endif %}" id="id_image" name="image"
+            accept="image/*">
+        {% if form.image.errors %}
+        <div class="invalid-feedback">
+            {{ form.image.errors }}
+        </div>
+        {% endif %}
+    </div>
+    <input type="submit" value="submit">
+  
+</form>
+{% endblock content %}

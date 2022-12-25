@@ -1,6 +1,8 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.views.generic import CreateView, ListView, DetailView
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.decorators import login_required
+from django.utils.text import slugify
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
 from .forms import SignUpForm, LoginForm, ProfileForm
@@ -30,14 +32,14 @@ class PostsView(ListView):
 
 class SignUpView(CreateView):
     template_name = 'users/signup.html'
-    success_url = reverse_lazy('magazine:login')
+    success_url = reverse_lazy('homelogin')
     form_class = SignUpForm
     success_message = 'signup success'
 
 
 def loginUser(request):
     if request.user.is_authenticated:
-        return redirect('magazine:home')
+        return redirect('homehome')
     if request.method == 'POST':
         form = LoginForm(request.POST)
         if form.is_valid():
@@ -47,7 +49,7 @@ def loginUser(request):
             user = authenticate(username=username, password=password)
             if user is not None:
                 login(request, user)
-                return redirect('magazine:home')
+                return redirect('homehome')
             else:
                 messages.error(request, 'Invalid username or Password')
     else:
@@ -101,3 +103,23 @@ class PostDetailView(DetailView):
 
         context['post'] = Post.objects.all()
         return context
+
+
+class CreatePost(LoginRequiredMixin, CreateView):
+    """
+    This class handles the form for creating post.
+    Loginrequiredmixin verifies that the current user who has created the post is authenticated.
+    """
+    model = Post
+    fields = ['title', 'article_description', 'content', 'image']
+    success_url = reverse_lazy('magazine:home')
+
+    def form_valid(self, form):
+        """
+        This function saves the post model if the form is valid.
+        """
+        self.object = form.save(commit=False)
+        self.object.author = self.request.user
+        self.object.slug = slugify(form.cleaned_data['title'])
+        self.object.save()
+        return super().form_valid(form)

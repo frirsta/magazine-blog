@@ -1,5 +1,5 @@
 from django.urls import path, reverse_lazy
-from . views import SignUpView, HomePageView, loginUser, logoutUser, profile_page, edit_profile, PostsView, PostDetailView
+from . views import SignUpView, HomePageView, loginUser, logoutUser, profile_page, edit_profile, PostsView, PostDetailView, CreatePost
 from django.contrib.auth.views import PasswordChangeView, PasswordChangeDoneView
 
 urlpatterns = [
@@ -13,5 +13,6 @@ urlpatterns = [
     path('password_change/done/', PasswordChangeDoneView.as_view(template_name='users/password_change_done.html'),name='password_change_done'),
     path('edit_profile/', edit_profile, name='edit_profile'),
     path('post/<pk>/', PostDetailView.as_view(), name='post_detail'),
+    path('create/', CreatePost.as_view(), name='post_create'),
 
 ]
