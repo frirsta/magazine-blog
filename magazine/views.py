@@ -32,14 +32,14 @@ class PostsView(ListView):
 
 class SignUpView(CreateView):
     template_name = 'users/signup.html'
-    success_url = reverse_lazy('homelogin')
+    success_url = reverse_lazy('login')
     form_class = SignUpForm
     success_message = 'signup success'
 
 
 def loginUser(request):
     if request.user.is_authenticated:
-        return redirect('homehome')
+        return redirect('magazine:home')
     if request.method == 'POST':
         form = LoginForm(request.POST)
         if form.is_valid():
@@ -49,7 +49,7 @@ def loginUser(request):
             user = authenticate(username=username, password=password)
             if user is not None:
                 login(request, user)
-                return redirect('homehome')
+                return redirect('magazine:home')
             else:
                 messages.error(request, 'Invalid username or Password')
     else:
