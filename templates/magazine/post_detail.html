@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
+<div class="container">
 <div class="post-detail-image">
     {% if object.image %}
       <img src="{{ object.image.url }}" alt="{{ object.title }}" class="post-image-detail">
@@ -16,4 +17,5 @@
 <h4>{{ object.article_description }}</h4>
 <p>{{ object.content }}</p>
 <span>{{ object.author }} | {{ object.post_created }}</span>
+</div>
 {% endblock content %}
