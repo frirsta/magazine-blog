@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="post-detail-image">
+    {% if post.image %}
+      <img src="{{ post.image.url }}" alt="{{ post.title }}" class="post-image">
+
+      {% else %}
+      <a class="post-image-link" href="#">
+        <img src="{% static 'img/default-post.jpg' %}" alt="{{ post.title }}" class="post-image">
+
+        {% endif %}
+</div>
+<h1>Post Detail</h1>
+<h3>{{ object.title }}</h3>
+<h4>{{ object.article_description }}</h4>
+<p>{{ object.content }}</p>
+<span>{{ object.author }} | {{ object.post_created }}</span>
+{% endblock content %}

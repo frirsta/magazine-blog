@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from django.views.generic import CreateView, ListView
+from django.views.generic import CreateView, ListView, DetailView
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
@@ -90,3 +90,7 @@ def edit_profile(request):
     else:
         form = ProfileForm(request.user.username)
     return render(request, "users/edit_profile.html", {"form": form})
+
+
+class PostDetailView(DetailView):
+    model = Post
