@@ -94,3 +94,10 @@ def edit_profile(request):
 
 class PostDetailView(DetailView):
     model = Post
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        pk = self.kwargs['pk']
+
+        context['post'] = Post.objects.all()
+        return context

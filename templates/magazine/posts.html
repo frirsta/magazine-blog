@@ -11,12 +11,12 @@
   {% for post in object_list %}
 
   <div class="post-container">
-    <a class="post-image-link" href="#">
+    <a class="post-image-link" href="{% url 'magazine:post_detail' post.pk %}">
       {% if post.image %}
       <img src="{{ post.image.url }}" alt="{{ post.title }}" class="post-image">
 
       {% else %}
-      <a class="post-image-link" href="#">
+      <a class="post-image-link" href="{% url 'magazine:post_detail' post.pk %}">
         <img src="{% static 'img/default-post.jpg' %}" alt="{{ post.title }}" class="post-image">
 
         {% endif %}

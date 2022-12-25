@@ -2,12 +2,12 @@
 {% load static %}
 {% block content %}
 <div class="post-detail-image">
-    {% if post.image %}
-      <img src="{{ post.image.url }}" alt="{{ post.title }}" class="post-image">
+    {% if object.image %}
+      <img src="{{ object.image.url }}" alt="{{ object.title }}" class="post-image-detail">
 
       {% else %}
-      <a class="post-image-link" href="#">
-        <img src="{% static 'img/default-post.jpg' %}" alt="{{ post.title }}" class="post-image">
+
+        <img src="{% static 'img/default-post.jpg' %}" alt="{{ object.title }}" class="post-image-detail">
 
         {% endif %}
 </div>

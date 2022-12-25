@@ -12,6 +12,6 @@ urlpatterns = [
     path('password_change/', PasswordChangeView.as_view(template_name='users/password_change.html', success_url=reverse_lazy('magazine:password_change_done')), name='password_change'),
     path('password_change/done/', PasswordChangeDoneView.as_view(template_name='users/password_change_done.html'),name='password_change_done'),
     path('edit_profile/', edit_profile, name='edit_profile'),
-    path('<pk>/', PostDetailView.as_view(), name='post_detail'),
+    path('post/<pk>/', PostDetailView.as_view(), name='post_detail'),
 
 ]
