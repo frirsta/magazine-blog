@@ -7,10 +7,10 @@
   </h1>
   <h2>Interior & Lifestyle</h2>
 </div>
-<div class="blog-post-container">
+<div class="row blog-post-container">
   {% for post in object_list %}
 
-  <div class="post-container">
+  <div class="col post-container">
     <a class="post-image-link" href="{% url 'magazine:post_detail' post.pk %}">
       {% if post.image %}
       <img src="{{ post.image.url }}" alt="{{ post.title }}" class="post-image">

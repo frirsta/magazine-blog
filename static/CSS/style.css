@@ -67,6 +67,7 @@ h1 {
     padding: 0;
     color: #FFFFFF;
     transition: .2s;
+    height: 800px;
 }
 
 .post-image-link {
@@ -133,4 +134,34 @@ input {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+/* post detail page */
+.post-detail-outer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.post-detail-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 755px;
+    border: 3px solid #000;
+}
+.post-detail-image{
+    
+}
+.post-image-detail{
+    width: 750px;
+    max-height: 1000px;
+}
+.post-text-container{
+    text-align: center;
+}
+
+.post-text-container h2, h3, span{
+    text-transform: capitalize;
 }
