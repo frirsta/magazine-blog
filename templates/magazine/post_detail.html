@@ -20,7 +20,38 @@
 <p>{{ object.content }}</p>
 </div>
 </div>
+{% if comments %}
+<div class="user-comment-container">
+  <div class="">
+    <h3>Comment{{ comments.count|pluralize }}</h3>
+    <span class="badge badge-dark ml-2">{{ comments.count }}</span>
+  </div>
+  {% for comment in comments %}
+  <div class="user-comment">
+    <div class="">
+      <div class="">
+        <div class="comment-content-name">
+          <div class="profile-picture">
+            {% if user.profile.image %}
+                <img src="{{ profile.image.url }}" alt="{{ user.username }}">
+            {% else %}
+                <img src="{% static 'img/default-profile.png' %}" alt="{{ user.username }}">
+            {% endif %}
+        </div>
+          <strong>{{ comment.name }}</strong>
+        </div>
+        <div class="comment-content">
+          <p class="">{{ comment.content }}</p>
+          <p class="text-right text-muted"><small>{{ comment.created }}</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
 </div>
+{% endif %}
+</div>
+{% if user.is_authenticated %}
 <div class="form-container">
   <form method="POST">
 {% csrf_token %}
@@ -42,4 +73,8 @@
 <input type="submit" value="submit">
   </form>
   </div>
+  {% else %}
+
+  <h2>Login to leave a comment</h2>
+  {% endif %}
 {% endblock content %}
