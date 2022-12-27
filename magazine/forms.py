@@ -19,8 +19,10 @@ class SignUpForm(UserCreationForm):
 
 
 class LoginForm(forms.Form):
-    username = forms.CharField()
-    password = forms.CharField()
+    username = forms.CharField(widget=forms.TextInput(
+        attrs={'class': 'input-area form-control', 'placeholder': 'Password', }))
+    password = forms.CharField(widget=forms.PasswordInput(
+        attrs={'class': 'input-area form-control', 'placeholder': 'Password', }))
 
 
 class ProfileForm(forms.Form):
