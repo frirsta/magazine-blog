@@ -94,9 +94,26 @@ h1 {
     align-items: center;
 }
 
-.form {
+form {
     width: 700px;
     margin: 50px;
+}
+
+.form{
+    width: 700px;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.form input, textarea{
+    border-radius: 0px;
+    border: transparent;
+    border-bottom: 1px solid #000;
+    background-color: transparent;
+    width: 700px;
 }
 
 .form-group {

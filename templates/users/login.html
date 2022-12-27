@@ -3,7 +3,7 @@
 
 <h1>Log in</h1>
 <div class="form-container">
-    <form class="form" method="POST">
+    <form method="POST">
         {% csrf_token %}
         <div class="form-group">
             {{ form.username.label_tag }}
