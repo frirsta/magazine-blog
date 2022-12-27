@@ -1,6 +1,6 @@
 from django import forms
 from django.contrib.auth.forms import UserCreationForm
-from . models import User
+from . models import User, Comment, Profile
 
 
 class SignUpForm(UserCreationForm):
@@ -20,7 +20,7 @@ class SignUpForm(UserCreationForm):
 
 class LoginForm(forms.Form):
     username = forms.CharField(widget=forms.TextInput(
-        attrs={'class': 'input-area form-control', 'placeholder': 'Password', }))
+        attrs={'class': 'input-area form-control', 'placeholder': 'Username', }))
     password = forms.CharField(widget=forms.PasswordInput(
         attrs={'class': 'input-area form-control', 'placeholder': 'Password', }))
 
@@ -44,3 +44,13 @@ class ProfileForm(forms.Form):
                 raise forms.ValidationError(
                     'Username is taken')
         return username
+
+
+class CommentForm(forms.ModelForm):
+    class Meta:
+        model = Comment
+        fields = ('content',)
+        widgets = {
+            'user': forms.TextInput(attrs={'placeholder': 'Username', 'class': 'input-area form-control', }),
+            'content': forms.TextInput(attrs={'placeholder': 'Comment', 'class': 'input-area form-control', })
+        }

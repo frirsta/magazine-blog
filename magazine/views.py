@@ -5,9 +5,9 @@ from django.contrib.auth.decorators import login_required
 from django.utils.text import slugify
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
-from .forms import SignUpForm, LoginForm, ProfileForm
+from .forms import SignUpForm, LoginForm, ProfileForm, CommentForm
 from django.urls import reverse_lazy
-from .models import Post, User, Profile
+from .models import Post, User, Profile, Comment
 
 
 class HomePageView(ListView):
@@ -31,13 +31,21 @@ class PostsView(ListView):
 
 
 class SignUpView(CreateView):
+    """
+    This function handles the signup view.
+    When user has created their account they get redirected to the login page.
+    """
     template_name = 'users/signup.html'
     success_url = reverse_lazy('magazine:login')
     form_class = SignUpForm
-    success_message = 'signup success'
 
 
 def loginUser(request):
+    """
+    This function handles the login form.
+    If the username and password is valid they log in and get redirected to the home page.
+    If the username or password is invalid a error message will display on the page.
+    """
     if request.user.is_authenticated:
         return redirect('magazine:home')
     if request.method == 'POST':
@@ -94,6 +102,7 @@ def edit_profile(request):
     return render(request, "users/edit_profile.html", {"form": form})
 
 
+# Rouizi
 class PostDetailView(DetailView):
     model = Post
 
@@ -102,9 +111,38 @@ class PostDetailView(DetailView):
         pk = self.kwargs['pk']
 
         post = get_object_or_404(Post, pk=pk)
+        form = CommentForm()
+        comments = post.comment_set.all()
 
+        context['comments'] = comments
+        context['form'] = form
         context['post'] = Post.objects.all()
         return context
+
+    def post(self, request, *args, **kwargs):
+        form = CommentForm(request.POST)
+        self.object = self.get_object()
+        context = super().get_context_data(**kwargs)
+
+        post = Post.objects.filter(id=self.kwargs['pk'])[0]
+        comments = post.comment_set.all()
+
+        context['comments'] = comments
+        context['form'] = form
+        context['post'] = post
+
+        if form.is_valid():
+
+            user = self.request.user
+            content = form.cleaned_data['content']
+
+            comment = Comment.objects.create(user=user, content=content, post=post)
+
+            form = CommentForm()
+            context['form'] = form
+            return self.render_to_response(context=context)
+
+        return self.render_to_response(context=context)
 
 
 class CreatePost(LoginRequiredMixin, CreateView):
