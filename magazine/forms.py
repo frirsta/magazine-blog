@@ -4,10 +4,18 @@ from . models import User
 
 
 class SignUpForm(UserCreationForm):
+    password1 = forms.CharField(widget=forms.PasswordInput(
+        attrs={'class': 'input-area form-control', 'placeholder': 'Password', }))
+    password2 = forms.CharField(widget=forms.PasswordInput(
+        attrs={'class': 'input-area form-control', 'placeholder': 'Confirm Password', }))
 
     class Meta:
         model = User
-        fields = ['username', 'first_name', 'last_name', 'email']
+        fields = ['username', 'email']
+        widgets = {
+            'username': forms.TextInput(attrs={'placeholder': 'Username', 'class': 'input-area form-control', }),
+            'email': forms.EmailInput(attrs={'placeholder': 'Email', 'class': 'input-area form-control', })
+        }
 
 
 class LoginForm(forms.Form):

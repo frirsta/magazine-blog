@@ -32,7 +32,7 @@ class PostsView(ListView):
 
 class SignUpView(CreateView):
     template_name = 'users/signup.html'
-    success_url = reverse_lazy('login')
+    success_url = reverse_lazy('magazine:login')
     form_class = SignUpForm
     success_message = 'signup success'
 
@@ -100,6 +100,8 @@ class PostDetailView(DetailView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         pk = self.kwargs['pk']
+
+        post = get_object_or_404(Post, pk=pk)
 
         context['post'] = Post.objects.all()
         return context

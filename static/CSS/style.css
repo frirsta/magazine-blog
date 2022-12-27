@@ -103,9 +103,6 @@ h1 {
     margin: 20px auto;
 }
 
-input {
-    background-color: unset;
-}
 
 .input-area {
     border-radius: 0px;
@@ -117,7 +114,6 @@ input {
     background-color: transparent;
 }
 
-.invalid-feedback {}
 
 /* profile page */
 

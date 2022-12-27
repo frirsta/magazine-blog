@@ -4,7 +4,10 @@
 * pip3 install dj_database_url==0.5.0 psycopg2
 * pip3 freeze --local > requirements.txt
 
+## bugs
+In the forms errors never showed on the page. In stackoverflow I finally found a solution.
 
+* https://stackoverflow.com/questions/64054215/display-django-registration-form-errors
 ## Credits
 * https://dontrepeatyourself.org/post/django-blog-tutorial-part-1-project-configuration/
 
