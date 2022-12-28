@@ -187,8 +187,26 @@ class UpdatePost(LoginRequiredMixin, UpdateView):
 
 
 class DeletePost(LoginRequiredMixin, DeleteView):
+    """
+    This class allows the user that has created a post can delete their own post.
+    """
     model = Post
     success_url = reverse_lazy('magazine:home')
 
     def get_queryset(self):
         return self.model.objects.filter(author=self.request.user)
+
+
+class UserPosts(ListView):
+    """
+    This class allows a user with an account to see all the posts they have made in one place.
+    This class adds the newest post on top of the page.
+    The posts are ordered by date in decreasing order.
+    """
+    model = Post
+    template_name = 'users/user_posts.html'
+    queryset = Post.objects.all()
+
+    def get_queryset(self):
+        return self.model.objects.filter(author=self.request.user).order_by('-post_created')
+  
