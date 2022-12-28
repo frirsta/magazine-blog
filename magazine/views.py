@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from django.views.generic import CreateView, ListView, DetailView, UpdateView
+from django.views.generic import CreateView, ListView, DetailView, UpdateView, DeleteView
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.decorators import login_required
 from django.utils.text import slugify
@@ -181,6 +181,14 @@ class UpdatePost(LoginRequiredMixin, UpdateView):
         context['update'] = 'update'
 
         return context
+
+    def get_queryset(self):
+        return self.model.objects.filter(author=self.request.user)
+
+
+class DeletePost(LoginRequiredMixin, DeleteView):
+    model = Post
+    success_url = reverse_lazy('magazine:home')
 
     def get_queryset(self):
         return self.model.objects.filter(author=self.request.user)
