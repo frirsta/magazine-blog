@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from django.views.generic import CreateView, ListView, DetailView
+from django.views.generic import CreateView, ListView, DetailView, UpdateView
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.decorators import login_required
 from django.utils.text import slugify
@@ -109,8 +109,9 @@ class PostDetailView(DetailView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         pk = self.kwargs['pk']
+        slug = self.kwargs['slug']
 
-        post = get_object_or_404(Post, pk=pk)
+        post = get_object_or_404(Post, pk=pk, slug=slug)
         form = CommentForm()
         comments = post.comment_set.all()
 
@@ -163,3 +164,23 @@ class CreatePost(LoginRequiredMixin, CreateView):
         self.object.slug = slugify(form.cleaned_data['title'])
         self.object.save()
         return super().form_valid(form)
+
+
+class UpdatePost(LoginRequiredMixin, UpdateView):
+    model = Post
+    fields = ['title', 'article_description', 'content', 'image']
+    template_name_suffix = '_update_form'
+    success_url = reverse_lazy('magazine:home')
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        pk = self.kwargs['pk']
+        slug = self.kwargs['slug']
+        post = Post.objects.filter(id=self.kwargs['pk'])[0]
+        update = True
+        context['update'] = 'update'
+
+        return context
+
+    def get_queryset(self):
+        return self.model.objects.filter(author=self.request.user)
