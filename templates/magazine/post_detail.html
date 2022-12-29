@@ -50,6 +50,9 @@
           <p class="">{{ comment.content }}</p>
           <p class="text-right text-muted"><small>{{ comment.created }}</small></p>
         </div>
+        {% if comment.user == request.user %}
+        <a href="{% url 'magazine:comment_delete' comment.pk %}">Delete</a>
+        {% endif %}
       </div>
     </div>
   </div>

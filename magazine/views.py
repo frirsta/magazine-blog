@@ -188,7 +188,7 @@ class UpdatePost(LoginRequiredMixin, UpdateView):
 
 class DeletePost(LoginRequiredMixin, DeleteView):
     """
-    This class allows the user that has created a post can delete their own post.
+    This class allows the user that has created a post to delete it.
     """
     model = Post
     success_url = reverse_lazy('magazine:home')
@@ -209,3 +209,14 @@ class UserPosts(ListView):
 
     def get_queryset(self):
         return self.model.objects.filter(author=self.request.user).order_by('-post_created')
+
+
+class DeleteComment(LoginRequiredMixin, DeleteView):
+    """
+    This class allows the user that has created a comment to delete it.
+    """
+    model = Comment
+    success_url = reverse_lazy('magazine:home')
+
+    def get_queryset(self):
+        return self.model.objects.filter(user=self.request.user)
