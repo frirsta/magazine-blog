@@ -7,8 +7,3 @@ from .models import User, Profile
 def create_profile(sender, created, instance, **kwargs):
     if created:
         Profile.objects.create(user=instance)
-
-
-@receiver(post_save, sender=User)
-def save_profile(sender, instance, **kwargs):
-    instance.profile.save()
