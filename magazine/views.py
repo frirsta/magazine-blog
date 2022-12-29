@@ -209,4 +209,3 @@ class UserPosts(ListView):
 
     def get_queryset(self):
         return self.model.objects.filter(author=self.request.user).order_by('-post_created')
-  
