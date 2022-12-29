@@ -2,88 +2,79 @@
 {% load static %}
 {% block content %}
 <div class="post-detail-outer">
-<div class="post-detail-container">
-<div class="post-detail-image">
-    {% if object.image %}
+  <div class="post-detail-container">
+    <div class="post-detail-image">
+      {% if object.image %}
       <img src="{{ object.image.url }}" alt="{{ object.title }}" class="post-image-detail">
 
       {% else %}
 
-        <img src="{% static 'img/default-post.jpg' %}" alt="{{ object.title }}" class="post-image-detail">
+      <img src="{% static 'img/default-post.jpg' %}" alt="{{ object.title }}" class="post-image-detail">
 
-        {% endif %}
-</div>
-<div class="post-text-container">
-<span>{{ object.author }} | {{ object.post_created }}</span>
-<h2>{{ object.title }}</h2>
-<h3>{{ object.article_description }}</h3>
-<p>{{ object.content }}</p>
-</div>
-{% if object.author == request.user %}
-<div class="container">
-  <a class="btn btn-outline-dark" href="{% url 'magazine:post_delete' object.pk object.slug %}">Delete</a>
-  <a class="btn btn-outline-dark" href="{% url 'magazine:post_update' object.pk object.slug %}">Edit</a>
-</div>
-{% endif %}
-</div>
-{% if comments %}
-<div class="user-comment-container">
-  <div class="">
-    <h3>Comment{{ comments.count|pluralize }}</h3>
-    <span class="badge badge-dark ml-2">{{ comments.count }}</span>
-  </div>
-  {% for comment in comments %}
-  <div class="user-comment">
-    <div class="">
-      <div class="">
-        <div class="comment-content-name">
-          <div class="profile-picture">
-            {% if user.profile.image %}
-                <img src="{{ profile.image.url }}" alt="{{ user.username }}">
-            {% else %}
-                <img src="{% static 'img/default-profile.png' %}" alt="{{ user.username }}">
-            {% endif %}
-        </div>
-          <strong>{{ comment.user }}</strong>
-        </div>
-        <div class="comment-content">
-          <p class="">{{ comment.content }}</p>
-          <p class="text-right text-muted"><small>{{ comment.created }}</small></p>
-        </div>
-        {% if comment.user == request.user %}
-        <a href="{% url 'magazine:comment_delete' comment.pk %}">Delete</a>
-        {% endif %}
-      </div>
+      {% endif %}
     </div>
+    <div class="post-text-container">
+      <span>{{ object.author }} | {{ object.post_created }}</span>
+      <h2>{{ object.title }}</h2>
+      <h3>{{ object.article_description }}</h3>
+      <p>{{ object.content }}</p>
+    </div>
+    {% if object.author == request.user %}
+    <div class="container">
+      <a class="btn btn-outline-dark" href="{% url 'magazine:post_delete' object.pk object.slug %}">Delete</a>
+      <a class="btn btn-outline-dark" href="{% url 'magazine:post_update' object.pk object.slug %}">Edit</a>
+    </div>
+    {% endif %}
   </div>
-  {% endfor %}
-</div>
-{% endif %}
+  {% if comments %}
+  <div class="user-comment-container">
+    <div class="comment-count">
+      <h3>Comment{{ comments.count|pluralize }}</h3>
+      <span class="badge badge-dark ml-2">{{ comments.count }}</span>
+    </div>
+    {% for comment in comments %}
+    <div class="user-comment">
+
+          <div class="comment-content">
+            <img src="{{ comment.user.profile.image.url }}" alt="{{ user.username }}"
+            class="profile-image comment-profile-image">
+            <strong>{{ comment.user }}</strong>
+            <p class="">{{ comment.content }}</p>
+            <p class="text-right text-muted"><small>{{ comment.created }}</small></p>
+          </div>
+          {% if comment.user == request.user %}
+          <a href="{% url 'magazine:comment_delete' comment.pk %}">Delete</a>
+          {% endif %}
+
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
 </div>
 {% if user.is_authenticated %}
 <div class="form-container">
   <form method="POST">
-{% csrf_token %}
-{% if form.non_field_errors %}
-{% for error in form_non_field_errors %}
-{{ error }}
-{% endfor %}
-{% endif %}
+    {% csrf_token %}
+    {% if form.non_field_errors %}
+    {% for error in form_non_field_errors %}
+    {{ error }}
+    {% endfor %}
+    {% endif %}
 
-{% for hidden in form_hidden_fields %}
-{{ hidden }}
-{% endfor %}
+    {% for hidden in form_hidden_fields %}
+    {{ hidden }}
+    {% endfor %}
 
-{% for field in form %}
-{{ field.label_tag }}
-<div class="form-group">{{ field }}</div>
-{{ field.errors.as_ul }}
-{% endfor %}
-<input type="submit" value="submit">
+    {% for field in form %}
+    {{ field.label_tag }}
+    <div class="form-group">{{ field }}</div>
+    {{ field.errors.as_ul }}
+    {% endfor %}
+    <input type="submit" value="submit">
   </form>
-  </div>
-  {% else %}
+</div>
+{% else %}
 
-  <h2>Login to leave a comment</h2>
-  {% endif %}
+<h2>Login to leave a comment</h2>
+{% endif %}
 {% endblock content %}
