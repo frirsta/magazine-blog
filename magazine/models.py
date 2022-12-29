@@ -20,7 +20,7 @@ class Post(models.Model):
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     post_created = models.DateTimeField(auto_now_add=True)
     post_updated = models.DateTimeField(auto_now=True)
-    image = models.ImageField(upload_to='', blank=True, null=True)
+    image = models.ImageField(upload_to='', blank=False, null=True)
 
     class Meta:
         ordering = ['-post_created']
