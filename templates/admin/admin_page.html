@@ -5,25 +5,33 @@
 <h1>Admin Page</h1>
 <div class="container">
     <div class="info-container">
-        <div class="info-card">
-        <h4>Posts
-            {{ posts }}
-        </h4>
-    </div>
-    <div class="info-card">
-        <h4>Users
-            {{ users }}
-        </h4>
-    </div>
-    <div class="info-card">
-        <h4>Comments {{ comments }}</h4>
-    </div>
+        <div class="info-card-container">
+            <div class="info-card">
+                <p class="info-card-number">{{ posts }}</p>
+                <p class="info-card-title">Number of posts created</p>
+            </div>
+            <i class="fa-solid fa-newspaper"></i>
+        </div>
+        <div class="info-card-container">
+            <div class="info-card">
+                <p class="info-card-number">{{ users }}</p>
+                <p class="info-card-title">User registrations</p>
+            </div>
+            <i class="fa-solid fa-user"></i>
+        </div>
+        <div class="info-card-container">
+            <div class="info-card">
+                <p class="info-card-number">{{ comments }}</p>
+                <p class="info-card-title">Number of comments created</p>
+            </div>
+            <i class="fa-solid fa-comment"></i>
+        </div>
     </div>
 </div>
 {% else %}
 <div class="staff-container">
     <h2>This is a staff page</h1>
-  </div>
+</div>
 {% endif %}
 
 {% endblock content %}

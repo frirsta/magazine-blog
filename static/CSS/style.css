@@ -100,7 +100,7 @@ form {
     margin: 50px;
 }
 
-.form{
+.form {
     width: 700px;
     margin: 50px;
     display: flex;
@@ -109,7 +109,8 @@ form {
     align-items: baseline;
 }
 
-.form input, textarea{
+.form input,
+textarea {
     border-radius: 0px;
     border: transparent;
     border-bottom: 1px solid #000;
@@ -131,14 +132,13 @@ form {
 .form-control {
     background-color: transparent;
 }
+
 /* delete button and cancel button */
-.button-container{
-    
-}
+.button-container {}
 
 /* profile page */
 
-.profile-container{
+.profile-container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -146,14 +146,14 @@ form {
     height: 600px;
 }
 
-.profile-links{
+.profile-links {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.profile-image{
+.profile-image {
     border-radius: 50%;
     width: 350px;
     height: 350px;
@@ -161,13 +161,14 @@ form {
 
 
 /* post detail page */
-.post-detail-outer{
+.post-detail-outer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.post-detail-container{
+
+.post-detail-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -176,30 +177,32 @@ form {
     border: 3px solid #000;
 }
 
-.post-detail-image{
-    
-}
-.post-image-detail{
+.post-detail-image {}
+
+.post-image-detail {
     width: 750px;
     max-height: 1000px;
 }
-.post-text-container{
+
+.post-text-container {
     text-align: center;
 }
 
-.post-text-container h2, h3, span{
+.post-text-container h2,
+h3,
+span {
     text-transform: capitalize;
 }
 
 /* comment section */
-.comment.count{}
+.comment.count {}
 
-.badge{
-    color: #000!important;
+.badge {
+    color: #000 !important;
     font-size: 20px;
 }
 
-.user-comment-container{
+.user-comment-container {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -207,7 +210,7 @@ form {
     align-items: center;
 }
 
-.user-comment{
+.user-comment {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -215,18 +218,55 @@ form {
     width: 500px;
     border: 3px solid;
 }
-.comment.content{}
 
-.comment-profile-image{
-   width: 100px;
+.comment.content {}
+
+.comment-profile-image {
+    width: 100px;
     height: 100px;
 
 }
-.comment-content-name{
 
-}
+.comment-content-name {}
 
 
 /* Admin and staff page */
 
-.staff-container{}
+.info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+}
+
+.info-card-container{
+    width: 300px;
+    height: 100px;
+    background-color: #000;
+    opacity: 0.3;
+    color: #fff;
+    padding: 25px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.info-card {
+
+}
+
+.info-card-number{
+    font-size: 40px;
+    margin: unset!important;
+    line-height: 1;
+}
+.info-card-title{}
+.staff-container {}
+
+.fa-solid {
+    font-size: 35px;
+}
