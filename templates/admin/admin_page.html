@@ -2,7 +2,7 @@
 {% load static %}
 {% block content %}
 {% if user.is_superuser %}
-<h1>Admin Page</h1>
+<h1>Admin Dashboard</h1>
 <div class="container">
     <div class="info-container">
         <div class="info-card-container">
@@ -27,6 +27,45 @@
             <i class="fa-solid fa-comment"></i>
         </div>
     </div>
+</div>
+<div class="dropdown">
+    <button type="button" class="btn btn-outline-dark dropdown-toggle admin-post-information-button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+        All Posts
+      </button>
+<table class="table dropdown-menu">
+    <thead>
+      <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Post title</th>
+      <th scope="col">Article description</th>
+      <th scope="col" class="post-content">Post Content</th>
+      <th scope="col">Date</th>
+
+    </tr>
+    </thead>
+    {% for post in object_list %}
+    <tbody>
+      <tr>
+        <td scope="col">{{ post.author }}</td>
+        <td scope="col">{{ post.title }}</td>
+        <td scope="col">post.article_description</td>
+        <td scope="col">
+          <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            {{ post.title }}
+          </button>
+          <ul class="dropdown-menu">
+            <li><p class="" href="#">{{ post.content }}</p></li>
+          </ul>
+        </div>
+      </td>
+        <td scope="col">{{ post.created_on }}</td>
+        <td><a class="btn btn-outline-dark" href="{% url 'magazine:post_delete' post.pk post.slug %}">Delete</a></td>
+      </tr>
+      
+    </tbody>
+    {% endfor %}
+  </table>
 </div>
 {% else %}
 <div class="staff-container">
