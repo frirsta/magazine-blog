@@ -58,6 +58,7 @@ h1 {
     justify-content: space-around;
     align-items: center;
     text-transform: capitalize;
+    margin: 0px;
 }
 
 .post-container {
