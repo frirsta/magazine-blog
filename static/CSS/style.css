@@ -131,7 +131,10 @@ form {
 .form-control {
     background-color: transparent;
 }
-
+/* delete button and cancel button */
+.button-container{
+    
+}
 
 /* profile page */
 
