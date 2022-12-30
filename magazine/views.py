@@ -167,6 +167,10 @@ class CreatePost(LoginRequiredMixin, CreateView):
 
 
 class UpdatePost(LoginRequiredMixin, UpdateView):
+    """
+    This class handles the view for updating the posts.
+    This class allows only the creator of the post to update it.
+    """
     model = Post
     fields = ['title', 'article_description', 'content', 'image']
     template_name_suffix = '_update_form'
@@ -220,3 +224,22 @@ class DeleteComment(LoginRequiredMixin, DeleteView):
 
     def get_queryset(self):
         return self.model.objects.filter(user=self.request.user)
+
+
+class AdminPage(LoginRequiredMixin, ListView):
+    """
+    This class adds all the model data in one place for the superuser / Site Owner.
+    """
+
+    model = Post
+    template_name = 'admin/admin_page.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['post'] = Post.objects.all()
+        context['comment'] = Comment.objects.all()
+        context['comments_approved'] = Comment.objects.filter(approved=True)
+        context['posts'] = Post.objects.all().count()
+        context['comments'] = Comment.objects.all().count()
+        context['users'] = User.objects.all().count()
+        return context

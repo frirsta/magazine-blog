@@ -1,5 +1,5 @@
 from django.urls import path, reverse_lazy
-from . views import SignUpView, HomePageView, loginUser, logoutUser, profile_page, edit_profile, PostsView, PostDetailView, CreatePost, UpdatePost, DeletePost, UserPosts, DeleteComment
+from . views import SignUpView, HomePageView, loginUser, logoutUser, profile_page, edit_profile, PostsView, PostDetailView, CreatePost, UpdatePost, DeletePost, UserPosts, DeleteComment, AdminPage
 from django.contrib.auth.views import PasswordChangeView, PasswordChangeDoneView
 
 urlpatterns = [
@@ -18,5 +18,6 @@ urlpatterns = [
     path('delete/<pk>/<slug:slug>/', DeletePost.as_view(), name='post_delete'),
     path('profile/posts/<username>', UserPosts.as_view(), name='user_posts'),
     path('delete/comment/<pk>', DeleteComment.as_view(), name='comment_delete'),
+    path('admin-page/', AdminPage.as_view(), name='admin_page'),
 
 ]
