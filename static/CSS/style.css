@@ -42,9 +42,7 @@ h1 {
 /* footer */
 
 footer{
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
+
 }
 
 .card{
@@ -246,6 +244,9 @@ span {
 
 
 /* Admin and staff page */
+.admin-container{
+    height: fit-content;
+}
 
 .info-container {
     display: flex;

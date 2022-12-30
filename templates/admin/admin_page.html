@@ -3,6 +3,7 @@
 {% block content %}
 {% if user.is_superuser %}
 <h1>Admin Dashboard</h1>
+<div class="admin-container">
 <div class="container">
     <div class="info-container">
         <div class="info-card-container">
@@ -66,6 +67,7 @@
     </tbody>
     {% endfor %}
   </table>
+</div>
 </div>
 {% else %}
 <div class="staff-container">
