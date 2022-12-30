@@ -16,7 +16,7 @@ urlpatterns = [
     path('create/', CreatePost.as_view(), name='post_create'),
     path('update/<pk>/<slug:slug>/', UpdatePost.as_view(), name='post_update'),
     path('delete/<pk>/<slug:slug>/', DeletePost.as_view(), name='post_delete'),
-    path('profile/<username>/posts/', UserPosts.as_view(), name='user_posts'),
+    path('profile/posts/<username>', UserPosts.as_view(), name='user_posts'),
     path('delete/comment/<pk>', DeleteComment.as_view(), name='comment_delete'),
 
 ]

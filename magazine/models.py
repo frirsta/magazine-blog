@@ -13,9 +13,9 @@ class User(AbstractUser):
 
 
 class Post(models.Model):
-    title = models.CharField(max_length=100, unique=True, db_index=True)
-    slug = models.SlugField(max_length=100, unique=True, db_index=True)
-    article_description = models.CharField(max_length=150, null=True)
+    title = models.CharField(max_length=50, unique=True, db_index=True)
+    slug = models.SlugField(max_length=50, unique=True, db_index=True)
+    article_description = models.CharField(max_length=100, null=True)
     content = models.TextField()
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     post_created = models.DateTimeField(auto_now_add=True)

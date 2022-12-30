@@ -14,7 +14,7 @@
     <div class="profile-links">
         <p><a class="btn btn-outline-dark" href="{% url 'magazine:edit_profile' %}">Edit Profile</a></p>
         <p><a class="btn btn-outline-dark" href="{% url 'magazine:password_change' %}">Change Password</a></p>
-        <a href="#">My Posts</a>
+        <p><a class="btn btn-outline-dark" href="{% url 'magazine:user_posts' request.user.username %}">My Posts</a></p>
     </div>
 </div>
 {% endblock content %}
