@@ -407,6 +407,11 @@ span {
     }
 
     .post-body {}
+
+    /* profile page */
+    .profile-title-container{
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -466,5 +471,24 @@ span {
 
     .post-body {
         width: 250px;
+    }
+
+    /* create post form */
+
+    .form{
+        width: 300px;
+    }
+    .form input, textarea{
+        width: 300px;
+    }
+
+    /* profile page */
+    .profile-container{
+        flex-direction: column;
+    }
+
+    .profile-image {
+        width: 250px;
+        height: 250px;
     }
 }
