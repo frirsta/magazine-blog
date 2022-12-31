@@ -505,4 +505,26 @@ span {
     }
     .post-image-detail {
         width: 350px;}
+
+    /* comment section */
+    .comment-profile-image {
+        width: 50px;
+        height: 50px;
+
+    }
+    .user-comment {
+        width: 300px;
+        height: 100px;
+        margin: 10px;
+        padding: 0 5px;
+    }
+    .comment-image-name {
+        font-size: 15px;
+    }
+    .comment-count{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: baseline;
+    }
 }
