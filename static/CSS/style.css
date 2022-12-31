@@ -474,7 +474,9 @@ span {
     }
 
     /* create post form */
-
+    form{
+        width: 300px;
+    }
     .form{
         width: 300px;
     }
