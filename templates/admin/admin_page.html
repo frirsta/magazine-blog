@@ -68,6 +68,32 @@
     {% endfor %}
   </table>
 </div>
+<div class="dropdown">
+  <button type="button" class="btn btn-outline-dark dropdown-toggle admin-post-information-button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+    All Comments
+  </button>
+  <table class="table dropdown-menu">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Post title</th>
+        <th scope="col">comment content </th>
+        <th scope="col">comment created</th>
+      </tr>
+    </thead>
+    {% for comment in comment %}
+    <tbody>
+      <tr>
+        <td scope="col">{{ comment.user }}</td>
+        <td scope="col">{{ comment.post }}</td>
+        <td scope="col">{{ comment.content }}</td>
+        <td scope="col">{{ comment.comment_created }}</td>
+        <td><a class="btn btn-outline-dark" href="{% url 'magazine:comment_delete' comment.id %}">Delete</a></td>
+      </tr>
+    </tbody>
+    {% endfor %}
+  </table>
+</div>
 </div>
 {% else %}
 <div class="staff-container">
