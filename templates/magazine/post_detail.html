@@ -36,11 +36,13 @@
     <div class="user-comment">
 
           <div class="comment-content">
+            <p class="comment-text">{{ comment.content }}</p>
+            
+            <div class="comment-image-name">
             <img src="{{ comment.user.profile.image.url }}" alt="{{ user.username }}"
             class="profile-image comment-profile-image">
-            <strong>{{ comment.user }}</strong>
-            <p class="">{{ comment.content }}</p>
-            <p class="text-right text-muted"><small>{{ comment.created }}</small></p>
+            <strong> {{ comment.user }} </strong>
+          </div>
           </div>
           {% if comment.user == request.user %}
           <a class="btn btn-outline-dark" href="{% url 'magazine:comment_delete' comment.pk %}">Delete</a>
