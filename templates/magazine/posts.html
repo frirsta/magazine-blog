@@ -15,11 +15,12 @@
         <img src="{% static 'img/default-post.jpg' %}" alt="{{ post.title }}" class="post-image">
 
         {% endif %}
-
+<div class="post-body">
         <div class="author-created">
           <span class="">
             {{ post.author }} | {{ post.post_created }}
           </span>
+        </div>
           <div class="title-description-container">
             <h2 class="post-title">{{ post.title }}</h2>
             <h3>{{ post.article_description }}</h3>
