@@ -8,7 +8,7 @@
         <p>{{ comment.content }} by {{ comment.user }}</p>
         <strong>This action cannot be undone</strong>
         <div class="button-container">
-            <input type="submit" value="Delete" class="btn btn-outline-dark">
+            <button type="submit" value="Delete" class="btn btn-outline-dark">Delete</button>
             <a href="{% url 'magazine:home' %}" class="btn btn-outline-dark">Cancel</a>
             </div>
     </form>

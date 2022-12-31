@@ -298,9 +298,3 @@ span {
 }
 
 .table{}
-
-.btn {
-    width: 100px!important;
-    text-transform: capitalize;
-    border: var(--bs-btn-border-width) solid var(--bs-btn-border-color)!important;
-}
