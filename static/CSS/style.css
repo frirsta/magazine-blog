@@ -409,8 +409,13 @@ span {
     .post-body {}
 
     /* profile page */
-    .profile-title-container{
+    .title-container{
         text-align: center;
+    }
+    /* post_detail */
+    .post-text-container {
+
+        padding: 5px;
     }
 }
 
@@ -493,4 +498,11 @@ span {
         width: 250px;
         height: 250px;
     }
+
+    /* post detail */
+    .post-detail-container{
+        width: 355px;
+    }
+    .post-image-detail {
+        width: 350px;}
 }
