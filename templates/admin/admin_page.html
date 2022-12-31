@@ -33,7 +33,7 @@
     <button type="button" class="btn btn-outline-dark dropdown-toggle admin-post-information-button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
         All Posts
       </button>
-<table class="table dropdown-menu">
+<table class="table dropdown-menu admin-dropdown">
     <thead>
       <tr>
       <th scope="col">Name</th>
@@ -42,6 +42,7 @@
       <th scope="col" class="post-content">Post Content</th>
       <th scope="col">Date</th>
 
+
     </tr>
     </thead>
     {% for post in object_list %}
@@ -49,7 +50,7 @@
       <tr>
         <td scope="col">{{ post.author }}</td>
         <td scope="col">{{ post.title }}</td>
-        <td scope="col">post.article_description</td>
+        <td scope="col">{{ post.article_description }}</td>
         <td scope="col">
           <div class="dropdown">
           <button class="btn btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -60,7 +61,8 @@
           </ul>
         </div>
       </td>
-        <td scope="col">{{ post.created_on }}</td>
+        <td scope="col">{{ post.post_created }}</td>
+        
         <td><a class="btn btn-outline-dark" href="{% url 'magazine:post_delete' post.pk post.slug %}">Delete</a></td>
       </tr>
       
@@ -72,7 +74,7 @@
   <button type="button" class="btn btn-outline-dark dropdown-toggle admin-post-information-button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
     All Comments
   </button>
-  <table class="table dropdown-menu">
+  <table class="table dropdown-menu admin-dropdown">
     <thead>
       <tr>
         <th scope="col">Name</th>
@@ -95,6 +97,7 @@
   </table>
 </div>
 </div>
+<div class="admin-footer"></div>
 {% else %}
 <div class="staff-container">
     <h2>This is a staff page</h1>
