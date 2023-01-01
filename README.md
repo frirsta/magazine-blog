@@ -8,6 +8,8 @@
 In the forms errors never showed on the page. In stackoverflow I finally found a solution.
 
 * https://stackoverflow.com/questions/64054215/display-django-registration-form-errors
+
+&nbsp; 
 ## Credits
 * https://dontrepeatyourself.org/post/django-blog-tutorial-part-1-project-configuration/
 

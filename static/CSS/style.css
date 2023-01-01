@@ -208,6 +208,17 @@ span {
     text-transform: capitalize;
 }
 
+.login-to-comment-container{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login-to-comment{
+    display: flex;
+}
+
 /* comment section */
 .comment.count {}
 

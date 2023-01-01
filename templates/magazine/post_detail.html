@@ -35,18 +35,18 @@
     {% for comment in comments %}
     <div class="user-comment">
 
-          <div class="comment-content">
-            <p class="comment-text">{{ comment.content }}</p>
-            
-            <div class="comment-image-name">
-            <img src="{{ comment.user.profile.image.url }}" alt="{{ user.username }}"
+      <div class="comment-content">
+        <p class="comment-text">{{ comment.content }}</p>
+
+        <div class="comment-image-name">
+          <img src="{{ comment.user.profile.image.url }}" alt="{{ user.username }}"
             class="profile-image comment-profile-image">
-            <strong> {{ comment.user }} </strong>
-          </div>
-          </div>
-          {% if comment.user == request.user %}
-          <a class="btn btn-outline-dark" href="{% url 'magazine:comment_delete' comment.pk %}">Delete</a>
-          {% endif %}
+          <strong> {{ comment.user }} </strong>
+        </div>
+      </div>
+      {% if comment.user == request.user %}
+      <a class="btn btn-outline-dark" href="{% url 'magazine:comment_delete' comment.pk %}">Delete</a>
+      {% endif %}
 
     </div>
     {% endfor %}
@@ -76,7 +76,8 @@
   </form>
 </div>
 {% else %}
-
-<h2>Login to leave a comment</h2>
+<div class="login-to-comment-container">
+  <h2 class="login-to-comment"><a class="nav-link {% if request.path == '/users/login' %}active{% endif %}" href="{% url 'magazine:login' %}">Log in&nbsp;</a> / <a class="nav-link {% if request.path == '/users/signup' %}active{% endif %}" href="{% url 'magazine:signup' %}">&nbsp;Sign up</a> &nbsp;to leave a comment</h2>
+</div>
 {% endif %}
 {% endblock content %}
