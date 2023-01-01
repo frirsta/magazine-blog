@@ -220,7 +220,13 @@ span {
 }
 
 /* comment section */
-.comment.count {}
+.comment-count {
+    display: flex;
+    height: 100px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 
 .badge {
     color: #000 !important;

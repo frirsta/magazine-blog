@@ -29,8 +29,8 @@
   {% if comments %}
   <div class="user-comment-container">
     <div class="comment-count">
-      <h3>Comment{{ comments.count|pluralize }}</h3>
       <span class="badge badge-dark ml-2">{{ comments.count }}</span>
+      <h3>Comment{{ comments.count|pluralize }}</h3>
     </div>
     {% for comment in comments %}
     <div class="user-comment">
