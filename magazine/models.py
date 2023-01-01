@@ -42,7 +42,7 @@ class Profile(models.Model):
 
 class Comment(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    content = models.TextField()
+    content = models.TextField(max_length=300)
     post = models.ForeignKey(Post, on_delete=models.CASCADE)
     comment_created = models.DateTimeField(auto_now_add=True)
     approved = models.BooleanField(default=True)
