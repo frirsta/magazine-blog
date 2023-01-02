@@ -35,7 +35,7 @@ h1 {
 }
 
 .hero {
-    background: url("/static/img/hero/hero.jpg") no-repeat center center;
+    background: url("../img/hero/hero.jpg") no-repeat center center;
     height: 600px;
     text-align: center;
 
