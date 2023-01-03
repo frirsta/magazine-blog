@@ -3,6 +3,7 @@
 {% block content %}
 <div class="title-container">
 <h2>Profile page</h2>
+{% if user.is_authenticated %}
 <h3>{{ user.username }}</h3>
 </div>
 <div class="profile-container">
@@ -10,6 +11,8 @@
     <div class="profile-picture">
 {% if profile.image %}
             <img src="{{ profile.image.url }}" alt="{{ user.username }}" class="profile-image">
+            {% else %}
+            <div class="profile-image" style="background: url({% static 'img/default-profile.png' %}) no-repeat center center;"></div>
     {% endif %}
         </div>
     <h3>{{ user.username }}</h3>
@@ -20,4 +23,5 @@
         <p><a class="btn btn-outline-dark" href="{% url 'magazine:user_posts' request.user.username %}">My Posts</a></p>
     </div>
 </div>
+{% endif %}
 {% endblock content %}

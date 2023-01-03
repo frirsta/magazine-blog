@@ -35,7 +35,6 @@ h1 {
 }
 
 .hero {
-    background: url("../img/hero/hero.jpg") no-repeat center center;
     height: 600px;
     text-align: center;
 
@@ -169,9 +168,11 @@ textarea {
 
 .profile-image {
     border-radius: 50%;
-    width: 350px;
-    height: 350px;
+    width: 400px;
+    height: 400px;
 }
+
+.default-profile-image{}
 
 
 /* post detail page */
