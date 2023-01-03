@@ -26,6 +26,10 @@ h1 {
 /* navbar */
 .navbar {
     height: 70px;
+    font-size: 25px;
+}
+.navbar-brand{
+    font-size: 30px;
 }
 
 /* logo & hero */

@@ -1,127 +1,104 @@
-# Libraries
+# Magazine
+Magazine is a website where people share and get inspired by interior designs. The website is targeted toward those who want to share, read and learn about interior design. The website is useful for those who want to know what is trending right now. 
+All website users can create an account and share what their homes look like or anything regarding interior design.
+
+The website owner can delete comments and posts, if it is inappropriate. This is done from the Admin Dashboard that is only accessible to the Website owner when they log in.
+
+
+## Features
+
+### Existing Features
+
+#### Home page
+
+* Navigation Bar
+  * Featured on all pages. The navigation bar includes links to the logo, homepage, blog page, login page and SignUp page.
+  * This allows the user to easily navigate through the website.
+  * When the user is logged in the navigation bar also links to Create Post page, Profile page, and it has a Log out link so the user can easily log out from their account.
+  * When the website owner is logged in the same links as the logged in user will display as well as an Admin link for the Admin dashboard.
+
+* The Landing/home page
+  * The landing page has an image of furniture and text that says 'MAGAZINE' and 'Interior & Lifestyle' This lets the user know what the website is about.
+  * The home page displays the six latest posts made so the user can see what the latest interior trends are and also so they can see examples of what type of content they will find on the page. 
+
+* The footer
+  * The footer links to Magazines social media accounts.
+ 
+ #### Blog
+
+ * The blog page displays all posts made with the latest ones on top of the page.
+
+
+#### Sign up
+* The SignUp page displays a form where the user writes their information to create an account.
+
+#### Log in
+* The log in page displays a form where the user writes their username and password to log in to their account.
+
+#### Create Post
+* In the create post page a user can create a post.
+    * Title | Name of the blog post.
+    * Article description | Description of the article. This is the first thing the user reads before deciding what post to read more about.
+    * Content | The post content.
+    * Image | The image that will be posted with content.
+
+#### Profile
+* In the profile page the user can edit their profile information.
+    * Add a profile picture.
+    * Change password.
+    * Find all their posts in one page.
+
+
+#### Admin Dashboard
+* In the admin the website owner can see how many posts have been made, how many accounts have been created and how many comments have been made.
+* On this page the owner can find all posts, who the author is, the title, the article description, the date it was created and the content.
+    * The owner can Delete posts from this page.
+* On this page the owner can find all the comments, the name of who has created the comment, the date the comment was created, the comment content, and what post it was commented on.
+    * The owner can delete comments from this page.
+
+### Features left to Implement
+
+## Testing
+https://www.responsivedesignchecker.com/
+https://validator.w3.org/
+https://jigsaw.w3.org/css-validator/
+## Technologies Used
+* Python
+* Django
+* HTML5 - For structure of the website
+* CSS3 - For styling of the website
+* GitHub - Used to host the website
+* GitPod - For deployment of the website
+* Miro - For creating the Wireframes
+miro.com
+### Libraries
 * pip3 install Pillow
 * pip3 install 'django<4' gunicorn
 * pip3 install dj_database_url==0.5.0 psycopg2
-*  pip3 install dj3-cloudinary-storage
+* pip3 install dj3-cloudinary-storage
 * pip3 freeze --local > requirements.txt
+
+### Validators
+
+### Unfixed Bugs
+
+
+## Deployment
+
+
+## Credits
+* https://dontrepeatyourself.org/post/django-blog-tutorial-part-1-project-configuration/
+### Content
+### Media
+#### Images
+* Image by rawpixel.com https://www.rawpixel.com/image/6012980/illustration-png-social-media-logo
+
 
 ## bugs
 In the forms errors never showed on the page. In stackoverflow I finally found a solution.
 
 * https://stackoverflow.com/questions/64054215/display-django-registration-form-errors
 
-&nbsp; 
-## Credits
-* https://dontrepeatyourself.org/post/django-blog-tutorial-part-1-project-configuration/
 
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-## images
-* Image by rawpixel.com https://www.rawpixel.com/image/6012980/illustration-png-social-media-logo
 
-Welcome frirsta,
-
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
-
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
-
-## Gitpod Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
-
-`python3 -m http.server`
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
-------
-
-## Release History
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
