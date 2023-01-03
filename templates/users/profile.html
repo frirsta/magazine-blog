@@ -8,9 +8,10 @@
 <div class="profile-container">
    
     <div class="profile-picture">
-
+{% if profile.image %}
             <img src="{{ profile.image.url }}" alt="{{ user.username }}" class="profile-image">
-    </div>
+    {% endif %}
+        </div>
     <h3>{{ user.username }}</h3>
     <p>{{ user.profile.bio }}</p>
     <div class="profile-links">
