@@ -474,7 +474,7 @@ span {
 
 @media screen and (max-width: 375px) {
     .hero{
-        background: url("http://res.cloudinary.com/magazine-blog/image/upload/f_auto/v1672830657/static/img/hero/hero-max-width-375px.8e594e7e8837.jpg") no-repeat center center;
+        background: url("https://res.cloudinary.com/magazine-blog/image/upload/f_auto/v1672830657/static/img/hero/hero-max-width-375px.8e594e7e8837.jpg") no-repeat center center;
     }
     .navbar-nav {
         font-size: 40px;
