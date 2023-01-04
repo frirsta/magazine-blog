@@ -27,14 +27,14 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="{% url 'magazine:home' %}">Home</a>
+            <a class="nav-link {% if request.path == '/' %}active{% endif %}" aria-current="page" href="{% url 'magazine:home' %}">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'magazine:posts' %}">Blog</a>
+            <a class="nav-link {% if request.path == '/posts/' %}active{% endif %}" href="{% url 'magazine:posts' %}">Blog</a>
           </li>
           {% if request.user.is_authenticated %}
           <li class="nav-item">
-            <a class="nav-link"
+            <a class="nav-link {% if request.path == '/create/' %}active{% endif %}"
               href="{% url 'magazine:post_create' %}">Create Post</a>
           </li>
           <li class="nav-item">
@@ -47,18 +47,18 @@
           {% if user.is_superuser %}
           <li class="nav-item">
             <a href="{% url 'magazine:admin_page' %}"
-              class="nav-link {% if request.path == '/admin_page/' %}active{% endif %}">Admin</a>
+              class="nav-link {% if request.path == '/admin-page/' %}active{% endif %}">Admin</a>
           </li>
           {% endif %}
 
           {% else %}
 
           <li class="nav-item">
-            <a class="nav-link {% if request.path == '/users/login' %}active{% endif %}"
+            <a class="nav-link {% if request.path == '/login/' %}active{% endif %}"
               href="{% url 'magazine:login' %}">Log in</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link {% if request.path == '/users/signup' %}active{% endif %}"
+            <a class="nav-link {% if request.path == '/signup/' %}active{% endif %}"
               href="{% url 'magazine:signup' %}">Sign up</a>
           </li>
 
@@ -73,6 +73,13 @@
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
   </div>
   {% endfor %}
+  {% for message in messages %}
+  <div class="alert alert-{% if message.tags == 'errors' %}warning{% else %}{{ message.tags }}{% endif %} alert-dismissible fade show" role="alert">
+    {{ message }}
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">&times;</button>
+  </div>
+  {% endfor %}
+
 
   {% block content %}
   {% endblock content %}
