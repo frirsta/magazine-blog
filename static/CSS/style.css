@@ -42,6 +42,7 @@ h1 {
 .hero {
     height: 600px;
     text-align: center;
+    margin-bottom: 25px;
 
 }
 
@@ -405,7 +406,7 @@ span {
     }
 
     .logo {
-        font-size: 150px;
+        font-size: 140px;
     }
 
     .blog-post-container {
