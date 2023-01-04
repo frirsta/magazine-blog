@@ -96,6 +96,7 @@ Bild av Olena Bohovyk: https://www.pexels.com/sv-se/foto/romantisk-mork-vinter-h
 Bild av Maria Orlova: https://www.pexels.com/sv-se/foto/kreativ-vagg-hus-vaxt-4915834/
 Bild av PNW Production: https://www.pexels.com/sv-se/foto/sang-vaxt-vit-design-8251666/
 Bild av Maksim Goncharenok: https://www.pexels.com/sv-se/foto/tra-vagg-bord-lyx-4352247/
+Bild av Nugroho  Wahyu : https://www.pexels.com/sv-se/foto/inne-tra-design-rum-3119180/ hero image
 ## bugs
 In the forms errors never showed on the page. In stackoverflow I finally found a solution.
 

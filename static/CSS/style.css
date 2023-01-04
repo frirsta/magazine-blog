@@ -43,6 +43,7 @@ h1 {
     height: 600px;
     text-align: center;
     margin-bottom: 25px;
+    background: url("/static/img/hero/hero.jpg");
 
 }
 
@@ -472,6 +473,9 @@ span {
 }
 
 @media screen and (max-width: 375px) {
+    .hero{
+        background: url("/static/img/hero/hero-max-width-375px.jpg") no-repeat center center;
+    }
     .navbar-nav {
         font-size: 40px;
         display: flex;
