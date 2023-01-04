@@ -28,7 +28,8 @@ h1 {
     height: 70px;
     font-size: 25px;
 }
-.navbar-brand{
+
+.navbar-brand {
     font-size: 30px;
 }
 
@@ -179,7 +180,7 @@ textarea {
     height: 400px;
 }
 
-.default-profile-image{}
+.default-profile-image {}
 
 
 /* post detail page */
@@ -216,14 +217,15 @@ span {
     text-transform: capitalize;
 }
 
-.login-to-comment-container{
+.login-to-comment-container {
     height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.login-to-comment{
+
+.login-to-comment {
     display: flex;
 }
 
@@ -291,15 +293,17 @@ span {
     font-size: 20px;
 }
 
-.comment-user-created{
+.comment-user-created {
     display: flex;
     flex-direction: column;
     line-height: 20px;
 }
-.comment-created{
+
+.comment-created {
     font-size: 80%;
 }
-.muted{}
+
+.muted {}
 
 
 /* Admin and staff page */
@@ -378,6 +382,8 @@ span {
     .navbar-nav {
         background: #FFF0F5;
         padding-left: 10px;
+        z-index: 2;
+        position: relative;
     }
 
     .container-fluid {
@@ -437,9 +443,10 @@ span {
     .post-body {}
 
     /* profile page */
-    .title-container{
+    .title-container {
         text-align: center;
     }
+
     /* post_detail */
     .post-text-container {
 
@@ -451,9 +458,11 @@ span {
     .blog-post-container {
         width: 767px;
     }
-    .post-container{
+
+    .post-container {
         height: unset;
     }
+
     .post-image {
         width: 200px;
     }
@@ -473,6 +482,7 @@ span {
         height: 300px;
 
     }
+
     .blog-post-container {
         width: 375px;
         justify-content: center;
@@ -487,12 +497,14 @@ span {
         align-items: center;
         margin: 10px 0;
     }
-    .post-image-link{
+
+    .post-image-link {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
+
     .post-image {
         width: 300px;
     }
@@ -507,18 +519,21 @@ span {
     }
 
     /* create post form */
-    form{
+    form {
         width: 300px;
     }
-    .form{
+
+    .form {
         width: 300px;
     }
-    .form input, textarea{
+
+    .form input,
+    textarea {
         width: 300px;
     }
 
     /* profile page */
-    .profile-container{
+    .profile-container {
         flex-direction: column;
     }
 
@@ -528,11 +543,13 @@ span {
     }
 
     /* post detail */
-    .post-detail-container{
+    .post-detail-container {
         width: 355px;
     }
+
     .post-image-detail {
-        width: 350px;}
+        width: 350px;
+    }
 
     /* comment section */
     .comment-profile-image {
@@ -540,16 +557,19 @@ span {
         height: 50px;
 
     }
+
     .user-comment {
         width: 300px;
         height: 100px;
         margin: 10px;
         padding: 0 5px;
     }
+
     .comment-image-name {
         font-size: 15px;
     }
-    .comment-count{
+
+    .comment-count {
         display: flex;
         flex-direction: row;
         justify-content: center;
