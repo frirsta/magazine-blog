@@ -386,6 +386,10 @@ span {
         position: relative;
     }
 
+    .navbar-toggler{
+        margin-right: 10px;
+    }
+
     .container-fluid {
         padding: 0;
     }
@@ -464,7 +468,7 @@ span {
     }
 
     .post-image {
-        width: 200px;
+     
     }
 }
 
@@ -515,7 +519,7 @@ span {
     }
 
     .post-body {
-        width: 250px;
+        width: 300px;
     }
 
     /* create post form */
