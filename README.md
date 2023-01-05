@@ -140,12 +140,12 @@ python3 manage.py graph_models --pydot -a -g -o my_project_visualized.png
 ### Media
 #### Images
 * Image by rawpixel.com https://www.rawpixel.com/image/6012980/illustration-png-social-media-logo
-Bild av Olena Bohovyk: https://www.pexels.com/sv-se/foto/romantisk-mork-vinter-hus-5686478/
-Bild av Maria Orlova: https://www.pexels.com/sv-se/foto/kreativ-vagg-hus-vaxt-4915834/
-Bild av PNW Production: https://www.pexels.com/sv-se/foto/sang-vaxt-vit-design-8251666/
-Bild av Maksim Goncharenok: https://www.pexels.com/sv-se/foto/tra-vagg-bord-lyx-4352247/
-Bild av Nugroho  Wahyu : https://www.pexels.com/sv-se/foto/inne-tra-design-rum-3119180/ hero image
-## bugs
+* Bild av Olena Bohovyk: https://www.pexels.com/sv-se/foto/romantisk-mork-vinter-hus-5686478/
+* Bild av Maria Orlova: https://www.pexels.com/sv-se/foto/kreativ-vagg-hus-vaxt-4915834/
+* Bild av PNW Production: https://www.pexels.com/sv-se/foto/sang-vaxt-vit-design-8251666/
+* Bild av Maksim Goncharenok: https://www.pexels.com/sv-se/foto/tra-vagg-bord-lyx-4352247/
+* Bild av Nugroho  Wahyu: https://www.pexels.com/sv-se/foto/inne-tra-design-rum-3119180/ hero image
+## Bugs
 In the forms errors never showed on the page. In stackoverflow I finally found a solution.
 
 * https://stackoverflow.com/questions/64054215/display-django-registration-form-errors
