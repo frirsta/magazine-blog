@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'cloudinary_storage',
+    'django_extensions',
     'django.contrib.staticfiles',
     'cloudinary',
     'magazine',
@@ -149,3 +150,10 @@ AUTH_USER_MODEL = 'magazine.User'
 # login url
 LOGIN_URL = '/users/login/'
 ACCOUNT_EMAIL_VERIFICATION = 'none'
+
+
+# Graph models
+GRAPH_MODELS = {
+  'all_applications': True,
+  'group_models': True,
+}

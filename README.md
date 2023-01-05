@@ -89,7 +89,13 @@ miro.com
 * pip3 install 'django<4' gunicorn
 * pip3 install dj_database_url==0.5.0 psycopg2
 * pip3 install dj3-cloudinary-storage
+* pip install django-extensions
+* pip install pyparsing pydot
 * pip3 freeze --local > requirements.txt
+<!-- 
+python3 manage.py graph_models --pydot -a -g -o my_project_visualized.png
+/manage.py graph_models -a > my_project.dot
+--> 
 
 ### Validators
 
