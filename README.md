@@ -25,6 +25,21 @@ I used [Dreampuf](https://dreampuf.github.io/GraphvizOnline/#digraph%20G%20%7B%0
 ### Wireframes
 I have used [Miro](https://miro.com/) to create WireFrames for the project.
 <details><summary>Wireframes</summary>
+
+<img src="static/img/readme/home_desktop.jpg" alt="home page on desktop screen" style="width: 50%">
+<img src="static/img/readme/home_ipad.jpg" alt="home page on ipad screen" style="width: 50%">
+<img src="static/img/readme/home_phone.jpg" alt="home page on phone screen" style="width: 50%">
+<img src="static/img/readme/blog_desktop.jpg" alt="blog page on desktop screen" style="width: 50%">
+<img src="static/img/readme/blog_ipad.jpg" alt="blog page on ipad screen" style="width: 50%">
+<img src="static/img/readme/blog_phone.jpg" alt="blog page on phone screen" style="width: 50%">
+<img src="static/img/readme/post_detail.jpg" alt="post detail on all screens" style="width: 50%">
+<img src="static/img/readme/signup.jpg" alt="signup page on all screens" style="width: 50%">
+<img src="static/img/readme/login.jpg" alt="login page on all screens" style="width: 50%">
+<img src="static/img/readme/edit_profile.jpg" alt="profile page on all screens" style="width: 50%">
+<img src="static/img/readme/create_post.jpg" alt="create post page on all screens" style="width: 50%">
+<img src="static/img/readme/change_password.jpg" alt="change password page on all screens" style="width: 50%">
+
+
 <p>
 
 #### Wireframes
