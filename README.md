@@ -24,6 +24,13 @@ I used [Dreampuf](https://dreampuf.github.io/GraphvizOnline/#digraph%20G%20%7B%0
 
 ### Wireframes
 I have used [Miro](https://miro.com/) to create WireFrames for the project.
+<details><summary>Wireframes</summary>
+<p>
+
+#### Wireframes
+
+</p>
+</details>
 
 ## Features
 
