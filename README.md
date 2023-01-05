@@ -1,8 +1,21 @@
 # Magazine
-Magazine is a website where people share and get inspired by interior designs. The website is targeted toward those who want to share, read and learn about interior design. The website is useful for those who want to know what is trending right now. 
+Magazine is a website where people share and get inspired by interior designs. The website is targeted toward those who want to share, read and learn about interior design. The website is useful for tho.se who want to know what is trending right now. 
 All website users can create an account and share what their homes look like or anything regarding interior design.
 
 The website owner can delete comments and posts, if it is inappropriate. This is done from the Admin Dashboard that is only accessible to the Website owner when they log in.
+
+## Title
+
+### Site Owner Goal
+The site's Owner's goal is to have a website where people who love interior design can have a space to read about and share their own tips and tricks about interior design. The website will have people inspired and people who inspire.
+
+### Site User Goal
+The site's user goal is to have a place to read about and share their own tips and tricks about interior design.
+
+
+## Project Management
+I have used the github project board to work with the blog.
+I have used [Miro](https://miro.com/) to create WireFrames for the project.
 
 
 ## Features
