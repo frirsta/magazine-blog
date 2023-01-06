@@ -8,11 +8,11 @@
   <div class="col post-container">
     <a class="post-image-link" href="{% url 'magazine:post_detail' post.pk post.slug %}">
       {% if post.image %}
-      <img src="{{ post.image.url }}" alt="{{ post.title }}" class="post-image">
+      <img src="{{ post.image.url }}" alt="a blog post image that links to the blog post page with all of the post content {{ post.title }}" class="post-image">
 
       {% else %}
       <a class="post-image-link" href="{% url 'magazine:post_detail' post.pk post.slug %}">
-        <img src="{% static 'img/default-post.jpg' %}" alt="{{ post.title }}" class="post-image">
+        <img src="{% static 'img/default-post.jpg' %}" alt="a blog post image that links to the blog post page with all of the post content {{ post.title }}" class="post-image">
 
         {% endif %}
 <div class="post-body">
