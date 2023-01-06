@@ -140,6 +140,9 @@ The website have some differences.
 https://www.responsivedesignchecker.com/
 https://validator.w3.org/
 https://jigsaw.w3.org/css-validator/
+
+
+
 ## Technologies Used
 * Python
 * Django
