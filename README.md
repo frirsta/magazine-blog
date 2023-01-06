@@ -1,28 +1,31 @@
-# Magazine
+# Magazine 
 Magazine is a website where people share and get inspired by interior designs. The website is targeted toward those who want to share, read and learn about interior design. The website is useful for tho.se who want to know what is trending right now. 
 All website users can create an account and share what their homes look like or anything regarding interior design.
 
 The website owner can delete comments and posts, if it is inappropriate. This is done from the Admin Dashboard that is only accessible to the Website owner when they log in.
 
-## Title
+## Project
+<br>
 
 ### Site Owner Goal
 The site's Owner's goal is to have a website where people who love interior design can have a space to read about and share their own tips and tricks about interior design. The website will have people inspired and people who inspire.
 
+<br>
+
 ### Site User Goal
 The site's user goal is to have a place to read about and share their own tips and tricks about interior design.
 
+<br>
 
 ## Project Management
 I have used the github project board to work with the blog.
 I have used [Miro](https://miro.com/) to create WireFrames for the project.
 
-
 ### Models Graph
 I have used Graph models to render a graphical overview of the blog models. It shows how the models are connected to each other in the database.
 I used [Dreampuf](https://dreampuf.github.io/GraphvizOnline/#digraph%20G%20%7B%0A%0A%20%20subgraph%20cluster_0%20%7B%0A%20%20%20%20style%3Dfilled%3B%0A%20%20%20%20color%3Dlightgrey%3B%0A%20%20%20%20node%20%5Bstyle%3Dfilled%2Ccolor%3Dwhite%5D%3B%0A%20%20%20%20a0%20-%3E%20a1%20-%3E%20a2%20-%3E%20a3%3B%0A%20%20%20%20label%20%3D%20%22process%20%231%22%3B%0A%20%20%7D%0A%0A%20%20subgraph%20cluster_1%20%7B%0A%20%20%20%20node%20%5Bstyle%3Dfilled%5D%3B%0A%20%20%20%20b0%20-%3E%20b1%20-%3E%20b2%20-%3E%20b3%3B%0A%20%20%20%20label%20%3D%20%22process%20%232%22%3B%0A%20%20%20%20color%3Dblue%0A%20%20%7D%0A%20%20start%20-%3E%20a0%3B%0A%20%20start%20-%3E%20b0%3B%0A%20%20a1%20-%3E%20b3%3B%0A%20%20b2%20-%3E%20a3%3B%0A%20%20a3%20-%3E%20a0%3B%0A%20%20a3%20-%3E%20end%3B%0A%20%20b3%20-%3E%20end%3B%0A%0A%20%20start%20%5Bshape%3DMdiamond%5D%3B%0A%20%20end%20%5Bshape%3DMsquare%5D%3B%0A%7D) to translate the DOT language into the graph.
 
-### Wireframes
+## Wireframes
 I have used [Miro](https://miro.com/) to create WireFrames for the project.
 The website have some differences.
 <details><summary>Wireframes</summary>
@@ -52,9 +55,9 @@ The website have some differences.
 
 <img src="static/img/readme/login.jpg" alt="login page on all screens" style="width: 100%">
 
-<img src="static/img/readme/edit_profile.jpg" alt="profile page on all screens" style="width: 100%">
-
 <img src="static/img/readme/profile.jpg" alt="profile page on all screens" style="width: 100%">
+
+<img src="static/img/readme/edit_profile.jpg" alt="profile page on all screens" style="width: 100%">
 
 <img src="static/img/readme/create_post.jpg" alt="create post page on all screens" style="width: 100%">
 
@@ -72,11 +75,17 @@ The website have some differences.
 </p>
 </details>
 
+<br>
+
 ## Features
+
+<br>
 
 ### Existing Features
 
-#### Home page
+<br>
+
+#### Features on all pages
 
 * Navigation Bar
   * Featured on all pages. The navigation bar includes links to the logo, homepage, blog page, login page and SignUp page.
@@ -84,12 +93,13 @@ The website have some differences.
   * When the user is logged in the navigation bar also links to Create Post page, Profile page, and it has a Log out link so the user can easily log out from their account.
   * When the website owner is logged in the same links as the logged in user will display as well as an Admin link for the Admin dashboard.
 
-* The Landing/home page
+* The footer
+  * The footer links to Magazine's social media accounts.
+
+#### The Landing/home page
   * The landing page has an image of furniture and text that says 'MAGAZINE' and 'Interior & Lifestyle' This lets the user know what the website is about.
   * The home page displays the six latest posts made so the user can see what the latest interior trends are and also so they can see examples of what type of content they will find on the page. 
 
-* The footer
-  * The footer links to Magazines social media accounts.
  
  #### Blog
 
@@ -102,18 +112,19 @@ The website have some differences.
 #### Log in
 * The log in page displays a form where the user writes their username and password to log in to their account.
 
+#### Profile
+* The profile page displays the user profile picture, user bio and three buttons.
+    * The Edit Profile button leads to the edit profile page where they can add a profile picture and write text about themselves.
+    * The Change password button leads to a page where they can change their password.
+    * The My Posts button leads to a page where they can find all posts they have created.
+
 #### Create Post
-* In the create post page a user can create a post.
+* In the create post page a user can create a post by adding text and image to the create post form. The form has four fields.
     * Title | Name of the blog post.
     * Article description | Description of the article. This is the first thing the user reads before deciding what post to read more about.
     * Content | The post content.
-    * Image | The image that will be posted with content.
+    * Image | The image that will be posted with the post text content.
 
-#### Profile
-* In the profile page the user can edit their profile information.
-    * Add a profile picture.
-    * Change password.
-    * Find all their posts in one page.
 
 
 #### Admin Dashboard

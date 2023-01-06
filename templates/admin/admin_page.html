@@ -4,7 +4,7 @@
 {% if user.is_superuser %}
 <h1>Admin Dashboard</h1>
 <div class="admin-container">
-<div class="container">
+<div class="admin-page-container">
     <div class="info-container">
         <div class="info-card-container">
             <div class="info-card">
@@ -53,7 +53,7 @@
         <td scope="col">{{ post.article_description }}</td>
         <td scope="col">
           <div class="dropdown">
-          <button class="btn btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <button class="btn btn-outline-dark dropdown-toggle admin-title-button" type="button" data-bs-toggle="dropdown" aria-expanded="false">
             {{ post.title }}
           </button>
           <ul class="dropdown-menu">
@@ -63,7 +63,7 @@
       </td>
         <td scope="col">{{ post.post_created }}</td>
         
-        <td><a class="btn btn-outline-dark" href="{% url 'magazine:post_delete' post.pk post.slug %}">Delete</a></td>
+        <td><a class="btn btn-outline-dark delete-button" href="{% url 'magazine:post_delete' post.pk post.slug %}">Delete</a></td>
       </tr>
       
     </tbody>
@@ -90,7 +90,7 @@
         <td scope="col">{{ comment.post }}</td>
         <td scope="col">{{ comment.content }}</td>
         <td scope="col">{{ comment.comment_created }}</td>
-        <td><a class="btn btn-outline-dark" href="{% url 'magazine:comment_delete' comment.id %}">Delete</a></td>
+        <td><a class="btn btn-outline-dark delete-button" href="{% url 'magazine:comment_delete' comment.id %}">Delete</a></td>
       </tr>
     </tbody>
     {% endfor %}
