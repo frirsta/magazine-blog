@@ -359,6 +359,9 @@ span {
 .fa-solid {
     font-size: 35px;
 }
+tbody, td, tfoot, th, thead, tr { 
+    width: 20%;
+}
 
 /* post information */
 
@@ -493,6 +496,10 @@ span {
     }
 
     .post-image {}
+    /* admin page */
+    td{
+        padding: 2px!important;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -623,5 +630,29 @@ span {
     }
     .card-footer{
         font-size: 80%;
+    }
+
+    /* admin page */
+    .table{
+        font-size: 8px;
+    }
+    .table-name{}
+    tbody, td, tfoot, th, thead, tr {
+        width: 0%;
+    }
+    .info-container {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 400px;
+    }
+
+    .admin-title-button,
+    .delete-button {
+        font-size: 85%;
+        padding: 2px;
+        margin: 0;
+        width: 50px;
+        margin-bottom: 2px;
+        overflow: hidden;
     }
 }

@@ -48,7 +48,7 @@
     {% for post in object_list %}
     <tbody>
       <tr>
-        <td scope="col">{{ post.author }}</td>
+        <td class="table-name" scope="col">{{ post.author }}</td>
         <td scope="col">{{ post.title }}</td>
         <td scope="col">{{ post.article_description }}</td>
         <td scope="col">
@@ -86,7 +86,7 @@
     {% for comment in comment %}
     <tbody>
       <tr>
-        <td scope="col">{{ comment.user }}</td>
+        <td class="table-name" scope="col">{{ comment.user }}</td>
         <td scope="col">{{ comment.post }}</td>
         <td scope="col">{{ comment.content }}</td>
         <td scope="col">{{ comment.comment_created }}</td>
