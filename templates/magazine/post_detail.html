@@ -30,7 +30,7 @@
   <div class="user-comment-container">
     <div class="comment-count">
       <span class="badge badge-dark ml-2">{{ comments.count }}</span>
-      <h3>Comment{{ comments.count|pluralize }}</h3>
+      <h3 class="comment-title" >Comment{{ comments.count|pluralize }}</h3>
     </div>
     {% for comment in comments %}
     <div class="user-comment">
@@ -45,10 +45,10 @@
           <p class="comment-text">{{ comment.content }}</p>
         </div>
         </div>
+        {% if comment.user == request.user %}
+        <a class="btn btn-outline-dark comment-delete-button" href="{% url 'magazine:comment_delete' comment.pk %}">Delete</a>
+        {% endif %}
       </div>
-      {% if comment.user == request.user %}
-      <a class="btn btn-outline-dark" href="{% url 'magazine:comment_delete' comment.pk %}">Delete</a>
-      {% endif %}
     </div>
     {% endfor %}
   </div>
