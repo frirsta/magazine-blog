@@ -12,11 +12,10 @@
 {% if profile.image %}
             <img src="{{ profile.image.url }}" alt="{{ user.username }}" class="profile-image">
             {% else %}
-            <div class="profile-image" style="background: url({% static 'img/default-profile.png' %}) no-repeat center center;"></div>
+            <img src="/static/img/default-profile.png" alt="{{ user.username }}" class="profile-image">
     {% endif %}
         </div>
-    <h3>{{ user.username }}</h3>
-    <p>{{ user.profile.bio }}</p>
+    <p class="profile-bio">{{ user.profile.bio }}</p>
     <div class="profile-links">
         <p><a class="btn btn-outline-dark" href="{% url 'magazine:edit_profile' %}">Edit Profile</a></p>
         <p><a class="btn btn-outline-dark" href="{% url 'magazine:password_change' %}">Change Password</a></p>

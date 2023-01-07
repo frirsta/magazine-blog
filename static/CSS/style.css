@@ -249,8 +249,17 @@ span {
 }
 .profile-image {
     border-radius: 50%;
+    width: 300px;
+
+}
+
+.title-container {
+    text-align: center;
+    position: relative;
+    top: 40px;
+}
+.profile-bio{
     width: 400px;
-    height: 400px;
 }
 /* Admin and staff page */
 .admin-container {
@@ -380,7 +389,8 @@ tr {
     }
     /* profile page */
     .title-container {
-        text-align: center;
+        position: unset;
+        top: unset;
     }
     /* Admin page */
     .info-card-container {
@@ -479,6 +489,12 @@ tr {
     /* profile page */
     .profile-container {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .profile-bio {
+        text-align: center;
+        width: 300px;
     }
     .profile-image {
         width: 250px;
