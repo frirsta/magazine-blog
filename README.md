@@ -4,28 +4,30 @@ All website users can create an account and share what their homes look like or 
 
 The website owner can delete comments and posts, if it is inappropriate. This is done from the Admin Dashboard that is only accessible to the Website owner when they log in.
 
-## Project
-<br>
+# Project
 
-### Site Owner Goal
+## Site Owner Goal
 The site's Owner's goal is to have a website where people who love interior design can have a space to read about and share their own tips and tricks about interior design. The website will have people inspired and people who inspire.
 
 <br>
 
-### Site User Goal
+## Site User Goal
 The site's user goal is to have a place to read about and share their own tips and tricks about interior design.
 
 <br>
 
-## Project Management
+# Project Management
 I have used the github project board to work with the blog.
-I have used [Miro](https://miro.com/) to create WireFrames for the project.
+<details><summary>GitHub Board</summary>
+<img src="static/img/readme/github_board.png" alt="github board" style="width: 100%">
+</details>
+<br>
 
 ### Models Graph
 I have used Graph models to render a graphical overview of the blog models. It shows how the models are connected to each other in the database.
 I used [Dreampuf](https://dreampuf.github.io/GraphvizOnline/#digraph%20G%20%7B%0A%0A%20%20subgraph%20cluster_0%20%7B%0A%20%20%20%20style%3Dfilled%3B%0A%20%20%20%20color%3Dlightgrey%3B%0A%20%20%20%20node%20%5Bstyle%3Dfilled%2Ccolor%3Dwhite%5D%3B%0A%20%20%20%20a0%20-%3E%20a1%20-%3E%20a2%20-%3E%20a3%3B%0A%20%20%20%20label%20%3D%20%22process%20%231%22%3B%0A%20%20%7D%0A%0A%20%20subgraph%20cluster_1%20%7B%0A%20%20%20%20node%20%5Bstyle%3Dfilled%5D%3B%0A%20%20%20%20b0%20-%3E%20b1%20-%3E%20b2%20-%3E%20b3%3B%0A%20%20%20%20label%20%3D%20%22process%20%232%22%3B%0A%20%20%20%20color%3Dblue%0A%20%20%7D%0A%20%20start%20-%3E%20a0%3B%0A%20%20start%20-%3E%20b0%3B%0A%20%20a1%20-%3E%20b3%3B%0A%20%20b2%20-%3E%20a3%3B%0A%20%20a3%20-%3E%20a0%3B%0A%20%20a3%20-%3E%20end%3B%0A%20%20b3%20-%3E%20end%3B%0A%0A%20%20start%20%5Bshape%3DMdiamond%5D%3B%0A%20%20end%20%5Bshape%3DMsquare%5D%3B%0A%7D) to translate the DOT language into the graph.
 
-## Wireframes
+# Wireframes
 I have used [Miro](https://miro.com/) to create WireFrames for the project.
 The website have some differences.
 <details><summary>Wireframes</summary>
@@ -77,15 +79,41 @@ The website have some differences.
 
 <br>
 
-## Features
+# User Experience (UX)
+## Site User
+
+| User/Admin | Description |
+| --- | --- |
+| Site User | As a Site User I can View posts so that I can select one to read |
+| Site User | As a site user I can read comments that are made for a specific post so that I can read what people think of the post |
+| Site User | As a Site User I can create an account so that I can comment and create content |
+| Site User | As a Site User I can create a post so that I can make content for the blog |
+| Site User | As a Site User I can comment posts so that I can write what I think about the post and interact with other blog readers |
+| Site User | As a site user I can delete comments I have made so that I have control over my comments, and can remove them if I change my mind on the comments |
+| Site User | As a Site user I can go to a profile page specifically for me so that I can find all posts created by me |
+| Site User | As a Site User I can login so that I can create content for the blog that is connected to my account |
+| Site User | As a Site User I can logout so that someone else using my computer can't post from my account |
 
 <br>
 
-### Existing Features
+## Site Owner
+
+| User/Admin | Description |
+| --- | --- |
+| Site Owner | All Site User stories apply to the Site Owner |
+| Site Owner | As a Site Owner I can go to the Admin Dashboard where I can find all posts made and information about them |
+| Site Owner | As a Site Owner I can find all posts and all comments created in one page so that I can manage the content on the website |
+| Site Owner | As a Site Owner I can go to the Admin Dashboard where I can find all comments made and information about them |
+| Site Owner | As a Site Owner I can I can delete the posts and comments from the admin page so that I can manage a secure environment for the users |
 
 <br>
 
-#### Features on all pages
+# Features
+
+<br>
+
+### Features on all pages
+<br>
 
 * Navigation Bar
   * Featured on all pages. The navigation bar includes links to the logo, homepage, blog page, login page and SignUp page.
@@ -96,29 +124,29 @@ The website have some differences.
 * The footer
   * The footer links to Magazine's social media accounts.
 
-#### The Landing/home page
+### The Landing/home page
   * The landing page has an image of furniture and text that says 'MAGAZINE' and 'Interior & Lifestyle' This lets the user know what the website is about.
   * The home page displays the six latest posts made so the user can see what the latest interior trends are and also so they can see examples of what type of content they will find on the page. 
 
  
- #### Blog
+ ### Blog
 
  * The blog page displays all posts made with the latest ones on top of the page.
 
 
-#### Sign up
+### Sign up
 * The SignUp page displays a form where the user writes their information to create an account.
 
-#### Log in
+### Log in
 * The log in page displays a form where the user writes their username and password to log in to their account.
 
-#### Profile
+### Profile
 * The profile page displays the user profile picture, user bio and three buttons.
     * The Edit Profile button leads to the edit profile page where they can add a profile picture and write text about themselves.
     * The Change password button leads to a page where they can change their password.
     * The My Posts button leads to a page where they can find all posts they have created.
 
-#### Create Post
+### Create Post
 * In the create post page a user can create a post by adding text and image to the create post form. The form has four fields.
     * Title | Name of the blog post.
     * Article description | Description of the article. This is the first thing the user reads before deciding what post to read more about.
@@ -127,7 +155,7 @@ The website have some differences.
 
 
 
-#### Admin Dashboard
+### Admin Dashboard
 * In the admin the website owner can see how many posts have been made, how many accounts have been created and how many comments have been made.
 * On this page the owner can find all posts, who the author is, the title, the article description, the date it was created and the content.
     * The owner can Delete posts from this page.
