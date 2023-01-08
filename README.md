@@ -199,7 +199,15 @@ python3 manage.py graph_models --pydot -a -g -o my_project_visualized.png
 
 
 ## Deployment
-
+Step 1
+step 2
+step3
+Step 4 
+* pip3 install 'django<4' gunicorn
+* pip3 install dj_database_url==0.5.0 psycopg2
+* pip3 install dj3-cloudinary-storage
+step 5
+pip3 freeze --local > requirements.txt
 
 ## Credits
 * https://dontrepeatyourself.org/post/django-blog-tutorial-part-1-project-configuration/
