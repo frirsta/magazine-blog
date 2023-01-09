@@ -199,7 +199,8 @@ python3 manage.py graph_models --pydot -a -g -o my_project_visualized.png
 
 
 ## Deployment
-<br>
+
+<details><summary>Wireframes</summary>
 
 Create a GitHub repository from the Code Institute template and click 'Use this template'
 <img src="static/img/deployment/step-1.png" alt="step of deployment" style="width: 100%">
@@ -409,14 +410,9 @@ Wait for the GitHub branch to be deployed and then click 'View App'
 This is what the app will look like when its successfully deployed
 <img src="static/img/deployment/step-49.png" alt="step of deployment" style="width: 100%"> 
 
-
+</details>
 <br>
 
-* pip3 install 'django<4' gunicorn
-* pip3 install dj_database_url==0.5.0 psycopg2
-* pip3 install dj3-cloudinary-storage
-step 5
-pip3 freeze --local > requirements.txt
 
 ## Credits
 * https://dontrepeatyourself.org/post/django-blog-tutorial-part-1-project-configuration/
