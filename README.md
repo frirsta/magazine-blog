@@ -200,7 +200,7 @@ python3 manage.py graph_models --pydot -a -g -o my_project_visualized.png
 
 ## Deployment
 
-<details><summary>Wireframes</summary>
+<details><summary>Deployment</summary>
 
 Create a GitHub repository from the Code Institute template and click 'Use this template'
 <img src="static/img/deployment/step-1.png" alt="step of deployment" style="width: 100%">
