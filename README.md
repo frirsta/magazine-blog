@@ -199,10 +199,219 @@ python3 manage.py graph_models --pydot -a -g -o my_project_visualized.png
 
 
 ## Deployment
-Step 1
-step 2
-step3
-Step 4 
+<br>
+
+Create a GitHub repository from the Code Institute template and click 'Use this template'
+<img src="static/img/deployment/step-1.png" alt="step of deployment" style="width: 100%">
+<br>
+Add a repository name and then click 'Create repository from template'
+<img src="static/img/deployment/step-2.png" alt="step of deployment" style="width: 100%">
+<br>
+When the repository is created click 'Gitpod'
+<img src="static/img/deployment/step-3.png" alt="step of deployment" style="width: 100%">
+<br>
+
+In the terminal type the following commands to install Django and its supporting libraries:
+
+  * <img src="static/img/deployment/deployment-1.png" alt="'pip3 install 'django<4' gunicorn' typed in the terminal" style="width: 100%">
+  * <img src="static/img/deployment/deployment-2.png" alt="'pip3 install dj_database_url==0.5.0 psycopg2' typed in the terminal" style="width: 100%">
+  * <img src="static/img/deployment/deployment-3.png" alt="'pip3 install dj3-cloudinary-storage typed' in the terminal" style="width: 100%">
+<br>
+After the libraries have been installed type the following command to create a requirements.txt file
+<img src="static/img/deployment/deployment-4.png" alt="'pip3 freeze --local > requirements.txt' typed in the terminal" style="width: 100%">
+<img src="static/img/deployment/step-5.png" alt="step of deployment" style="width: 100%">
+
+<br>
+Create the Django project by typing the following command
+<img src="static/img/deployment/step-6.png" alt="step of deployment" style="width: 100%">
+After typing the command this 'blog' folder with files will be displayed in the directory
+<img src="static/img/deployment/step-7.png" alt="step of deployment" style="width: 100%">
+  
+<br>
+Create the Django application by typing the following command
+<img src="static/img/deployment/step-8.png" alt="step of deployment" style="width: 100%">
+After typing the command this 'magazine' with files will be displayed in the directory
+<img src="static/img/deployment/step-9.png" alt="step of deployment" style="width: 100%">
+
+<br>
+
+In the settings.py in the blog folder add the application (add 'magazine') to the 'INSTALLED_APPS' section as shown in following image
+<img src="static/img/deployment/step-10.png" alt="step of deployment" style="width: 100%">
+<br>
+
+In the terminal type 'python3 manage.py migrate'
+<img src="static/img/deployment/step-11.png" alt="step of deployment" style="width: 100%">  
+<br>
+
+In the terminal type 'python3 manage.py runserver' and click 'Open Browser'
+<img src="static/img/deployment/step-12.png" alt="step of deployment" style="width: 100%">  
+<br>
+The following image is what the website will look like
+<img src="static/img/deployment/step-13.png" alt="step of deployment" style="width: 100%">  
+
+<br>
+
+Create or login to [Heroku](https://www.heroku.com/)
+
+In the heroku Website click 'New' and after click 'Create new app'
+<img src="static/img/deployment/step-14.png" alt="step of deployment" style="width: 100%">  
+
+<br>
+
+Write the app name, choose a region and then click 'Create app' 
+<img src="static/img/deployment/step-15.png" alt="step of deployment" style="width: 100%">  
+<br>
+
+In the application website click 'Deploy' on the navigation menu
+<img src="static/img/deployment/step-16.png" alt="step of deployment" style="width: 100%">  
+<br>
+
+In the 'Deploy' page follow these steps:
+  1 Click the GitHub logo
+  2 Search for the GitHub repository that was made for this project
+  3 When the repository is found click 'Connect'
+<img src="static/img/deployment/step-17.png" alt="step of deployment" style="width: 100%">  
+<br>
+
+<img src="static/img/deployment/step-18.png" alt="step of deployment" style="width: 100%">
+
+### Create database
+
+https://www.elephantsql.com/ 
+Start with clicking 'Create New Instance'
+<img src="static/img/deployment/elephantsql.png" alt="step of deployment" style="width: 100%"> 
+
+<br>
+
+Enter a name for the database and then click 'Select Region'
+<img src="static/img/deployment/step-19.png" alt="step of deployment" style="width: 100%">  
+<br>
+
+Select a region and then click Review
+<img src="static/img/deployment/step-20.png" alt="step of deployment" style="width: 100%">  
+<br>
+
+Review the information and click 'Create Instance'
+<img src="static/img/deployment/step-21.png" alt="step of deployment" style="width: 100%">  
+<br>
+
+When the instance is created it will be displayed on top of the list of created instances
+Click the instance that has been created
+<img src="static/img/deployment/step-22.png" alt="step of deployment" style="width: 100%">
+<br>
+
+Copy the Url
+<img src="static/img/deployment/step-23.png" alt="step of deployment" style="width: 100%"> 
+<br>
+
+Create a 'env.py' file on the top level directory
+<img src="static/img/deployment/step-24.png" alt="step of deployment" style="width: 100%"> 
+<br>
+
+In the 'env.py' file add the following text
+<img src="static/img/deployment/step-25.png" alt="step of deployment" style="width: 100%"> 
+<br>
+
+Add the following text and in the red area paste the Url copied from the instance that was created in https://www.elephantsql.com/
+<img src="static/img/deployment/step-26.png" alt="step of deployment" style="width: 100%"> 
+  
+<br>
+
+In the 'settings.py' file copy the value of 'SECRET_KEY' (The secret key is removed from image because it has to be kept secret)
+<img src="static/img/deployment/step-27.png" alt="step of deployment" style="width: 100%"> 
+<br>
+
+In the 'env.py' file add the following text and paste the secret key as value
+<img src="static/img/deployment/step-28.png" alt="step of deployment" style="width: 100%"> 
+<br>
+
+Add the following text on top of the 'setting.py' file
+<img src="static/img/deployment/step-29.png" alt="step of deployment" style="width: 100%"> 
+<br>
+
+Add the following replace the value of 'SECRET_KEY' and add the following text
+<img src="static/img/deployment/step-30.png" alt="step of deployment" style="width: 100%"> 
+<br>
+
+  1 Comment out the database that is in the 'settings.py' file
+  2 Add the following text to connect the new database
+<img src="static/img/deployment/step-31.png" alt="step of deployment" style="width: 100%"> 
+<br>
+
+In the terminal type the following command
+<img src="static/img/deployment/step-32.png" alt="step of deployment" style="width: 100%"> 
+<br>
+
+In https://www.elephantsql.com/ in the instance that was created click 'Browser' 
+<img src="static/img/deployment/step-33.png" alt="step of deployment" style="width: 100%"> 
+<br>
+
+In the 'Browser' page click 'Table queries' and the database will be displayed
+<img src="static/img/deployment/step-34.png" alt="step of deployment" style="width: 100%"> 
+
+<br>
+
+In the application in heroku click 'Settings' in the navigation menu. After click 'Reveal Config Vars'
+Add the following keys and in the red area add their values
+<img src="static/img/deployment/step-35.png" alt="step of deployment" style="width: 100%"> 
+
+https://cloudinary.com/ Create an account or log in to cloudinary.
+
+<br>
+
+In 'API Environment variable' copy the value as shown below
+<img src="static/img/deployment/step-36.png" alt="step of deployment" style="width: 100%"> 
+<br>
+
+In the 'env.py' file add 'os.environ["CLOUDINARY_URL"]' and paste the link that was copied from cloudinary
+<img src="static/img/deployment/step-37.png" alt="step of deployment" style="width: 100%"> 
+<br>
+
+In the 'settings.py' file add 'cloudinary_storage' and 'cloudinary' as shown below
+<img src="static/img/deployment/step-38.png" alt="step of deployment" style="width: 100%"> 
+<br>
+
+Add the following text in the 'settings.py' file
+<img src="static/img/deployment/step-39.png" alt="step of deployment" style="width: 100%"> 
+<br>
+
+Add the following text as shown below in the 'settings.py' file
+<img src="static/img/deployment/step-40.png" alt="step of deployment" style="width: 100%"> 
+<br>
+
+* Add the following text as shown below in the 'settings.py' file
+<img src="static/img/deployment/step-41.png" alt="step of deployment" style="width: 100%"> 
+<br>
+
+Create these folders on the top level directory
+<img src="static/img/deployment/step-43.png" alt="step of deployment" style="width: 100%"> 
+<br>
+
+
+Creata a 'Procfile' file on the top level directory
+<img src="static/img/deployment/step-44.png" alt="step of deployment" style="width: 100%"> 
+<br>
+
+In the 'Procfile' file add the following text.
+<img src="static/img/deployment/step-45.png" alt="step of deployment" style="width: 100%">
+After push the project to GitHub.
+<br>
+
+In the application in Heroku navigate to the deploy page and scroll to the bottom of the page
+<img src="static/img/deployment/step-46.png" alt="step of deployment" style="width: 100%"> 
+<br>
+
+Click 'Deploy Branch'
+Wait for the GitHub branch to be deployed and then click 'View App'
+<img src="static/img/deployment/step-48.png" alt="step of deployment" style="width: 100%"> 
+<br>
+
+This is what the app will look like when its successfully deployed
+<img src="static/img/deployment/step-49.png" alt="step of deployment" style="width: 100%"> 
+
+
+<br>
+
 * pip3 install 'django<4' gunicorn
 * pip3 install dj_database_url==0.5.0 psycopg2
 * pip3 install dj3-cloudinary-storage
