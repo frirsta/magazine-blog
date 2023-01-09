@@ -165,9 +165,9 @@ The website have some differences.
 ### Features left to Implement
 
 ## Testing
-https://www.responsivedesignchecker.com/
-https://validator.w3.org/
-https://jigsaw.w3.org/css-validator/
+[responsivedesignchecker](https://www.responsivedesignchecker.com/)
+[HTML validator](https://validator.w3.org/)
+[CSS validator](https://jigsaw.w3.org/css-validator/)
 
 
 
@@ -213,9 +213,9 @@ When the repository is created click 'Gitpod'
 
 In the terminal type the following commands to install Django and its supporting libraries:
 
-  * <img src="static/img/deployment/deployment-1.png" alt="'pip3 install 'django<4' gunicorn' typed in the terminal" style="width: 100%">
-  * <img src="static/img/deployment/deployment-2.png" alt="'pip3 install dj_database_url==0.5.0 psycopg2' typed in the terminal" style="width: 100%">
-  * <img src="static/img/deployment/deployment-3.png" alt="'pip3 install dj3-cloudinary-storage typed' in the terminal" style="width: 100%">
+<img src="static/img/deployment/deployment-1.png" alt="'pip3 install 'django<4' gunicorn' typed in the terminal" style="width: 100%">
+<img src="static/img/deployment/deployment-2.png" alt="'pip3 install dj_database_url==0.5.0 psycopg2' typed in the terminal" style="width: 100%">
+<img src="static/img/deployment/deployment-3.png" alt="'pip3 install dj3-cloudinary-storage typed' in the terminal" style="width: 100%">
 <br>
 After the libraries have been installed type the following command to create a requirements.txt file
 <img src="static/img/deployment/deployment-4.png" alt="'pip3 freeze --local > requirements.txt' typed in the terminal" style="width: 100%">
@@ -277,7 +277,7 @@ In the 'Deploy' page follow these steps:
 
 ### Create database
 
-https://www.elephantsql.com/ 
+[ElephantSQL](https://www.elephantsql.com/) 
 Start with clicking 'Create New Instance'
 <img src="static/img/deployment/elephantsql.png" alt="step of deployment" style="width: 100%"> 
 
@@ -312,7 +312,7 @@ In the 'env.py' file add the following text
 <img src="static/img/deployment/step-25.png" alt="step of deployment" style="width: 100%"> 
 <br>
 
-Add the following text and in the red area paste the Url copied from the instance that was created in https://www.elephantsql.com/
+Add the following text and in the red area paste the Url copied from the instance that was created in [ElephantSQL](https://www.elephantsql.com/)
 <img src="static/img/deployment/step-26.png" alt="step of deployment" style="width: 100%"> 
   
 <br>
@@ -342,7 +342,7 @@ In the terminal type the following command
 <img src="static/img/deployment/step-32.png" alt="step of deployment" style="width: 100%"> 
 <br>
 
-In https://www.elephantsql.com/ in the instance that was created click 'Browser' 
+In [ElephantSQL](https://www.elephantsql.com/) in the instance that was created click 'Browser' 
 <img src="static/img/deployment/step-33.png" alt="step of deployment" style="width: 100%"> 
 <br>
 
@@ -355,7 +355,7 @@ In the application in heroku click 'Settings' in the navigation menu. After clic
 Add the following keys and in the red area add their values
 <img src="static/img/deployment/step-35.png" alt="step of deployment" style="width: 100%"> 
 
-https://cloudinary.com/ Create an account or log in to cloudinary.
+[Cloudinary](https://cloudinary.com/) Create an account or log in to cloudinary.
 
 <br>
 
@@ -379,7 +379,7 @@ Add the following text as shown below in the 'settings.py' file
 <img src="static/img/deployment/step-40.png" alt="step of deployment" style="width: 100%"> 
 <br>
 
-* Add the following text as shown below in the 'settings.py' file
+Add the following text as shown below in the 'settings.py' file
 <img src="static/img/deployment/step-41.png" alt="step of deployment" style="width: 100%"> 
 <br>
 
