@@ -12,7 +12,7 @@
 {% if profile.image %}
             <img src="{{ profile.image.url }}" alt="{{ user.username }}" class="profile-image">
             {% else %}
-            <img src="/static/img/default-profile.png" alt="{{ user.username }}" class="profile-image">
+            <img src="https://res.cloudinary.com/magazine-blog/image/upload/f_auto/v1672731112/static/img/default-profile-1024px.0432cd6086a2.png" alt="{{ user.username }}" class="profile-image">
     {% endif %}
         </div>
     <p class="profile-bio">{{ user.profile.bio }}</p>
