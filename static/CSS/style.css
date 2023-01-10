@@ -6,8 +6,6 @@ body {
     box-sizing: border-box;
     font-family: 'Cormorant Garamond', serif;
     background: #FFF0F5;
-    background: -moz-linear-gradient(top, #FFF0F5 0%, #FFFFFF 50%, #FFF0F5 100%);
-    background: -webkit-linear-gradient(top, #FFF0F5 0%, #FFFFFF 50%, #FFF0F5 100%);
     background: linear-gradient(to bottom, #FFF0F5 0%, #FFFFFF 50%, #FFF0F5 100%);
 }
 h1 {
