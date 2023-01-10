@@ -113,8 +113,6 @@ The website have some differences.
 <br>
 
 ### Features on all pages
-<br>
-
 * Navigation Bar
   * Featured on all pages. The navigation bar includes links to the logo, homepage, blog page, login page and SignUp page.
   * This allows the user to easily navigate through the website.
