@@ -165,8 +165,19 @@ The website have some differences.
 ## Testing
 [responsivedesignchecker](https://www.responsivedesignchecker.com/)
 [HTML validator](https://validator.w3.org/)
+<img src="static/img/readme/testing/html_validator.png" alt="html validator" style="width: 100%">
 [CSS validator](https://jigsaw.w3.org/css-validator/)
+<img src="static/img/readme/testing/css_validator.png" alt="css validator" style="width: 100%">
+[Jshint](https://jshint.com/)
+<img src="static/img/readme/testing/js_validator.png" alt="js validator" style="width: 100%">
 
+### Lighthouse
+The website has also been tested with the Chrome developer tool Google Lighthouse. It has been tested for desktop and for mobile. What was tested:
+
+* Performance
+* Accessibility
+* Best Practices
+* SEO (Search engine optimisation)
 
 
 ## Technologies Used
