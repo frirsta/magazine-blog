@@ -57,9 +57,10 @@ def loginUser(request):
             user = authenticate(username=username, password=password)
             if user is not None:
                 login(request, user)
+                messages.success(request, 'You have successfully logged in')
                 return redirect('magazine:home')
             else:
-                messages.error(request, 'Invalid username or Password')
+                messages.warning(request, 'Invalid username or Password')
     else:
         form = LoginForm()
     return render(request, 'users/login.html', {'form': form})
