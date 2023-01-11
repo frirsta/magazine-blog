@@ -20,8 +20,8 @@
         <div class="form-group">
             {{ form.bio.label_tag }}
             <textarea type="text" class="form-control input-area {% if form.bio.errors %}is-invalid{% endif %}"
-                id="id_bio" name="bio" value="{{ form.bio.value }}"
-                rows="5"></textarea>
+                id="id_bio" name="bio"
+                rows="5">{{ form.bio.value|default:user.profile.bio }}</textarea>
             {% if form.bio.errors %}
             <div class="invalid-feedback">
                 {{ form.bio.errors }}

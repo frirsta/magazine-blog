@@ -68,6 +68,7 @@ def loginUser(request):
 
 def logoutUser(request):
     logout(request)
+    messages.success(request, 'You have successfully logged out')
     return redirect('magazine:login')
 
 
@@ -94,6 +95,7 @@ def edit_profile(request):
             user.username = username
             user.save()
             profile.bio = bio
+            messages.success(request, 'Profile successfully changed')
             if image:
                 profile.image = image
             profile.save()
