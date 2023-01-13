@@ -27,8 +27,8 @@ class LoginForm(forms.Form):
 
 class ProfileForm(forms.Form):
     image = forms.ImageField(required=False)
-    bio = forms.CharField(widget=forms.Textarea(), required=False)
-    username = forms.CharField()
+    bio = forms.CharField(widget=forms.Textarea(), max_length=500, required=False)
+    username = forms.CharField(max_length=100)
 
     def __init__(self, old_username, *args, **kwargs):
         super().__init__(*args, **kwargs)
