@@ -425,7 +425,7 @@ tr {
         padding: 2px !important;
     }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
     .hero {
         background: url("https://res.cloudinary.com/magazine-blog/image/upload/f_auto/v1672830657/static/img/hero/hero-max-width-375px.8e594e7e8837.jpg") no-repeat center center;
     }
@@ -507,6 +507,9 @@ tr {
     .post-image-detail {
         width: 350px;
     }
+    .post-detail-image {
+        width: 350px;
+    }
     /* comment section */
     .comment-profile-image {
         width: 50px;
@@ -518,6 +521,7 @@ tr {
     .comment-image-name {
         font-size: 12px;
         width: 100%;
+        justify-content: start;
     }
     .comment-text {
         font-size: 10px;
