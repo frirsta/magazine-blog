@@ -8,29 +8,35 @@ body {
     background: #FFF0F5;
     background: linear-gradient(to bottom, #FFF0F5 0%, #FFFFFF 50%, #FFF0F5 100%);
 }
+
 h1 {
     text-align: center;
     margin-top: 50px;
 }
+
 /* buttons */
 .btn {
     border-radius: 0px;
     margin-bottom: 15px;
     font-size: 20px;
 }
+
 /* navbar */
 .navbar {
     height: 70px;
     font-size: 25px;
 }
+
 .navbar-brand {
     font-size: 30px;
 }
+
 /* logo & hero */
 .logo {
     font-size: 200px;
     margin-top: 0px;
 }
+
 .hero {
     height: 600px;
     text-align: center;
@@ -38,10 +44,12 @@ h1 {
     background: url("https://res.cloudinary.com/magazine-blog/image/upload/f_auto/v1672574161/static/img/hero/hero.26930ba73ffe.jpg") no-repeat center center;
 
 }
+
 /* footer */
 .card {
     background-color: unset !important;
 }
+
 .social-media-container {
     display: flex;
     flex-direction: row;
@@ -49,10 +57,12 @@ h1 {
     align-items: center;
     list-style: none;
 }
+
 .social-media-container li a {
     color: #000;
     font-size: 30px;
 }
+
 /* all forms */
 .form-container {
     display: flex;
@@ -60,10 +70,12 @@ h1 {
     justify-content: center;
     align-items: center;
 }
+
 form {
     width: 700px;
     margin: 50px;
 }
+
 .form {
     width: 700px;
     margin: 50px;
@@ -72,6 +84,7 @@ form {
     justify-content: center;
     align-items: baseline;
 }
+
 .form input,
 textarea {
     border-radius: 0px;
@@ -80,17 +93,21 @@ textarea {
     background-color: transparent;
     width: 700px;
 }
+
 .form-group {
     margin: 20px auto;
 }
+
 .input-area {
     border-radius: 0px;
     border: transparent;
     border-bottom: 1px solid #000;
 }
+
 .form-control {
     background-color: transparent;
 }
+
 /* home post */
 .blog-post-container {
     display: flex;
@@ -100,6 +117,7 @@ textarea {
     text-transform: capitalize;
     margin: 0px;
 }
+
 .post-container {
     margin: 0px;
     position: relative;
@@ -113,15 +131,18 @@ textarea {
     justify-content: center;
     align-items: center;
 }
+
 .post-image-link {
     text-decoration: none;
     color: #000;
 }
+
 .post-image {
     width: 30vw;
     height: 600px;
     border-radius: 10px;
 }
+
 /* post detail page */
 .post-detail-outer {
     display: flex;
@@ -129,6 +150,7 @@ textarea {
     justify-content: center;
     align-items: center;
 }
+
 .post-detail-container {
     display: flex;
     flex-direction: column;
@@ -137,18 +159,22 @@ textarea {
     width: 755px;
     border: 3px solid #000;
 }
+
 .post-image-detail {
     width: 750px;
     max-height: 1000px;
 }
+
 .post-text-container {
     text-align: center;
 }
+
 .post-text-container h2,
 h3,
 span {
     text-transform: capitalize;
 }
+
 .login-to-comment-container {
     height: 300px;
     display: flex;
@@ -156,9 +182,11 @@ span {
     justify-content: center;
     align-items: center;
 }
+
 .login-to-comment {
     display: flex;
 }
+
 /* comment section */
 .comment-count {
     display: flex;
@@ -167,11 +195,13 @@ span {
     justify-content: center;
     align-items: center;
 }
+
 .badge {
     color: #000 !important;
     font-size: 20px;
     font-weight: 300;
 }
+
 .user-comment-container {
     font-family: 'Montserrat', sans-serif;
     width: 100%;
@@ -180,9 +210,11 @@ span {
     justify-content: center;
     align-items: center;
 }
+
 .comment-title {
     font-weight: 300;
 }
+
 .user-comment {
     display: flex;
     flex-direction: row;
@@ -195,6 +227,7 @@ span {
     text-transform: capitalize;
     padding: 3px;
 }
+
 .comment-content {
     width: 100%;
     display: flex;
@@ -202,10 +235,12 @@ span {
     justify-content: space-between;
     align-items: end;
 }
+
 .comment-text {
     font-size: 13px;
     width: 100%;
 }
+
 .comment-profile-image {
     width: 100px;
     height: 100px;
@@ -213,6 +248,7 @@ span {
     border-radius: 50%;
     border: 1ps solid;
 }
+
 .comment-image-name {
     display: flex;
     flex-direction: row;
@@ -220,19 +256,23 @@ span {
     justify-content: center;
     font-size: 15px;
 }
+
 .comment-user-created {
     display: flex;
     flex-direction: column;
     font-weight: 300;
     padding-top: 2px;
 }
+
 .comment-created {
     font-size: 80%;
     font-weight: 400;
 }
+
 .comment-delete-button {
     margin-bottom: 0px;
 }
+
 /* profile page */
 .profile-container {
     display: flex;
@@ -241,12 +281,14 @@ span {
     align-items: center;
     height: 600px;
 }
+
 .profile-links {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 .profile-image {
     border-radius: 50%;
     width: 300px;
@@ -258,18 +300,22 @@ span {
     position: relative;
     top: 40px;
 }
-.profile-bio{
+
+.profile-bio {
     width: 400px;
 }
+
 /* Admin and staff page */
 .admin-container {
     font-family: 'Montserrat', sans-serif;
     height: 700px;
 }
+
 .admin-dropdown {
     height: 300px;
     overflow: auto;
 }
+
 .info-container {
     display: flex;
     flex-direction: row;
@@ -277,6 +323,7 @@ span {
     align-items: center;
     height: 200px;
 }
+
 .info-card-container {
     width: 300px;
     height: 100px;
@@ -290,6 +337,7 @@ span {
     align-items: center;
     border-radius: 10px;
 }
+
 .info-card-number {
     font-size: 40px;
     margin: unset !important;
@@ -299,6 +347,7 @@ span {
 .fa-solid {
     font-size: 35px;
 }
+
 tbody,
 td,
 tfoot,
@@ -307,6 +356,7 @@ thead,
 tr {
     width: 20%;
 }
+
 .admin-post-information-button {
     width: 100%;
     font-size: 25px;
@@ -315,31 +365,38 @@ tr {
     justify-content: space-between;
     align-items: center;
 }
+
 @media screen and (max-width: 991px) {
     .logo {
         font-size: 180px;
     }
+
     .navbar {
         font-size: 30px;
         padding: 0;
     }
+
     .navbar-nav {
         background: #FFF0F5;
         padding-left: 10px;
         z-index: 2;
         position: relative;
     }
+
     .navbar-toggler {
         margin-right: 10px;
     }
+
     .container-fluid {
         padding: 0;
     }
+
     .navbar-brand {
         font-size: 30px;
         padding-left: 10px;
     }
 }
+
 @media screen and (max-width: 821px) {
     .navbar {
         display: flex;
@@ -347,18 +404,21 @@ tr {
         align-items: center;
         height: 60px;
     }
+
     .hero {
         max-width: 820px;
         height: 400px;
     }
+
     .logo {
         font-size: 140px;
     }
 
     /* post_detail page, home page posts and blog page posts */
-        .post-text-container {
-            padding: 5px;
-        }
+    .post-text-container {
+        padding: 5px;
+    }
+
     .blog-post-container {
         width: 820px;
         display: flex;
@@ -366,69 +426,96 @@ tr {
         justify-content: space-between;
         margin: 0;
     }
+
     .author-created {
         margin-top: 0;
         font-size: 16px;
     }
+
     .post-container {
         margin: 10px;
         color: #000;
     }
+
     .post-title {
         font-size: 20px;
         font-weight: 700;
     }
+
     .title-description-container h3 {
         font-size: 18px;
     }
+
     .post-image {
         height: 500px;
     }
+
     .title-description-container {
         max-width: 400px;
     }
+
     /* profile page */
     .title-container {
         position: unset;
         top: unset;
     }
+
     /* Admin page */
     .info-card-container {
         width: 250px;
     }
+
     .info-card-title {
         font-size: 80%;
     }
+
     .table {
         font-size: 59%;
     }
+
     .admin-post-information-button {
         font-size: 90%;
     }
+
     .admin-title-button {
         font-size: 90%;
     }
+
     .delete-button {
         font-size: 90%;
     }
 }
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 770px) {
+
     /* post_detail page, home page posts and blog page posts */
     .blog-post-container {
         width: 767px;
     }
+
     .post-container {
         height: unset;
     }
+
+    .post-detail-container {
+        width: 735px;
+    }
+
+    .post-image-detail {
+        width: 730px;
+    }
+
     /* admin page */
     td {
         padding: 2px !important;
     }
 }
+
 @media screen and (max-width: 376px) {
     .hero {
         background: url("https://res.cloudinary.com/magazine-blog/image/upload/f_auto/v1672830657/static/img/hero/hero-max-width-375px.8e594e7e8837.jpg") no-repeat center center;
     }
+
     .navbar-nav {
         font-size: 40px;
         display: flex;
@@ -438,13 +525,16 @@ tr {
         align-items: center;
         padding: 0;
     }
+
     .logo {
         font-size: 50px;
     }
+
     .hero {
         max-width: 375px;
         height: 300px;
     }
+
     /* home page posts and blog page posts */
     .blog-post-container {
         width: 375px;
@@ -452,6 +542,7 @@ tr {
         flex-direction: column;
         align-items: center;
     }
+
     .post-container {
         display: flex;
         flex-direction: column;
@@ -459,92 +550,114 @@ tr {
         align-items: center;
         margin: 10px 0;
     }
+
     .post-image-link {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
+
     .post-image {
         width: 300px;
     }
+
     .post-title {
         margin: 0px;
         padding: 5px;
     }
+
     .post-body {
         width: 300px;
     }
+
     /* form */
     form {
         width: 300px;
     }
+
     .form {
         width: 300px;
     }
+
     .form input,
     textarea {
         width: 300px;
     }
+
     /* profile page */
     .profile-container {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
+
     .profile-bio {
         text-align: center;
         width: 300px;
     }
+
     .profile-image {
         width: 250px;
         height: 250px;
     }
+
     /* post detail */
     .post-detail-container {
         width: 355px;
     }
+
     .post-image-detail {
         width: 350px;
     }
+
     .post-detail-image {
         width: 350px;
     }
+
     /* comment section */
     .comment-profile-image {
         width: 50px;
         height: 50px;
     }
+
     .user-comment {
         width: 350px;
     }
+
     .comment-image-name {
         font-size: 12px;
         width: 100%;
         justify-content: start;
     }
+
     .comment-text {
         font-size: 10px;
         width: 90%;
         margin-bottom: 2px;
     }
+
     .comment-delete-button {
         margin-bottom: 0;
         font-size: 10px;
     }
+
     /* footer */
     .social-media-container {
         margin: 0px;
         padding: 0px;
         height: 100px;
     }
+
     .card-footer {
         font-size: 80%;
     }
+
     /* admin page */
     .table {
         font-size: 8px;
     }
+
     tbody,
     td,
     tfoot,
@@ -553,11 +666,13 @@ tr {
     tr {
         width: 0%;
     }
+
     .info-container {
         flex-direction: column;
         justify-content: space-evenly;
         height: 400px;
     }
+
     /* admin page */
     .admin-title-button,
     .delete-button {
