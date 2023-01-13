@@ -4,103 +4,132 @@
 {% if user.is_superuser %}
 <h1>Admin Dashboard</h1>
 <div class="admin-container">
-<div class="admin-page-container">
+  <div class="admin-page-container">
     <div class="info-container">
-        <div class="info-card-container">
-            <div class="info-card">
-                <p class="info-card-number">{{ posts }}</p>
-                <p class="info-card-title">Number of posts created</p>
-            </div>
-            <i class="fa-solid fa-newspaper"></i>
+      <div class="info-card-container">
+        <div class="info-card">
+          <p class="info-card-number">{{ posts }}</p>
+          <p class="info-card-title">Number of posts created</p>
         </div>
-        <div class="info-card-container">
-            <div class="info-card">
-                <p class="info-card-number">{{ users }}</p>
-                <p class="info-card-title">User registrations</p>
-            </div>
-            <i class="fa-solid fa-user"></i>
+        <i class="fa-solid fa-newspaper"></i>
+      </div>
+      <div class="info-card-container">
+        <div class="info-card">
+          <p class="info-card-number">{{ users }}</p>
+          <p class="info-card-title">User registrations</p>
         </div>
-        <div class="info-card-container">
-            <div class="info-card">
-                <p class="info-card-number">{{ comments }}</p>
-                <p class="info-card-title">Number of comments created</p>
-            </div>
-            <i class="fa-solid fa-comment"></i>
+        <i class="fa-solid fa-user"></i>
+      </div>
+      <div class="info-card-container">
+        <div class="info-card">
+          <p class="info-card-number">{{ comments }}</p>
+          <p class="info-card-title">Number of comments created</p>
         </div>
+        <i class="fa-solid fa-comment"></i>
+      </div>
     </div>
-</div>
-<div class="dropdown">
-    <button type="button" class="btn btn-outline-dark dropdown-toggle admin-post-information-button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-        All Posts
-      </button>
-<table class="table dropdown-menu admin-dropdown">
-    <thead>
-      <tr>
-      <th scope="col">Name</th>
-      <th scope="col">Post title</th>
-      <th scope="col">Article description</th>
-      <th scope="col" class="post-content">Post Content</th>
-      <th scope="col">Date</th>
+  </div>
+  <div class="dropdown">
+    <button type="button" class="btn btn-outline-dark dropdown-toggle admin-post-information-button"
+      data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+      All Posts
+    </button>
+    <table class="table dropdown-menu admin-dropdown">
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Post title</th>
+          <th scope="col">Article description</th>
+          <th scope="col" class="post-content">Post Content</th>
+          <th scope="col">Date</th>
 
 
-    </tr>
-    </thead>
-    {% for post in object_list %}
-    <tbody>
-      <tr>
-        <td class="table-name" scope="col">{{ post.author }}</td>
-        <td scope="col">{{ post.title }}</td>
-        <td scope="col">{{ post.article_description }}</td>
-        <td scope="col">
-          <div class="dropdown">
-          <button class="btn btn-outline-dark dropdown-toggle admin-title-button" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            {{ post.title }}
-          </button>
-          <ul class="dropdown-menu">
-            <li><button>{{ post.content }}</button></li>
-          </ul>
-        </div>
-      </td>
-        <td scope="col">{{ post.post_created }}</td>
-        
-        <td><a class="btn btn-outline-dark delete-button" href="{% url 'magazine:post_delete' post.pk post.slug %}">Delete</a></td>
-      </tr>
-      
-    </tbody>
-    {% endfor %}
-  </table>
-</div>
-<div class="dropdown">
-  <button type="button" class="btn btn-outline-dark dropdown-toggle admin-post-information-button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-    All Comments
-  </button>
-  <table class="table dropdown-menu admin-dropdown">
-    <thead>
-      <tr>
-        <th scope="col">Name</th>
-        <th scope="col">Post title</th>
-        <th scope="col">comment content </th>
-        <th scope="col">comment created</th>
-      </tr>
-    </thead>
-    {% for comment in comment %}
-    <tbody>
-      <tr>
-        <td class="table-name" scope="col">{{ comment.user }}</td>
-        <td scope="col">{{ comment.post }}</td>
-        <td scope="col">{{ comment.content }}</td>
-        <td scope="col">{{ comment.comment_created }}</td>
-        <td><a class="btn btn-outline-dark delete-button" href="{% url 'magazine:comment_delete' comment.id %}">Delete</a></td>
-      </tr>
-    </tbody>
-    {% endfor %}
-  </table>
-</div>
+        </tr>
+      </thead>
+      {% for post in object_list %}
+      <tbody>
+        <tr>
+          <td class="table-name" scope="col">{{ post.author }}</td>
+          <td scope="col">{{ post.title }}</td>
+          <td scope="col">{{ post.article_description }}</td>
+          <td scope="col">
+            <div class="dropdown">
+              <button class="btn btn-outline-dark dropdown-toggle admin-title-button" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                {{ post.title }}
+              </button>
+              <ul class="dropdown-menu">
+                <li><button>{{ post.content }}</button></li>
+              </ul>
+            </div>
+          </td>
+          <td scope="col">{{ post.post_created }}</td>
+
+          <td><a class="btn btn-outline-dark delete-button"
+              href="{% url 'magazine:post_delete' post.pk post.slug %}">Delete</a></td>
+        </tr>
+
+      </tbody>
+      {% endfor %}
+    </table>
+  </div>
+  <div class="dropdown">
+    <button type="button" class="btn btn-outline-dark dropdown-toggle admin-post-information-button"
+      data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+      All Comments
+    </button>
+    <table class="table dropdown-menu admin-dropdown">
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Post title</th>
+          <th scope="col">Comment content </th>
+          <th scope="col">Comment created</th>
+        </tr>
+      </thead>
+      {% for comment in comment %}
+      <tbody>
+        <tr>
+          <td class="table-name" scope="col">{{ comment.user }}</td>
+          <td scope="col">{{ comment.post }}</td>
+          <td scope="col">{{ comment.content }}</td>
+          <td scope="col">{{ comment.comment_created }}</td>
+          <td><a class="btn btn-outline-dark delete-button"
+              href="{% url 'magazine:comment_delete' comment.id %}">Delete</a></td>
+        </tr>
+      </tbody>
+      {% endfor %}
+    </table>
+  </div>
+  <div class="dropdown">
+    <button type="button" class="btn btn-outline-dark dropdown-toggle admin-post-information-button"
+      data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+      All Users
+    </button>
+    <table class="table dropdown-menu admin-dropdown">
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Email</th>
+          <th scope="col">Account Created</th>
+        </tr>
+      </thead>
+      {% for profile in profiles %}
+      <tbody>
+        <tr>
+          <td class="table-name" scope="col">{{ profile.user }}</td>
+          <td scope="col">{{ profile.user.email }}</td>
+          <td scope="col">{{ profile.user.account_created }}</td>
+        </tr>
+      </tbody>
+      {% endfor %}
+    </table>
+  </div>
 </div>
 <div class="admin-footer"></div>
 {% else %}
 <div class="staff-container">
-    <h2>This is a staff page</h1>
+  <h2>This is a staff page</h1>
 </div>
 {% endif %}
 

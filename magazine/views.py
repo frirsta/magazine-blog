@@ -244,5 +244,6 @@ class AdminPage(LoginRequiredMixin, ListView):
         context['comments_approved'] = Comment.objects.filter(approved=True)
         context['posts'] = Post.objects.all().count()
         context['comments'] = Comment.objects.all().count()
+        context['profiles'] = Profile.objects.all()
         context['users'] = User.objects.all().count()
         return context
