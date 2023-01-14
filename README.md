@@ -303,6 +303,8 @@ The website has also been tested with the Chrome developer tool Google Lighthous
 * GitHub - Used to host the website
 * GitPod - For deployment of the website
 * [Miro](https://miro.com/) - For creating the Wireframes
+* Bootstrap - CSS framwork
+* Heroku - The platform where the application is deployed
 
 ### Libraries
 * pip3 install 'django<4' - To get django framework
@@ -540,17 +542,22 @@ This is what the app will look like when its successfully deployed
 
 
 ## Credits
-* https://dontrepeatyourself.org/post/django-blog-tutorial-part-1-project-configuration/
+Sources that have helped build the website:
+
+[Django blog tutorial](https://dontrepeatyourself.org/post/django-blog-tutorial-part-1-project-configuration/)
+In the python files I have left a comment ("# Rouizi") above the functions that I have gotten from the blog tutorial.
+<br>
+[Class-Based Views](https://ccbv.co.uk/)
+From this website I have gotten methods and attributes for the class-based views.
+
 ### Content
-### Media
+[Icons8](https://icons8.com/) - Favicon
+
 #### Images
-* Image by rawpixel.com https://www.rawpixel.com/image/6012980/illustration-png-social-media-logo
-* Bild av Olena Bohovyk: https://www.pexels.com/sv-se/foto/romantisk-mork-vinter-hus-5686478/
-* Bild av Maria Orlova: https://www.pexels.com/sv-se/foto/kreativ-vagg-hus-vaxt-4915834/
-* Bild av PNW Production: https://www.pexels.com/sv-se/foto/sang-vaxt-vit-design-8251666/
-* Bild av Maksim Goncharenok: https://www.pexels.com/sv-se/foto/tra-vagg-bord-lyx-4352247/
-* Bild av Nugroho  Wahyu: https://www.pexels.com/sv-se/foto/inne-tra-design-rum-3119180/ hero image
-## Bugs
+[Default Profile Image by rawpixel.com](https://www.rawpixel.com/image/6012980/illustration-png-social-media-logo)
+[Hero Image by Nugroho  Wahyu](https://www.pexels.com/sv-se/foto/inne-tra-design-rum-3119180/)
+
+#### Bugs
 In the forms errors never showed on the page. In stackoverflow I finally found a solution.
 
 * https://stackoverflow.com/questions/64054215/display-django-registration-form-errors
