@@ -260,8 +260,9 @@ The website has also been tested with the Chrome developer tool Google Lighthous
 <br>
 
 ## Technologies Used
-* Python
-* Django
+* Python - For functionality of the website
+* JavaScript - Used to make website interactive
+* Django - Model-View-Template framework
 * HTML5 - For structure of the website
 * CSS3 - For styling of the website
 * GitHub - Used to host the website
@@ -269,13 +270,14 @@ The website has also been tested with the Chrome developer tool Google Lighthous
 * [Miro](https://miro.com/) - For creating the Wireframes
 
 ### Libraries
-* pip3 install Pillow
-* pip3 install 'django<4' gunicorn
-* pip3 install dj_database_url==0.5.0 psycopg2
-* pip3 install dj3-cloudinary-storage
-* pip install django-extensions
-* pip install pyparsing pydot
-* pip3 freeze --local > requirements.txt
+* pip3 install 'django<4' - To get django framework
+* pip3 install Pillow -  For ImageField in models.py
+* pip3 install 'django<4' gunicorn - Is the server that will run in heroku, handles everything that happens between the web server and the web application
+* pip3 install dj_database_url==0.5.0 psycopg2 - Installs PostgreSQL and psycopg2
+* pip3 install dj3-cloudinary-storage - Cloudinary handles all the static files and the images uploaded by users
+* pip install pyparsing pydot - To create a graph of the database
+* pip install django-extensions - Supporting library of Graph models
+
 <!-- 
 python3 manage.py graph_models --pydot -a -g -o my_project_visualized.png
 /manage.py graph_models -a > my_project.dot
