@@ -4,6 +4,8 @@ All website users can create an account and share what their homes look like or 
 
 The website owner can delete comments and posts, if it is inappropriate. This is done from the Admin Dashboard that is only accessible to the Website owner when they log in.
 
+<img src="static/img/readme/all_devices.png" alt="website on all devices" style="width: 100%">
+
 # Project
 
 ## Site Owner Goal
@@ -26,6 +28,8 @@ I have used the github project board to work with the blog.
 ### Models Graph
 I have used Graph models to render a graphical overview of the blog models. It shows how the models are connected to each other in the database.
 I used [Dreampuf](https://dreampuf.github.io/GraphvizOnline/#digraph%20G%20%7B%0A%0A%20%20subgraph%20cluster_0%20%7B%0A%20%20%20%20style%3Dfilled%3B%0A%20%20%20%20color%3Dlightgrey%3B%0A%20%20%20%20node%20%5Bstyle%3Dfilled%2Ccolor%3Dwhite%5D%3B%0A%20%20%20%20a0%20-%3E%20a1%20-%3E%20a2%20-%3E%20a3%3B%0A%20%20%20%20label%20%3D%20%22process%20%231%22%3B%0A%20%20%7D%0A%0A%20%20subgraph%20cluster_1%20%7B%0A%20%20%20%20node%20%5Bstyle%3Dfilled%5D%3B%0A%20%20%20%20b0%20-%3E%20b1%20-%3E%20b2%20-%3E%20b3%3B%0A%20%20%20%20label%20%3D%20%22process%20%232%22%3B%0A%20%20%20%20color%3Dblue%0A%20%20%7D%0A%20%20start%20-%3E%20a0%3B%0A%20%20start%20-%3E%20b0%3B%0A%20%20a1%20-%3E%20b3%3B%0A%20%20b2%20-%3E%20a3%3B%0A%20%20a3%20-%3E%20a0%3B%0A%20%20a3%20-%3E%20end%3B%0A%20%20b3%20-%3E%20end%3B%0A%0A%20%20start%20%5Bshape%3DMdiamond%5D%3B%0A%20%20end%20%5Bshape%3DMsquare%5D%3B%0A%7D) to translate the DOT language into the graph.
+
+<img src="static/img/readme/graphviz.png" alt="github board" style="width: 100%">
 
 # Wireframes
 I have used [Miro](https://miro.com/) to create WireFrames for the project.
@@ -315,10 +319,6 @@ The website has also been tested with the Chrome developer tool Google Lighthous
 * pip install pyparsing pydot - To create a graph of the database
 * pip install django-extensions - Supporting library of Graph models
 
-<!-- 
-python3 manage.py graph_models --pydot -a -g -o my_project_visualized.png
-/manage.py graph_models -a > my_project.dot
---> 
 
 ### Validators
 
