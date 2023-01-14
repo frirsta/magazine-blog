@@ -178,7 +178,86 @@ The website has also been tested with the Chrome developer tool Google Lighthous
 * Accessibility
 * Best Practices
 * SEO (Search engine optimisation)
+<br>
 
+<details><summary>Lighthouse</summary>
+
+### Home page 
+#### Desktop
+<img src="static/img/readme/testing/lighthouse/home_desktop.png" alt="lighthouse score for home page on desktop device" style="width: 100%">
+
+#### Mobile
+<img src="static/img/readme/testing/lighthouse/home_mobile.png" alt="lighthouse score for home page on mobile device" style="width: 100%">
+
+<br>
+
+### Blog page 
+#### Desktop
+<img src="static/img/readme/testing/lighthouse/blog_desktop.png" alt="lighthouse score for blog page on desktop device" style="width: 100%">
+
+#### Mobile
+<img src="static/img/readme/testing/lighthouse/blog_mobile.png" alt="lighthouse score for blog page on mobile device" style="width: 100%">
+
+### Signup page 
+#### Desktop
+<img src="static/img/readme/testing/lighthouse/signup_desktop.png" alt="lighthouse score for signup page on desktop device" style="width: 100%">
+
+#### Mobile
+<img src="static/img/readme/testing/lighthouse/signup_mobile.png" alt="lighthouse score for signup page on mobile device" style="width: 100%">
+
+### Login page 
+#### Desktop
+<img src="static/img/readme/testing/lighthouse/login_desktop.png" alt="lighthouse score for login page on desktop device" style="width: 100%">
+
+#### Mobile
+<img src="static/img/readme/testing/lighthouse/login_mobile.png" alt="lighthouse score for login page on mobile device" style="width: 100%">
+
+### Create post page 
+#### Desktop
+<img src="static/img/readme/testing/lighthouse/create_post_desktop.png" alt="lighthouse score for create_post page on desktop device" style="width: 100%">
+
+#### Mobile
+<img src="static/img/readme/testing/lighthouse/create_post_mobile.png" alt="lighthouse score for create_post page on mobile device" style="width: 100%">
+
+### Profile page 
+#### Desktop
+<img src="static/img/readme/testing/lighthouse/profile_desktop.png" alt="lighthouse score for profile page on desktop device" style="width: 100%">
+
+#### Mobile
+<img src="static/img/readme/testing/lighthouse/profile_mobile.png" alt="lighthouse score for profile page on mobile device" style="width: 100%">
+
+### Edit profile page 
+#### Desktop
+<img src="static/img/readme/testing/lighthouse/edit_profile_desktop.png" alt="lighthouse score for edit_profile page on desktop device" style="width: 100%">
+
+#### Mobile
+<img src="static/img/readme/testing/lighthouse/edit_profile_mobile.png" alt="lighthouse score for edit_profile page on mobile device" style="width: 100%">
+
+### Change password page 
+#### Desktop
+<img src="static/img/readme/testing/lighthouse/change_password_desktop.png" alt="lighthouse score for change_password page on desktop device" style="width: 100%">
+
+#### Mobile
+<img src="static/img/readme/testing/lighthouse/change_password_mobile.png" alt="lighthouse score for change_password page on mobile device" style="width: 100%">
+
+### User posts page 
+#### Desktop
+<img src="static/img/readme/testing/lighthouse/user_posts_desktop.png" alt="lighthouse score for user_posts page on desktop device" style="width: 100%">
+
+#### Mobile
+<img src="static/img/readme/testing/lighthouse/user_posts_mobile.png" alt="lighthouse score for user_posts page on mobile device" style="width: 100%">
+
+### Admin page 
+#### Desktop
+<img src="static/img/readme/testing/lighthouse/admin_desktop.png" alt="lighthouse score for admin page on desktop device" style="width: 100%">
+
+#### Mobile
+<img src="static/img/readme/testing/lighthouse/admin_mobile.png" alt="lighthouse score for admin page on mobile device" style="width: 100%">
+
+
+</details>
+
+<br>
 
 ## Technologies Used
 * Python
@@ -187,8 +266,8 @@ The website has also been tested with the Chrome developer tool Google Lighthous
 * CSS3 - For styling of the website
 * GitHub - Used to host the website
 * GitPod - For deployment of the website
-* Miro - For creating the Wireframes
-miro.com
+* [Miro](https://miro.com/) - For creating the Wireframes
+
 ### Libraries
 * pip3 install Pillow
 * pip3 install 'django<4' gunicorn
