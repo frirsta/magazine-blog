@@ -4,30 +4,46 @@ from . models import User, Comment, Profile
 
 
 class SignUpForm(UserCreationForm):
-    password1 = forms.CharField(label='Password', widget=forms.PasswordInput(
-        attrs={'class': 'input-area form-control', 'placeholder': 'Password', 'label': 'Password', }))
-    password2 = forms.CharField(label='Confirm Password', widget=forms.PasswordInput(
-        attrs={'class': 'input-area form-control', 'placeholder': 'Confirm Password', 'label': 'Confirm Password', }))
+    password1 = forms.CharField(
+        label='Password', widget=forms.PasswordInput(
+            attrs={
+                'class': 'input-area form-control',
+                'placeholder': 'Password', 'label': 'Password', }))
+    password2 = forms.CharField(
+        label='Confirm Password', widget=forms.PasswordInput(
+            attrs={
+                'class': 'input-area form-control',
+                'placeholder': 'Confirm Password',
+                'label': 'Confirm Password', }))
 
     class Meta:
         model = User
         fields = ['username', 'email']
         widgets = {
-            'username': forms.TextInput(attrs={'placeholder': 'Username', 'class': 'input-area form-control', }),
-            'email': forms.EmailInput(attrs={'placeholder': 'Email', 'class': 'input-area form-control', })
+            'username': forms.TextInput(attrs={
+                'placeholder': 'Username',
+                'class': 'input-area form-control', }),
+            'email': forms.EmailInput(attrs={
+                'placeholder': 'Email',
+                'class': 'input-area form-control', })
         }
 
 
 class LoginForm(forms.Form):
     username = forms.CharField(widget=forms.TextInput(
-        attrs={'class': 'input-area form-control', 'placeholder': 'Username', }))
+        attrs={
+            'class': 'input-area form-control',
+            'placeholder': 'Username', }))
     password = forms.CharField(widget=forms.PasswordInput(
-        attrs={'class': 'input-area form-control', 'placeholder': 'Password', }))
+        attrs={
+            'class': 'input-area form-control',
+            'placeholder': 'Password', }))
 
 
 class ProfileForm(forms.Form):
     image = forms.ImageField(required=False)
-    bio = forms.CharField(widget=forms.Textarea(), max_length=500, required=False)
+    bio = forms.CharField(
+        widget=forms.Textarea(), max_length=500, required=False)
     username = forms.CharField(max_length=100)
 
     def __init__(self, old_username, *args, **kwargs):
@@ -51,6 +67,10 @@ class CommentForm(forms.ModelForm):
         model = Comment
         fields = ('content',)
         widgets = {
-            'user': forms.TextInput(attrs={'placeholder': 'Username', 'class': 'input-area form-control', }),
-            'content': forms.TextInput(attrs={'placeholder': 'Comment', 'class': 'input-area form-control', })
+            'user': forms.TextInput(attrs={
+                'placeholder': 'Username',
+                'class': 'input-area form-control', }),
+            'content': forms.TextInput(attrs={
+                'placeholder': 'Comment',
+                'class': 'input-area form-control', })
         }

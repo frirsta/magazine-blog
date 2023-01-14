@@ -171,6 +171,39 @@ The website have some differences.
 [Jshint](https://jshint.com/)
 <img src="static/img/readme/testing/js_validator.png" alt="js validator" style="width: 100%">
 
+
+[Code Institute Pep8](https://pep8ci.herokuapp.com/)
+<details><summary>Pep8</summary>
+
+### admin.py file
+<img src="static/img/readme/testing/pep8/pep8_admin.png" alt="python validator admin file" style="width: 100%">
+
+<br>
+
+### forms.py file
+<img src="static/img/readme/testing/pep8/pep8_forms.png" alt="python validator forms file" style="width: 100%">
+
+<br>
+
+### models.py file
+<img src="static/img/readme/testing/pep8/pep8_models.png" alt="python validator models file" style="width: 100%">
+
+<br>
+
+### signals.py file
+<img src="static/img/readme/testing/pep8/pep8_signals.png" alt="python validator signals file" style="width: 100%">
+
+<br>
+
+### urls.py file
+<img src="static/img/readme/testing/pep8/pep8_urls.png" alt="python validator urls file" style="width: 100%">
+
+<br>
+
+### views.py file
+<img src="static/img/readme/testing/pep8/pep8_views.png" alt="python validator views file" style="width: 100%">
+</details>
+
 ### Lighthouse
 The website has also been tested with the Chrome developer tool Google Lighthouse. It has been tested for desktop and for mobile. What was tested:
 
@@ -258,6 +291,8 @@ The website has also been tested with the Chrome developer tool Google Lighthous
 </details>
 
 <br>
+
+
 
 ## Technologies Used
 * Python - For functionality of the website

@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from django.views.generic import CreateView, ListView, DetailView, UpdateView, DeleteView
+from django.views.generic import (
+    CreateView, ListView, DetailView, UpdateView, DeleteView)
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.decorators import login_required
 from django.utils.text import slugify
@@ -43,8 +44,10 @@ class SignUpView(CreateView):
 def loginUser(request):
     """
     This function handles the login form.
-    If the username and password is valid they log in and get redirected to the home page.
-    If the username or password is invalid a error message will display on the page.
+    If the username and password is valid they log in and get redirected
+    to the home page.
+    If the username or password is invalid a error message will display
+    on the page.
     """
     if request.user.is_authenticated:
         return redirect('magazine:home')
@@ -77,7 +80,8 @@ def logoutUser(request):
 def profile_page(request, username):
     user = get_object_or_404(User, username=username)
     profile = get_object_or_404(Profile, user=user)
-    return render(request, 'users/profile.html', {'profile': profile, 'user': user})
+    return render(request, 'users/profile.html', {
+        'profile': profile, 'user': user})
 
 
 # Rouizi
@@ -140,7 +144,8 @@ class PostDetailView(DetailView):
             user = self.request.user
             content = form.cleaned_data['content']
 
-            comment = Comment.objects.create(user=user, content=content, post=post)
+            comment = Comment.objects.create(
+                user=user, content=content, post=post)
 
             form = CommentForm()
             context['form'] = form
@@ -152,7 +157,8 @@ class PostDetailView(DetailView):
 class CreatePost(LoginRequiredMixin, CreateView):
     """
     This class handles the form for creating post.
-    Loginrequiredmixin verifies that the current user who has created the post is authenticated.
+    Loginrequiredmixin verifies that the current user who has created the
+    post is authenticated.
     """
     model = Post
     fields = ['title', 'article_description', 'content', 'image']
@@ -206,7 +212,8 @@ class DeletePost(LoginRequiredMixin, DeleteView):
 
 class UserPosts(ListView):
     """
-    This class allows a user with an account to see all the posts they have made in one place.
+    This class allows a user with an account to see all the posts
+    they have made in one place.
     This class adds the newest post on top of the page.
     The posts are ordered by date in decreasing order.
     """
@@ -215,7 +222,8 @@ class UserPosts(ListView):
     queryset = Post.objects.all()
 
     def get_queryset(self):
-        return self.model.objects.filter(author=self.request.user).order_by('-post_created')
+        return self.model.objects.filter(author=self.request.user).order_by(
+            '-post_created')
 
 
 class DeleteComment(LoginRequiredMixin, DeleteView):
@@ -231,7 +239,8 @@ class DeleteComment(LoginRequiredMixin, DeleteView):
 
 class AdminPage(LoginRequiredMixin, ListView):
     """
-    This class adds all the model data in one place for the superuser / Site Owner.
+    This class adds all the model data in one place
+    for the superuser / Site Owner.
     """
 
     model = Post
