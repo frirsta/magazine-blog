@@ -15,10 +15,10 @@ class User(AbstractUser):
 
 class Post(models.Model):
     title = models.CharField(max_length=50, unique=True, db_index=True)
-    slug = models.SlugField(max_length=50, unique=True, db_index=True)
+    slug = models.SlugField(max_length=50, db_index=True)
     article_description = models.CharField(max_length=100, null=True)
     content = models.TextField()
-    author = models.ForeignKey(User, on_delete=models.CASCADE)
+    author = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
     post_created = models.DateTimeField(auto_now_add=True)
     post_updated = models.DateTimeField(auto_now=True)
     image = models.ImageField(upload_to='', blank=False, null=True)
