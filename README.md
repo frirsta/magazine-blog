@@ -318,6 +318,7 @@ The website has also been tested with the Chrome developer tool Google Lighthous
 * pip3 install dj3-cloudinary-storage - Cloudinary handles all the static files and the images uploaded by users
 * pip install pyparsing pydot - To create a graph of the database
 * pip install django-extensions - Supporting library of Graph models
+* pip install coverage
 
 
 ### Validators
