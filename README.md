@@ -296,7 +296,19 @@ The website has also been tested with the Chrome developer tool Google Lighthous
 
 <br>
 
+### Testing with Coverage
+<details><summary>Coverage</summary>
 
+<img src="static/img/readme/testing/coverage/1.png" alt="Step 1 of the testing process with coverage" style="width: 70%">
+
+<img src="static/img/readme/testing/coverage/2.png" alt="Step 2 of the testing process with coverage" style="width: 70%">
+
+<img src="static/img/readme/testing/coverage/3.png" alt="Step 3 of the testing process with coverage" style="width: 70%">
+
+<img src="static/img/readme/testing/coverage/4.png" alt="Step 4 of the testing process with coverage" style="width: 70%">
+
+<img src="static/img/readme/testing/coverage/5.png" alt="Step 5 of the testing process with coverage" style="width: 70%">
+</details>
 
 ## Technologies Used
 * Python - For functionality of the website
