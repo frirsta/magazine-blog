@@ -1,5 +1,5 @@
 # Magazine 
-Magazine is a website where people share and get inspired by interior designs. The website is targeted toward those who want to share, read and learn about interior design. The website is useful for tho.se who want to know what is trending right now. 
+Magazine is a website where people share and get inspired by interior designs. The website is targeted toward those who want to share, read and learn about interior design. The website is useful for those who want to know what is trending right now. 
 All website users can create an account and share what their homes look like or anything regarding interior design.
 
 The website owner can delete comments and posts, if it is inappropriate. This is done from the Admin Dashboard that is only accessible to the Website owner when they log in.
@@ -297,6 +297,8 @@ The website has also been tested with the Chrome developer tool Google Lighthous
 <br>
 
 ### Testing with Coverage
+Due to prioritizing other tasks, I haven't had time for a lot of testing. Using Coverage, I have tested the Post model. The coverage report shows that 70% of testing has been done.
+Below are images of the steps taken for testing the Post model in chronological order
 <details><summary>Coverage</summary>
 
 <img src="static/img/readme/testing/coverage/1.png" alt="Step 1 of the testing process with coverage" style="width: 70%">
@@ -323,17 +325,13 @@ The website has also been tested with the Chrome developer tool Google Lighthous
 * Heroku - The platform where the application is deployed
 
 ### Libraries
-* pip3 install 'django<4' - To get django framework
 * pip3 install Pillow -  For ImageField in models.py
-* pip3 install 'django<4' gunicorn - Is the server that will run in heroku, handles everything that happens between the web server and the web application
+* pip3 install 'django<4' gunicorn - Installs Django and Gunicorn is the server that will run in heroku, handles everything that happens between the web server and the web application
 * pip3 install dj_database_url==0.5.0 psycopg2 - Installs PostgreSQL and psycopg2
 * pip3 install dj3-cloudinary-storage - Cloudinary handles all the static files and the images uploaded by users
 * pip install pyparsing pydot - To create a graph of the database
 * pip install django-extensions - Supporting library of Graph models
 * pip install coverage
-
-
-### Validators
 
 ### Unfixed Bugs
 
@@ -566,14 +564,10 @@ From this website I have gotten methods and attributes for the class-based views
 ### Content
 [Icons8](https://icons8.com/) - Favicon
 
-#### Images
+### Images
 [Default Profile Image by rawpixel.com](https://www.rawpixel.com/image/6012980/illustration-png-social-media-logo)
+<br>
 [Hero Image by Nugroho  Wahyu](https://www.pexels.com/sv-se/foto/inne-tra-design-rum-3119180/)
-
-#### Bugs
-In the forms errors never showed on the page. In stackoverflow I finally found a solution.
-
-* https://stackoverflow.com/questions/64054215/display-django-registration-form-errors
 
 
 
