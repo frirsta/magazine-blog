@@ -74,14 +74,11 @@ The website have some differences.
 <img src="static/img/readme/change_password_phone.jpg" alt="change_password page on phone screen" style="width: 20%">
 </div>
 
-
 <p>
 
 #### Wireframes
-
 </p>
 </details>
-
 <br>
 
 # User Experience (UX)
@@ -114,7 +111,6 @@ The website have some differences.
 <br>
 
 # Features
-
 <br>
 
 ### Features on all pages
@@ -130,12 +126,9 @@ The website have some differences.
 ### The Landing/home page
   * The landing page has an image of furniture and text that says 'MAGAZINE' and 'Interior & Lifestyle' This lets the user know what the website is about.
   * The home page displays the six latest posts made so the user can see what the latest interior trends are and also so they can see examples of what type of content they will find on the page. 
-
  
- ### Blog
-
+### Blog
  * The blog page displays all posts made with the latest ones on top of the page.
-
 
 ### Sign up
 * The SignUp page displays a form where the user writes their information to create an account.
@@ -156,6 +149,13 @@ The website have some differences.
     * Content | The post content.
     * Image | The image that will be posted with the post text content.
 
+### Admin Dashboard
+* In the admin the website owner can see how many posts have been made, how many accounts have been created and how many comments have been made.
+* On this page the owner can find all posts, who the author is, the title, the article description, the date it was created and the content.
+    * The owner can Delete posts from this page.
+* On this page the owner can find all the comments, the name of who has created the comment, the date the comment was created, the comment content, and what post it was commented on.
+    * The owner can delete comments from this page.
+
 ### 404 page
 * This is the page the user get redirected to if the website does not exist.
 <br>
@@ -165,17 +165,9 @@ The website have some differences.
 <img src="static/img/readme/pages/404-desktop.png" alt="404 page on desktop screen" style="width: 48%">
 </div>
 
+# Features left to Implement
 
-### Admin Dashboard
-* In the admin the website owner can see how many posts have been made, how many accounts have been created and how many comments have been made.
-* On this page the owner can find all posts, who the author is, the title, the article description, the date it was created and the content.
-    * The owner can Delete posts from this page.
-* On this page the owner can find all the comments, the name of who has created the comment, the date the comment was created, the comment content, and what post it was commented on.
-    * The owner can delete comments from this page.
-
-### Features left to Implement
-
-## Testing
+# Testing
 [responsivedesignchecker](https://www.responsivedesignchecker.com/)
 [HTML validator](https://validator.w3.org/)
 <img src="static/img/readme/testing/html_validator.png" alt="html validator" style="width: 100%">
@@ -188,6 +180,7 @@ The website have some differences.
 [Code Institute Pep8](https://pep8ci.herokuapp.com/)
 <details><summary>Pep8</summary>
 
+## Pep8
 ### admin.py file
 <img src="static/img/readme/testing/pep8/pep8_admin.png" alt="python validator admin file" style="width: 100%">
 
@@ -217,7 +210,7 @@ The website have some differences.
 <img src="static/img/readme/testing/pep8/pep8_views.png" alt="python validator views file" style="width: 100%">
 </details>
 
-### Lighthouse
+## Lighthouse
 The website has also been tested with the Chrome developer tool Google Lighthouse. It has been tested for desktop and for mobile. What was tested:
 
 * Performance
@@ -225,7 +218,6 @@ The website has also been tested with the Chrome developer tool Google Lighthous
 * Best Practices
 * SEO (Search engine optimisation)
 <br>
-
 <details><summary>Lighthouse</summary>
 
 ### Home page 
@@ -321,7 +313,7 @@ Below are images of the steps taken for testing the Post model in chronological 
 <img src="static/img/readme/testing/coverage/5.png" alt="Step 5 of the testing process with coverage" style="width: 70%">
 </details>
 
-## Technologies Used
+# Technologies Used
 * Python - For functionality of the website
 * JavaScript - Used to make website interactive
 * Django - Model-View-Template framework
@@ -333,7 +325,7 @@ Below are images of the steps taken for testing the Post model in chronological 
 * Bootstrap - CSS framwork
 * Heroku - The platform where the application is deployed
 
-### Libraries
+## Libraries
 * pip3 install Pillow -  For ImageField in models.py
 * pip3 install 'django<4' gunicorn - Installs Django and Gunicorn is the server that will run in heroku, handles everything that happens between the web server and the web application
 * pip3 install dj_database_url==0.5.0 psycopg2 - Installs PostgreSQL and psycopg2
@@ -342,10 +334,10 @@ Below are images of the steps taken for testing the Post model in chronological 
 * pip install django-extensions - Supporting library of Graph models
 * pip install coverage
 
-### Unfixed Bugs
+# Unfixed Bugs
 
 
-## Deployment
+# Deployment
 
 <details><summary>Deployment</summary>
 
@@ -561,7 +553,7 @@ This is what the app will look like when its successfully deployed
 <br>
 
 
-## Credits
+# Credits
 Sources that have helped build the website:
 
 [Django blog tutorial](https://dontrepeatyourself.org/post/django-blog-tutorial-part-1-project-configuration/)
