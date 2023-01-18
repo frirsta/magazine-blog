@@ -366,6 +366,20 @@ tr {
     align-items: center;
 }
 
+/* 404 */
+
+.error-container {
+height: 600px;
+
+}
+.error-number{
+    font-size: 200px;
+    margin-top: 0;
+}
+.error-text{
+    margin-top: 0;
+}
+
 @media screen and (max-width: 991px) {
     .logo {
         font-size: 180px;
@@ -684,4 +698,9 @@ tr {
         margin-bottom: 2px;
         overflow: hidden;
     }
+    /* 404 */
+    .error-container {
+        height: 500px;
+        
+        }
 }

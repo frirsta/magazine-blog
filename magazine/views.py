@@ -256,3 +256,7 @@ class AdminPage(LoginRequiredMixin, ListView):
         context['profiles'] = Profile.objects.all()
         context['users'] = User.objects.all().count()
         return context
+
+
+def error_404(request, exception):
+    return render(request, '404.html')

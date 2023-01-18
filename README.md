@@ -156,6 +156,14 @@ The website have some differences.
     * Content | The post content.
     * Image | The image that will be posted with the post text content.
 
+### 404 page
+* This is the page the user get redirected to if the website does not exist.
+<br>
+<div style="display: flex; align-items: start; justify-content: space-between;">
+<img src="static/img/readme/pages/404-iphonese.png" alt="404 page on iphonese screen" style="width: 20%">
+<img src="static/img/readme/pages/404-ipadair.png" alt="404 page on ipadair screen" style="width: 30%">
+<img src="static/img/readme/pages/404-desktop.png" alt="404 page on desktop screen" style="width: 48%">
+</div>
 
 
 ### Admin Dashboard
@@ -569,6 +577,24 @@ From this website I have gotten methods and attributes for the class-based views
 [Default Profile Image by rawpixel.com](https://www.rawpixel.com/image/6012980/illustration-png-social-media-logo)
 <br>
 [Hero Image by Nugroho  Wahyu](https://www.pexels.com/sv-se/foto/inne-tra-design-rum-3119180/)
+
+Bild av Element5 Digital: https://www.pexels.com/sv-se/foto/tra-lampor-skrivbord-lampa-1125136/
+Bild av Taryn Elliott: https://www.pexels.com/sv-se/foto/sovrum-interior-heminredning-skandinavisk-4440213/
+Bild av Polina Kovaleva: https://www.pexels.com/sv-se/foto/sang-sovrum-lampa-design-5644277/
+Bild av Emre Can Acer: https://www.pexels.com/sv-se/foto/tra-bocker-hus-bord-2079249/
+Bild av Maksim Goncharenok: https://www.pexels.com/sv-se/foto/tra-vagg-bord-lyx-4352247/
+Bild av Jean van der Meulen: https://www.pexels.com/sv-se/foto/hotell-hus-glas-lyx-1457847/
+Bild av PNW Production: https://www.pexels.com/sv-se/foto/sang-vaxt-vit-design-8251666/
+Bild av Maria Orlova: https://www.pexels.com/sv-se/foto/kreativ-vagg-hus-vaxt-4915834/
+Bild av Olena Bohovyk: https://www.pexels.com/sv-se/foto/romantisk-mork-vinter-hus-5686478/
+Bild av Zsófia Fehér: https://www.pexels.com/sv-se/foto/byggnad-arkitektur-resa-utomhus-14532811/
+Bild av Dilruba Sarıçimen: https://www.pexels.com/sv-se/foto/dryck-dricksglas-vertikalt-skott-narbild-8851505/
+Bild av Element5 Digital: https://www.pexels.com/sv-se/foto/tra-lampor-skrivbord-lampa-1125136/
+Bild av Max Vakhtbovych: https://www.pexels.com/sv-se/foto/mat-stad-restaurang-manniskor-6434622/
+Bild av Pixabay: https://www.pexels.com/sv-se/foto/barnkammare-dekor-design-golv-462235/
+Bild av Mathilde Langevin: https://www.pexels.com/sv-se/foto/dekoration-bage-spegel-vas-14320924/
+Bild av Vincent Rivaud: https://www.pexels.com/sv-se/foto/hus-lyx-lampa-hem-2227832/
+Bild av Victoria Akvarel : https://www.pexels.com/sv-se/foto/hotell-hus-arkitektur-lyx-3315291/
 
 
 
