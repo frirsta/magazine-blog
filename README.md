@@ -128,6 +128,11 @@ The website have some differences.
 
 * The footer
   * The footer links to Magazine's social media accounts.
+  <div style="display: flex; align-items: start; justify-content: space-between;">
+<img src="static/img/readme/pages/footer_mobile.png" alt="footer on mobile screen" style="width: 30%">
+<img src="static/img/readme/pages/footer_ipad.png" alt="footer on ipad screen" style="width: 30%">
+<img src="static/img/readme/pages/footer_desktop.png" alt="footer on desktop screen" style="width: 30%">
+</div>
 
 ### The Landing/home page
   * The landing page has an image of furniture and text that says 'MAGAZINE' and 'Interior & Lifestyle' This lets the user know what the website is about.
