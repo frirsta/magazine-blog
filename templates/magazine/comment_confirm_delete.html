@@ -9,7 +9,7 @@
         <strong>This action cannot be undone</strong>
         <div class="button-container">
             <button type="submit" value="Delete" class="btn btn-outline-dark">Delete</button>
-            <a href="{% url 'magazine:home' %}" class="btn btn-outline-dark">Cancel</a>
+            <a href="{% url 'magazine:post_detail' comment.post.pk comment.post.slug %}" class="btn btn-outline-dark">Cancel</a>
             </div>
     </form>
 </div>
