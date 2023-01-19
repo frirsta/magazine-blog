@@ -246,7 +246,8 @@ The edit profile page is where the user can add a profile picture, change userna
 </div>
 
 # Features left to Implement
-
+* Add more automated testing
+* Add search functionality so the user can find posts or other users.
 # Testing
 [responsivedesignchecker](https://www.responsivedesignchecker.com/)
 [HTML validator](https://validator.w3.org/)
