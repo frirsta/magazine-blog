@@ -414,217 +414,365 @@ Below are images of the steps taken for testing the Post model in chronological 
 
 # Deployment
 
-<details><summary>Deployment</summary>
+This website was deployed to [Heroku](https://heroku.com/). To deploy the website follow the steps below:
 
-Create a GitHub repository from the Code Institute template and click 'Use this template'
+
+1. Create a GitHub repository from the Code Institute template and click 'Use this template'.
+<details><summary>Heroku Deployment - Step 1:</summary>
 <img src="static/img/deployment/step-1.png" alt="step of deployment" style="width: 100%">
+</details>
 <br>
-Add a repository name and then click 'Create repository from template'
+
+2. Add a repository name and then click 'Create repository from template'.
+<details><summary>Heroku Deployment - Step 2:</summary>
 <img src="static/img/deployment/step-2.png" alt="step of deployment" style="width: 100%">
+</details>
 <br>
-When the repository is created click 'Gitpod'
+
+3. When the repository is created, click 'Gitpod'.
+<details><summary>Heroku Deployment - Step 3:</summary>
 <img src="static/img/deployment/step-3.png" alt="step of deployment" style="width: 100%">
+</details>
 <br>
 
-In the terminal type the following commands to install Django and its supporting libraries:
+4. In the terminal type the following commands to install Django and its supporting libraries:
+* pip3 install 'django<4' gunicorn
+* pip3 install dj_database_url==0.5.0 psycopg2
+* pip3 install dj3-cloudinary-storage
 
+<details><summary>Heroku Deployment - Step 4:</summary>
 <img src="static/img/deployment/deployment-1.png" alt="'pip3 install 'django<4' gunicorn' typed in the terminal" style="width: 100%">
 <img src="static/img/deployment/deployment-2.png" alt="'pip3 install dj_database_url==0.5.0 psycopg2' typed in the terminal" style="width: 100%">
 <img src="static/img/deployment/deployment-3.png" alt="'pip3 install dj3-cloudinary-storage typed' in the terminal" style="width: 100%">
+</details>
 <br>
-After the libraries have been installed type the following command to create a requirements.txt file
+
+5. After the libraries have been installed, type the following command to create a requirements.txt file:
+* pip3 freeze --local > requirements.txt
+<details><summary>Heroku Deployment - Step 5:</summary>
 <img src="static/img/deployment/deployment-4.png" alt="'pip3 freeze --local > requirements.txt' typed in the terminal" style="width: 100%">
 <img src="static/img/deployment/step-5.png" alt="step of deployment" style="width: 100%">
+</details>
 
 <br>
-Create the Django project by typing the following command
+
+6. Create the Django project by typing the following command:
+* "django-admin startproject PROJECT_NAME ." - Don't forget the dot at the end.
+<details><summary>Heroku Deployment - Step 6:</summary>
 <img src="static/img/deployment/step-6.png" alt="step of deployment" style="width: 100%">
-After typing the command this 'blog' folder with files will be displayed in the directory
+After typing the command this 'blog' folder with files will be displayed in the directory.
 <img src="static/img/deployment/step-7.png" alt="step of deployment" style="width: 100%">
+</details>
   
 <br>
-Create the Django application by typing the following command
+
+7. Create the Django application by typing the following command:
+* "python3 manage.py startapp APP_NAME"
+<details><summary>Heroku Deployment - Step 7:</summary>
 <img src="static/img/deployment/step-8.png" alt="step of deployment" style="width: 100%">
-After typing the command this 'magazine' with files will be displayed in the directory
+After typing the command this 'magazine' with files will be displayed in the directory.
 <img src="static/img/deployment/step-9.png" alt="step of deployment" style="width: 100%">
+</details>
 
 <br>
 
-In the settings.py in the blog folder add the application (add 'magazine') to the 'INSTALLED_APPS' section as shown in following image
+8. Now the application needs to be added in settings.py. Add the application name to the 'INSTALLED_APPS' section as shown in the following image.
+<details><summary>Heroku Deployment - Step 8:</summary>
 <img src="static/img/deployment/step-10.png" alt="step of deployment" style="width: 100%">
+</details>
 <br>
 
-In the terminal type 'python3 manage.py migrate'
-<img src="static/img/deployment/step-11.png" alt="step of deployment" style="width: 100%">  
+9. Next, the first migrations will be made. 
+In the terminal type:
+* python3 manage.py migrate
+<details><summary>Heroku Deployment - Step 9:</summary>
+<img src="static/img/deployment/step-11.png" alt="step of deployment" style="width: 100%">
+</details>  
 <br>
 
-In the terminal type 'python3 manage.py runserver' and click 'Open Browser'
-<img src="static/img/deployment/step-12.png" alt="step of deployment" style="width: 100%">  
+
+10. To see if everything works as expected. In the terminal type:
+* 'python3 manage.py runserver' and click 'Open Browser'.
+<details><summary>Heroku Deployment - Step 10:</summary>
+<img src="static/img/deployment/step-12.png" alt="step of deployment" style="width: 100%">
+ 
 <br>
-The following image is what the website will look like
-<img src="static/img/deployment/step-13.png" alt="step of deployment" style="width: 100%">  
+
+This is what the website will look like.
+<img src="static/img/deployment/step-13.png" alt="step of deployment" style="width: 100%">
+</details>  
 
 <br>
+
+### These following images show the steps taken to create the application on Heroku, connect the database and create the environment. The deployment to GitHub from Heroku will also be shown. 
 
 Create or login to [Heroku](https://www.heroku.com/)
 
-In the heroku Website click 'New' and after click 'Create new app'
-<img src="static/img/deployment/step-14.png" alt="step of deployment" style="width: 100%">  
+11. On the heroku Website click 'New' and after click 'Create new app'.
+<details><summary>Heroku Deployment - Step 11:</summary>
+<img src="static/img/deployment/step-14.png" alt="step of deployment" style="width: 100%">
+</details>  
 
 <br>
 
-Write the app name, choose a region and then click 'Create app' 
-<img src="static/img/deployment/step-15.png" alt="step of deployment" style="width: 100%">  
+12. Write the app name, choose a region and then click 'Create app'. 
+<details><summary>Heroku Deployment - Step 12:</summary>
+<img src="static/img/deployment/step-15.png" alt="step of deployment" style="width: 100%">
+</details>  
 <br>
 
-In the application website click 'Deploy' on the navigation menu
-<img src="static/img/deployment/step-16.png" alt="step of deployment" style="width: 100%">  
+13. In the application website click 'Deploy' on the navigation menu.
+<details><summary>Heroku Deployment - Step 13:</summary>
+<img src="static/img/deployment/step-16.png" alt="step of deployment" style="width: 100%">
+</details>  
 <br>
 
-In the 'Deploy' page follow these steps:
-  1 Click the GitHub logo
-  2 Search for the GitHub repository that was made for this project
-  3 When the repository is found click 'Connect'
-<img src="static/img/deployment/step-17.png" alt="step of deployment" style="width: 100%">  
+14. In the 'Deploy' page, follow these steps as shown on the image:
+    1. Click the GitHub logo.
+    2. Search for the GitHub repository that was made for this project.
+    3. When the repository is found click 'Connect'.
+  <details><summary>Heroku Deployment - Step 14:</summary>
+<img src="static/img/deployment/step-17.png" alt="step of deployment" style="width: 100%">
 <br>
-
+When the repository is connected, this is what the page look like.
 <img src="static/img/deployment/step-18.png" alt="step of deployment" style="width: 100%">
+</details>
+
+</br>
 
 ### Create database
+The database used in this website has been created with [ElephantSQL](https://www.elephantsql.com/) and the steps below show how.
 
-[ElephantSQL](https://www.elephantsql.com/) 
-Start with clicking 'Create New Instance'
-<img src="static/img/deployment/elephantsql.png" alt="step of deployment" style="width: 100%"> 
+15. Start by clicking 'Create New Instance'.
+<details><summary>Heroku Deployment - Step 15:</summary>
+<img src="static/img/deployment/elephantsql.png" alt="step of deployment" style="width: 100%">
+</details> 
 
 <br>
 
-Enter a name for the database and then click 'Select Region'
-<img src="static/img/deployment/step-19.png" alt="step of deployment" style="width: 100%">  
+16. Enter a name for the database and then click 'Select Region'.
+<details><summary>Heroku Deployment - Step 16:</summary>
+<img src="static/img/deployment/step-19.png" alt="step of deployment" style="width: 100%">
+</details>  
 <br>
 
-Select a region and then click Review
-<img src="static/img/deployment/step-20.png" alt="step of deployment" style="width: 100%">  
+17. Select a region and then click Review.
+<details><summary>Heroku Deployment - Step 17:</summary>
+<img src="static/img/deployment/step-20.png" alt="step of deployment" style="width: 100%">
+</details>  
 <br>
 
-Review the information and click 'Create Instance'
-<img src="static/img/deployment/step-21.png" alt="step of deployment" style="width: 100%">  
+18. Review the information and click 'Create Instance'.
+<details><summary>Heroku Deployment - Step 18:</summary>
+<img src="static/img/deployment/step-21.png" alt="step of deployment" style="width: 100%">
+</details>  
 <br>
 
-When the instance is created it will be displayed on top of the list of created instances
-Click the instance that has been created
+19. When the instance is created, it will be displayed on top of the list of created instances.
+Click the instance that has been created.
+<details><summary>Heroku Deployment - Step 19:</summary>
 <img src="static/img/deployment/step-22.png" alt="step of deployment" style="width: 100%">
+</details>
 <br>
 
-Copy the Url
-<img src="static/img/deployment/step-23.png" alt="step of deployment" style="width: 100%"> 
+20. Copy the Url.
+<details><summary>Heroku Deployment - Step 20:</summary>
+<img src="static/img/deployment/step-23.png" alt="step of deployment" style="width: 100%">
+</details> 
 <br>
 
-Create a 'env.py' file on the top level directory
-<img src="static/img/deployment/step-24.png" alt="step of deployment" style="width: 100%"> 
+21. In GitPod create an 'env.py' file in the top level directory.
+<details><summary>Heroku Deployment - Step 21:</summary>
+<img src="static/img/deployment/step-24.png" alt="step of deployment" style="width: 100%">
+</details> 
 <br>
 
-In the 'env.py' file add the following text
-<img src="static/img/deployment/step-25.png" alt="step of deployment" style="width: 100%"> 
+22. In the 'env.py' file add the following text.
+<details><summary>Heroku Deployment - Step 22:</summary>
+<img src="static/img/deployment/step-25.png" alt="step of deployment" style="width: 100%">
+</details> 
 <br>
 
-Add the following text and in the red area paste the Url copied from the instance that was created in [ElephantSQL](https://www.elephantsql.com/)
-<img src="static/img/deployment/step-26.png" alt="step of deployment" style="width: 100%"> 
+23. Add the following text in the env.py file:
+* Import os
+* os.environ["DATABASE_URL"]
+* Paste the url that was copied earlier in the red area that is shown below.
+<details><summary>Heroku Deployment - Step 23:</summary>
+<img src="static/img/deployment/step-26.png" alt="step of deployment" style="width: 100%">
+</details> 
   
 <br>
 
-In the 'settings.py' file copy the value of 'SECRET_KEY' (The secret key is removed from image because it has to be kept secret)
+24. In the 'settings' file, copy the value of 'SECRET_KEY' (The secret key is removed from the image because it has to be kept secret).
+<details><summary>Heroku Deployment - Step 24:</summary>
 <img src="static/img/deployment/step-27.png" alt="step of deployment" style="width: 100%"> 
-<br>
-
-In the 'env.py' file add the following text and paste the secret key as value
-<img src="static/img/deployment/step-28.png" alt="step of deployment" style="width: 100%"> 
-<br>
-
-Add the following text on top of the 'setting.py' file
-<img src="static/img/deployment/step-29.png" alt="step of deployment" style="width: 100%"> 
-<br>
-
-Add the following replace the value of 'SECRET_KEY' and add the following text
-<img src="static/img/deployment/step-30.png" alt="step of deployment" style="width: 100%"> 
-<br>
-
-  1 Comment out the database that is in the 'settings.py' file
-  2 Add the following text to connect the new database
-<img src="static/img/deployment/step-31.png" alt="step of deployment" style="width: 100%"> 
-<br>
-
-In the terminal type the following command
-<img src="static/img/deployment/step-32.png" alt="step of deployment" style="width: 100%"> 
-<br>
-
-In [ElephantSQL](https://www.elephantsql.com/) in the instance that was created click 'Browser' 
-<img src="static/img/deployment/step-33.png" alt="step of deployment" style="width: 100%"> 
-<br>
-
-In the 'Browser' page click 'Table queries' and the database will be displayed
-<img src="static/img/deployment/step-34.png" alt="step of deployment" style="width: 100%"> 
-
-<br>
-
-In the application in heroku click 'Settings' in the navigation menu. After click 'Reveal Config Vars'
-Add the following keys and in the red area add their values
-<img src="static/img/deployment/step-35.png" alt="step of deployment" style="width: 100%"> 
-
-[Cloudinary](https://cloudinary.com/) Create an account or log in to cloudinary.
-
-<br>
-
-In 'API Environment variable' copy the value as shown below
-<img src="static/img/deployment/step-36.png" alt="step of deployment" style="width: 100%"> 
-<br>
-
-In the 'env.py' file add 'os.environ["CLOUDINARY_URL"]' and paste the link that was copied from cloudinary
-<img src="static/img/deployment/step-37.png" alt="step of deployment" style="width: 100%"> 
-<br>
-
-In the 'settings.py' file add 'cloudinary_storage' and 'cloudinary' as shown below
-<img src="static/img/deployment/step-38.png" alt="step of deployment" style="width: 100%"> 
-<br>
-
-Add the following text in the 'settings.py' file
-<img src="static/img/deployment/step-39.png" alt="step of deployment" style="width: 100%"> 
-<br>
-
-Add the following text as shown below in the 'settings.py' file
-<img src="static/img/deployment/step-40.png" alt="step of deployment" style="width: 100%"> 
-<br>
-
-Add the following text as shown below in the 'settings.py' file
-<img src="static/img/deployment/step-41.png" alt="step of deployment" style="width: 100%"> 
-<br>
-
-Create these folders on the top level directory
-<img src="static/img/deployment/step-43.png" alt="step of deployment" style="width: 100%"> 
-<br>
-
-
-Creata a 'Procfile' file on the top level directory
-<img src="static/img/deployment/step-44.png" alt="step of deployment" style="width: 100%"> 
-<br>
-
-In the 'Procfile' file add the following text.
-<img src="static/img/deployment/step-45.png" alt="step of deployment" style="width: 100%">
-After push the project to GitHub.
-<br>
-
-In the application in Heroku navigate to the deploy page and scroll to the bottom of the page
-<img src="static/img/deployment/step-46.png" alt="step of deployment" style="width: 100%"> 
-<br>
-
-Click 'Deploy Branch'
-Wait for the GitHub branch to be deployed and then click 'View App'
-<img src="static/img/deployment/step-48.png" alt="step of deployment" style="width: 100%"> 
-<br>
-
-This is what the app will look like when its successfully deployed
-<img src="static/img/deployment/step-49.png" alt="step of deployment" style="width: 100%"> 
-
 </details>
+<br>
+
+25. Add the following text in the env.py file:
+* os.environ["SECRET_KEY"]
+* Paste the "SECRET_KEY" value that was copied from the 'settings.py' as value for 'os.environ["SECRET_KEY"]'.
+<details><summary>Heroku Deployment - Step 25:</summary>
+<img src="static/img/deployment/step-28.png" alt="step of deployment" style="width: 100%"> 
+</details>
+<br>
+
+26. Add the following text on top of the 'setting.py' file:
+* import os
+* import dj_database_url
+* <pre>if os.path.isfile('env.py'):
+        import os</pre>
+<details><summary>Heroku Deployment - Step 26:</summary>
+<img src="static/img/deployment/step-29.png" alt="step of deployment" style="width: 100%"> 
+</details>
+<br>
+
+27. Replace the value of 'SECRET_KEY' in the 'settings.py' file and add the following text:
+* os.environ.get('SECRET_KEY')
+<details><summary>Heroku Deployment - Step 27:</summary>
+<img src="static/img/deployment/step-30.png" alt="step of deployment" style="width: 100%"> 
+</details>
+<br>
+
+28. Comment out the database that is in the 'settings.py' file and add the following text to connect the new database:
+
+  <details><summary>Heroku Deployment - Step 28:</summary>
+<img src="static/img/deployment/step-31.png" alt="step of deployment" style="width: 100%"> 
+</details>
+<br>
+
+29. Save all the files and in the terminal type the following command to migrate the changes:
+* python3 manage.py migrate.
+<details><summary>Heroku Deployment - Step 29:</summary>
+<img src="static/img/deployment/step-32.png" alt="step of deployment" style="width: 100%"> 
+</details>
+<br>
+
+30. In the [ElephantSQL](https://www.elephantsql.com/) database click 'Browser'.
+<details><summary>Heroku Deployment - Step 30:</summary>
+<img src="static/img/deployment/step-33.png" alt="step of deployment" style="width: 100%"> 
+</details>
+<br>
+
+31. In the 'Browser' page, click 'Table queries' and if everything works as expected the database will be displayed.
+<details><summary>Heroku Deployment - Step 31:</summary>
+<img src="static/img/deployment/step-34.png" alt="step of deployment" style="width: 100%"> 
+</details>
+
+<br>
+
+32. In the application in Heroku click 'Settings' in the navigation menu. After click 'Reveal Config Vars'. Add the 'DATABASE_URL' and the 'SECRET_KEY', and in the red area add their values.
+<details><summary>Heroku Deployment - Step 32:</summary>
+<img src="static/img/deployment/step-35.png" alt="step of deployment" style="width: 100%"> 
+</details>
+<br>
+
+### [Cloudinary](https://cloudinary.com/) has been used for image management and the steps below show how the website has been connected to [Cloudinary](https://cloudinary.com/).
+
+Create an account or log in.
+
+<br>
+
+33. In 'API Environment variable' copy the value as shown below.
+<details><summary>Heroku Deployment - Step 33:</summary>
+<img src="static/img/deployment/step-36.png" alt="step of deployment" style="width: 100%">
+</details> 
+<br>
+
+34. In the 'env.py' file add 'os.environ["CLOUDINARY_URL"]' and paste the link that was copied from Cloudinary.
+<details><summary>Heroku Deployment - Step 34:</summary>
+<img src="static/img/deployment/step-37.png" alt="step of deployment" style="width: 100%">
+</details> 
+<br>
+
+35. In the 'settings.py' file add 'cloudinary_storage' and 'cloudinary' as shown below to 'INSTALLED_APPS'.
+The apps have to be written in the following order:
+    1. 'cloudinary_storage'
+    2. 'django.contrib.staticfiles'
+    3. 'cloudinary'
+<details><summary>Heroku Deployment - Step 35:</summary>
+<img src="static/img/deployment/step-38.png" alt="step of deployment" style="width: 100%">
+</details> 
+<br>
+
+36. Add the following text in the 'settings.py' file to tell Django where to store static files.
+<details><summary>Heroku Deployment - Step 36:</summary>
+<img src="static/img/deployment/step-39.png" alt="step of deployment" style="width: 100%">
+</details> 
+<br>
+
+37. Add the following text as shown below in the 'settings.py' file to connect the templates folder.
+<details><summary>Heroku Deployment - Step 37:</summary>
+<img src="static/img/deployment/step-40.png" alt="step of deployment" style="width: 100%">
+</details> 
+<br>
+
+38. Add 'TEMPLATES_DIR' as the 'DIRS' value in 'TEMPLATES' as shown below.
+<details><summary>Heroku Deployment - Step 38:</summary>
+<img src="static/img/deployment/step-41.png" alt="step of deployment" style="width: 100%">
+</details> 
+<br>
+
+39. In the 'ALLOWED_HOSTS' add the Heroku app and localhost.
+<details><summary>Heroku Deployment - Step 39:</summary>
+<img src="static/img/readme/allowed_hosts.png" alt="step of deployment" style="width: 100%">
+</details> 
+<br>
+
+40. Create these folders in the top level directory:
+* media
+* templates
+* static
+<details><summary>Heroku Deployment - Step 40:</summary>
+<img src="static/img/deployment/step-43.png" alt="step of deployment" style="width: 100%">
+</details> 
+<br>
+
+41. In the application in Heroku in 'Config Vars'. Add 'CLOUDINARY_URL' and as value (the red area) add the url. Also, add the following keys and values:
+* key: PORT - value: 8000
+* key: DISABLE_COLLECTSTATIC - value: 1
+<details><summary>Heroku Deployment - Step 41:</summary>
+<img src="static/img/deployment/step-44.png" alt="step of deployment" style="width: 100%">
+</details> 
+<br>
+
+42. Create a 'Procfile' file in the top level directory.
+<details><summary>Heroku Deployment - Step 42:</summary>
+<img src="static/img/deployment/step-44.png" alt="step of deployment" style="width: 100%">
+</details> 
+<br>
+
+43. In the 'Procfile' file add the following text:
+* web: gunicorn PROJECT_NAME.wsgi
+<details><summary>Heroku Deployment - Step 43:</summary>
+<img src="static/img/deployment/step-45.png" alt="step of deployment" style="width: 100%">
+</details>
+<br>
+
+
+Save all the files and add, commit and push the project to GitHub by writing these commands:
+* git add .
+* git commit -m "Deployment Commit"
+* git push
+
+44. In the application in Heroku navigate to the deploy page and scroll to the bottom of the page.
+<details><summary>Heroku Deployment - Step 44:</summary>
+<img src="static/img/deployment/step-46.png" alt="step of deployment" style="width: 100%">
+</details> 
+<br>
+
+
+45. Click 'Deploy Branch' and wait for the GitHub branch to be deployed and then click 'View App'.
+<details><summary>Heroku Deployment - Step 45:</summary>
+<img src="static/img/deployment/step-48.png" alt="step of deployment" style="width: 100%">
+</details> 
+<br>
+
+46. This is what the app will look like when it's successfully deployed.
+<details><summary>Heroku Deployment - Step 46:</summary>
+<img src="static/img/deployment/step-49.png" alt="step of deployment" style="width: 100%">
+</details> 
+
 <br>
 
 
