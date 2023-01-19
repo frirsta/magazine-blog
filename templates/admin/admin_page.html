@@ -53,15 +53,8 @@
           <td scope="col">{{ post.title }}</td>
           <td scope="col">{{ post.article_description }}</td>
           <td scope="col">
-            <div class="dropdown">
-              <button class="btn btn-outline-dark dropdown-toggle admin-title-button" type="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                {{ post.title }}
-              </button>
-              <ul class="dropdown-menu">
-                <li><button>{{ post.content }}</button></li>
-              </ul>
-            </div>
+
+<a class="btn btn-outline-dark" href="{% url 'magazine:post_detail' post.pk post.slug %}">Post page</a>
           </td>
           <td scope="col">{{ post.post_created }}</td>
 
