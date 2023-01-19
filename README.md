@@ -119,6 +119,12 @@ The website have some differences.
   * This allows the user to easily navigate through the website.
   * When the user is logged in the navigation bar also links to Create Post page, Profile page, and it has a Log out link so the user can easily log out from their account.
   * When the website owner is logged in the same links as the logged in user will display as well as an Admin link for the Admin dashboard.
+<br>
+<div style="display: flex; align-items: start; justify-content: space-between;">
+<img src="static/img/readme/pages/navbar.png" alt="navbar page when no user is logged in" style="width: 30%">
+<img src="static/img/readme/pages/navbar_user.png" alt="navbar page when user is logged in" style="width: 30%">
+<img src="static/img/readme/pages/navbar_admin.png" alt="navbar page when admin is logged in" style="width: 30%">
+</div>
 
 * The footer
   * The footer links to Magazine's social media accounts.
@@ -126,21 +132,78 @@ The website have some differences.
 ### The Landing/home page
   * The landing page has an image of furniture and text that says 'MAGAZINE' and 'Interior & Lifestyle' This lets the user know what the website is about.
   * The home page displays the six latest posts made so the user can see what the latest interior trends are and also so they can see examples of what type of content they will find on the page. 
+<br>
+<div style="display: flex; align-items: start; justify-content: space-between;">
+<img src="static/img/readme/pages/home_mobile.png" alt="home page on mobile screen" style="width: 20%">
+<img src="static/img/readme/pages/home_ipad.png" alt="home page on ipad screen" style="width: 30%">
+<img src="static/img/readme/pages/home_desktop.png" alt="home page on desktop screen" style="width: 48%">
+</div>
  
 ### Blog
  * The blog page displays all posts made with the latest ones on top of the page.
+ <br>
+<div style="display: flex; align-items: start; justify-content: space-between;">
+<img src="static/img/readme/pages/blog_mobile.png" alt="blog page on mobile screen" style="width: 20%">
+<img src="static/img/readme/pages/blog_ipad.png" alt="blog page on ipad screen" style="width: 30%">
+<img src="static/img/readme/pages/blog_desktop.png" alt="blog page on desktop screen" style="width: 48%">
+</div>
 
 ### Sign up
 * The SignUp page displays a form where the user writes their information to create an account.
+<br>
+<div style="display: flex; align-items: start; justify-content: space-between;">
+<img src="static/img/readme/pages/signup_mobile.png" alt="signup page on mobile screen" style="width: 20%">
+<img src="static/img/readme/pages/signup_ipad.png" alt="signup page on ipad screen" style="width: 30%">
+<img src="static/img/readme/pages/signup_desktop.png" alt="signup page on desktop screen" style="width: 48%">
+</div>
 
 ### Log in
 * The log in page displays a form where the user writes their username and password to log in to their account.
+<br>
+<div style="display: flex; align-items: start; justify-content: space-between;">
+<img src="static/img/readme/pages/login_mobile.png" alt="login page on mobile screen" style="width: 20%">
+<img src="static/img/readme/pages/login_ipad.png" alt="login page on ipad screen" style="width: 30%">
+<img src="static/img/readme/pages/login_desktop.png" alt="login page on desktop screen" style="width: 48%">
+</div>
 
 ### Profile
 * The profile page displays the user profile picture, user bio and three buttons.
     * The Edit Profile button leads to the edit profile page where they can add a profile picture and write text about themselves.
     * The Change password button leads to a page where they can change their password.
     * The My Posts button leads to a page where they can find all posts they have created.
+    <br>
+<div style="display: flex; align-items: start; justify-content: space-between;">
+<img src="static/img/readme/pages/profile_mobile.png" alt="profile page on mobile screen" style="width: 20%">
+<img src="static/img/readme/pages/profile_ipad.png" alt="profile page on ipad screen" style="width: 30%">
+<img src="static/img/readme/pages/profile_desktop.png" alt="profile page on desktop screen" style="width: 48%">
+</div>
+
+### User posts
+* The logged in user can find all the posts they have created in this page.
+<br>
+<div style="display: flex; align-items: start; justify-content: space-between;">
+<img src="static/img/readme/pages/user_posts_mobile.png" alt="user_posts page on mobile screen" style="width: 20%">
+<img src="static/img/readme/pages/user_posts_ipad.png" alt="user_posts page on ipad screen" style="width: 30%">
+<img src="static/img/readme/pages/user_posts_desktop.png" alt="user_posts page on desktop screen" style="width: 48%">
+</div>
+
+### Change Password
+* The change password page is where the user can change their password.
+<br>
+<div style="display: flex; align-items: start; justify-content: space-between;">
+<img src="static/img/readme/pages/change_password_mobile.png" alt="change_password page on mobile screen" style="width: 20%">
+<img src="static/img/readme/pages/change_password_ipad.png" alt="change_password page on ipad screen" style="width: 30%">
+<img src="static/img/readme/pages/change_password_desktop.png" alt="change_password page on desktop screen" style="width: 48%">
+</div>
+
+### Edit Profile
+The edit profile page is where the user can add a profile picture, change username and write text about themselves.
+<br>
+<div style="display: flex; align-items: start; justify-content: space-between;">
+<img src="static/img/readme/pages/edit_profile_mobile.png" alt="edit_profile page on mobile screen" style="width: 20%">
+<img src="static/img/readme/pages/edit_profile_ipad.png" alt="edit_profile page on ipad screen" style="width: 30%">
+<img src="static/img/readme/pages/edit_profile_desktop.png" alt="edit_profile page on desktop screen" style="width: 48%">
+</div>
 
 ### Create Post
 * In the create post page a user can create a post by adding text and image to the create post form. The form has four fields.
@@ -148,6 +211,12 @@ The website have some differences.
     * Article description | Description of the article. This is the first thing the user reads before deciding what post to read more about.
     * Content | The post content.
     * Image | The image that will be posted with the post text content.
+<br>
+<div style="display: flex; align-items: start; justify-content: space-between;">
+<img src="static/img/readme/pages/create_post_mobile.png" alt="create_post page on mobile screen" style="width: 20%">
+<img src="static/img/readme/pages/create_post_ipad.png" alt="create_post page on ipad screen" style="width: 30%">
+<img src="static/img/readme/pages/create_post_desktop.png" alt="create_post page on desktop screen" style="width: 48%">
+</div>
 
 ### Admin Dashboard
 * In the admin the website owner can see how many posts have been made, how many accounts have been created and how many comments have been made.
@@ -155,14 +224,20 @@ The website have some differences.
     * The owner can Delete posts from this page.
 * On this page the owner can find all the comments, the name of who has created the comment, the date the comment was created, the comment content, and what post it was commented on.
     * The owner can delete comments from this page.
+<br>
+<div style="display: flex; align-items: start; justify-content: space-between;">
+<img src="static/img/readme/pages/admin_mobile.png" alt="admin page on mobile screen" style="width: 20%">
+<img src="static/img/readme/pages/admin_ipad.png" alt="admin page on ipad screen" style="width: 30%">
+<img src="static/img/readme/pages/admin_desktop.png" alt="admin page on desktop screen" style="width: 48%">
+</div>
 
 ### 404 page
 * This is the page the user get redirected to if the website does not exist.
 <br>
 <div style="display: flex; align-items: start; justify-content: space-between;">
-<img src="static/img/readme/pages/404-iphonese.png" alt="404 page on iphonese screen" style="width: 20%">
-<img src="static/img/readme/pages/404-ipadair.png" alt="404 page on ipadair screen" style="width: 30%">
-<img src="static/img/readme/pages/404-desktop.png" alt="404 page on desktop screen" style="width: 48%">
+<img src="static/img/readme/pages/404_mobile.png" alt="404 page on iphonese screen" style="width: 20%">
+<img src="static/img/readme/pages/404_ipad.png" alt="404 page on ipadair screen" style="width: 30%">
+<img src="static/img/readme/pages/404_desktop.png" alt="404 page on desktop screen" style="width: 48%">
 </div>
 
 # Features left to Implement
@@ -589,5 +664,6 @@ Bild av Vincent Rivaud: https://www.pexels.com/sv-se/foto/hus-lyx-lampa-hem-2227
 Bild av Victoria Akvarel : https://www.pexels.com/sv-se/foto/hotell-hus-arkitektur-lyx-3315291/
 
 
-
-
+# Acknowledgment
+This website has been made for my 4th Portfolio Project (Full-Stack Toolkit) - Diploma in Full Stack Software Development at [Code Institute](https://codeinstitute.net/).
+I would like to thank my mentor Precious Ijege from Code Institute who helped me develop the website with feedback through the project.
