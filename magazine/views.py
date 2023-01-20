@@ -260,3 +260,19 @@ class AdminPage(LoginRequiredMixin, ListView):
 
 def error_404(request, exception):
     return render(request, '404.html')
+
+
+class AdminDeletePost(LoginRequiredMixin, DeleteView):
+    """
+    This class allows the user that has created a post to delete it.
+    """
+    model = Post
+    success_url = reverse_lazy('magazine:home')
+
+
+class AdminDeleteComment(LoginRequiredMixin, DeleteView):
+    """
+    This class allows the user that has created a comment to delete it.
+    """
+    model = Comment
+    success_url = reverse_lazy('magazine:home')

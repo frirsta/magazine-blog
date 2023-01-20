@@ -24,6 +24,10 @@
       <a class="btn btn-outline-dark" href="{% url 'magazine:post_delete' object.pk object.slug %}">Delete</a>
       <a class="btn btn-outline-dark" href="{% url 'magazine:post_update' object.pk object.slug %}">Edit</a>
     </div>
+    {% elif user.is_superuser %}
+    <div class="container">
+      <a class="btn btn-outline-dark" href="{% url 'magazine:post_delete' object.pk object.slug %}">Delete</a>
+    </div>
     {% endif %}
   </div>
   {% if comments %}

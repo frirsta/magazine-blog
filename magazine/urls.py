@@ -2,7 +2,8 @@ from django.urls import path, reverse_lazy
 from . views import (
     SignUpView, HomePageView, loginUser, logoutUser, profile_page,
     edit_profile, PostsView, PostDetailView, CreatePost, UpdatePost,
-    DeletePost, UserPosts, DeleteComment, AdminPage)
+    DeletePost, UserPosts, DeleteComment, AdminPage, AdminDeleteComment,
+    AdminDeletePost)
 from django.contrib.auth.views import (
     PasswordChangeView, PasswordChangeDoneView)
 
@@ -29,5 +30,9 @@ urlpatterns = [
     path('delete/comment/<pk>', DeleteComment.as_view(),
          name='comment_delete'),
     path('admin-page/', AdminPage.as_view(), name='admin_page'),
+    path('admin_delete/comment/<pk>', AdminDeleteComment.as_view(),
+         name='comment_delete'),
+    path('admin_delete/<pk>/<slug:slug>/', AdminDeletePost.as_view(),
+         name='post_delete'),
 
 ]
