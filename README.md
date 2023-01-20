@@ -721,7 +721,7 @@ The apps have to be written in the following order:
 
 39. In the 'ALLOWED_HOSTS' add the Heroku app and localhost.
 <details><summary>Heroku Deployment - Step 39:</summary>
-<img src="readme/readme/allowed_hosts.png" alt="step of deployment" style="width: 100%">
+<img src="readme/allowed_hosts.png" alt="step of deployment" style="width: 100%">
 </details> 
 <br>
 
