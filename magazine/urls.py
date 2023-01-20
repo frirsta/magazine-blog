@@ -31,8 +31,8 @@ urlpatterns = [
          name='comment_delete'),
     path('admin-page/', AdminPage.as_view(), name='admin_page'),
     path('admin_delete/comment/<pk>', AdminDeleteComment.as_view(),
-         name='comment_delete'),
+         name='admin_comment_delete'),
     path('admin_delete/<pk>/<slug:slug>/', AdminDeletePost.as_view(),
-         name='post_delete'),
+         name='admin_post_delete'),
 
 ]
