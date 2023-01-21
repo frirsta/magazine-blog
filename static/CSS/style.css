@@ -428,6 +428,18 @@ height: 600px;
         font-size: 140px;
     }
 
+    .btn {
+        margin-bottom: 0px;
+        font-size: 12px;
+        padding: 5px;
+    }
+    .delete-button {
+        font-size: 12px;
+    }
+    /* admin page */
+    tbody, td, tfoot, th, thead, tr {
+        width: 10%;
+    }
     /* post_detail page, home page posts and blog page posts */
     .post-text-container {
         padding: 5px;
@@ -669,6 +681,14 @@ height: 600px;
     }
 
     /* admin page */
+    .admin-post-information-button {
+        padding: 5px!important;
+        font-size: 10px!important;
+    }
+    .btn {
+        font-size: 10px;
+        padding: 3px;
+    }
     .table {
         font-size: 8px;
     }
