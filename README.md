@@ -37,7 +37,7 @@ I have used [Miro](https://miro.com/) to create WireFrames for the project.
 The website have some differences.
 <details><summary>Wireframes</summary>
 
-<div style="display: flex; align-items: start;">
+<div style="display: flex; align-items: flex-start;">
 <img src="readme/home_desktop.jpg" alt="home page on desktop screen" style="width: 40%">
 <img src="readme/home_ipad.jpg" alt="home page on ipad screen" style="width: 30%">
 <img src="readme/home_phone.jpg" alt="home page on phone screen" style="width: 20%">
@@ -45,13 +45,13 @@ The website have some differences.
 
 <br>
 
-<div style="display: flex; align-items: start;">
+<div style="display: flex; align-items: flex-start;">
 <img src="readme/blog_desktop.jpg" alt="blog page on desktop screen" style="width: 40%">
 <img src="readme/blog_ipad.jpg" alt="blog page on ipad screen" style="width: 30%">
 <img src="readme/blog_phone.jpg" alt="blog page on phone screen" style="width: 20%">
 </div>
 
-<div style="display: flex; align-items: start;">
+<div style="display: flex; align-items: flex-start;">
 <img src="readme/post_detail_desktop.jpg" alt="post_detail page on desktop screen" style="width: 40%">
 <img src="readme/post_detail_ipad.jpg" alt="post_detail page on ipad screen" style="width: 30%">
 <img src="readme/post_detail_phone.jpg" alt="post_detail page on phone screen" style="width: 20%">
@@ -68,7 +68,7 @@ The website have some differences.
 
 <img src="readme/create_post.jpg" alt="create post page on all screens" style="width: 100%">
 
-<div style="display: flex; align-items: start;">
+<div style="display: flex; align-items: flex-start;">
 <img src="readme/change_password_desktop.jpg" alt="change_password page on desktop screen" style="width: 40%">
 <img src="readme/change_password_ipad.jpg" alt="change_password page on ipad screen" style="width: 30%">
 <img src="readme/change_password_phone.jpg" alt="change_password page on phone screen" style="width: 20%">
@@ -120,7 +120,7 @@ The website have some differences.
   * When the user is logged in the navigation bar also links to Create Post page, Profile page, and it has a Log out link so the user can easily log out from their account.
   * When the website owner is logged in the same links as the logged in user will display as well as an Admin link for the Admin dashboard.
 <br>
-<div style="display: flex; align-items: start; justify-content: space-between;">
+<div style="display: flex; align-items: flex-start; justify-content: space-between;">
 <img src="readme/pages/navbar.png" alt="navbar page when no user is logged in" style="width: 30%">
 <img src="readme/pages/navbar_user.png" alt="navbar page when user is logged in" style="width: 30%">
 <img src="readme/pages/navbar_admin.png" alt="navbar page when admin is logged in" style="width: 30%">
@@ -128,7 +128,7 @@ The website have some differences.
 
 * The footer
   * The footer links to Magazine's social media accounts.
-  <div style="display: flex; align-items: start; justify-content: space-between;">
+  <div style="display: flex; align-items: flex-start; justify-content: space-between;">
 <img src="readme/pages/footer_mobile.png" alt="footer on mobile screen" style="width: 30%">
 <img src="readme/pages/footer_ipad.png" alt="footer on ipad screen" style="width: 30%">
 <img src="readme/pages/footer_desktop.png" alt="footer on desktop screen" style="width: 30%">
@@ -138,7 +138,7 @@ The website have some differences.
   * The landing page has an image of furniture and text that says 'MAGAZINE' and 'Interior & Lifestyle' This lets the user know what the website is about.
   * The home page displays the six latest posts made so the user can see what the latest interior trends are and also so they can see examples of what type of content they will find on the page. 
 <br>
-<div style="display: flex; align-items: start; justify-content: space-between;">
+<div style="display: flex; align-items: flex-start; justify-content: space-between;">
 <img src="readme/pages/home_mobile.png" alt="home page on mobile screen" style="width: 20%">
 <img src="readme/pages/home_ipad.png" alt="home page on ipad screen" style="width: 30%">
 <img src="readme/pages/home_desktop.png" alt="home page on desktop screen" style="width: 48%">
@@ -147,7 +147,7 @@ The website have some differences.
 ### Blog
  * The blog page displays all posts made with the latest ones on top of the page.
  <br>
-<div style="display: flex; align-items: start; justify-content: space-between;">
+<div style="display: flex; align-items: flex-start; justify-content: space-between;">
 <img src="readme/pages/blog_mobile.png" alt="blog page on mobile screen" style="width: 20%">
 <img src="readme/pages/blog_ipad.png" alt="blog page on ipad screen" style="width: 30%">
 <img src="readme/pages/blog_desktop.png" alt="blog page on desktop screen" style="width: 48%">
@@ -156,7 +156,7 @@ The website have some differences.
 ### Sign up
 * The SignUp page displays a form where the user writes their information to create an account.
 <br>
-<div style="display: flex; align-items: start; justify-content: space-between;">
+<div style="display: flex; align-items: flex-start; justify-content: space-between;">
 <img src="readme/pages/signup_mobile.png" alt="signup page on mobile screen" style="width: 20%">
 <img src="readme/pages/signup_ipad.png" alt="signup page on ipad screen" style="width: 30%">
 <img src="readme/pages/signup_desktop.png" alt="signup page on desktop screen" style="width: 48%">
@@ -165,7 +165,7 @@ The website have some differences.
 ### Log in
 * The log in page displays a form where the user writes their username and password to log in to their account.
 <br>
-<div style="display: flex; align-items: start; justify-content: space-between;">
+<div style="display: flex; align-items: flex-start; justify-content: space-between;">
 <img src="readme/pages/login_mobile.png" alt="login page on mobile screen" style="width: 20%">
 <img src="readme/pages/login_ipad.png" alt="login page on ipad screen" style="width: 30%">
 <img src="readme/pages/login_desktop.png" alt="login page on desktop screen" style="width: 48%">
@@ -177,7 +177,7 @@ The website have some differences.
     * The Change password button leads to a page where they can change their password.
     * The My Posts button leads to a page where they can find all posts they have created.
     <br>
-<div style="display: flex; align-items: start; justify-content: space-between;">
+<div style="display: flex; align-items: flex-start; justify-content: space-between;">
 <img src="readme/pages/profile_mobile.png" alt="profile page on mobile screen" style="width: 20%">
 <img src="readme/pages/profile_ipad.png" alt="profile page on ipad screen" style="width: 30%">
 <img src="readme/pages/profile_desktop.png" alt="profile page on desktop screen" style="width: 48%">
@@ -186,7 +186,7 @@ The website have some differences.
 ### User posts
 * The logged in user can find all the posts they have created in this page.
 <br>
-<div style="display: flex; align-items: start; justify-content: space-between;">
+<div style="display: flex; align-items: flex-start; justify-content: space-between;">
 <img src="readme/pages/user_posts_mobile.png" alt="user_posts page on mobile screen" style="width: 20%">
 <img src="readme/pages/user_posts_ipad.png" alt="user_posts page on ipad screen" style="width: 30%">
 <img src="readme/pages/user_posts_desktop.png" alt="user_posts page on desktop screen" style="width: 48%">
@@ -195,7 +195,7 @@ The website have some differences.
 ### Change Password
 * The change password page is where the user can change their password.
 <br>
-<div style="display: flex; align-items: start; justify-content: space-between;">
+<div style="display: flex; align-items: flex-start; justify-content: space-between;">
 <img src="readme/pages/change_password_mobile.png" alt="change_password page on mobile screen" style="width: 20%">
 <img src="readme/pages/change_password_ipad.png" alt="change_password page on ipad screen" style="width: 30%">
 <img src="readme/pages/change_password_desktop.png" alt="change_password page on desktop screen" style="width: 48%">
@@ -204,7 +204,7 @@ The website have some differences.
 ### Edit Profile
 The edit profile page is where the user can add a profile picture, change username and write text about themselves.
 <br>
-<div style="display: flex; align-items: start; justify-content: space-between;">
+<div style="display: flex; align-items: flex-start; justify-content: space-between;">
 <img src="readme/pages/edit_profile_mobile.png" alt="edit_profile page on mobile screen" style="width: 20%">
 <img src="readme/pages/edit_profile_ipad.png" alt="edit_profile page on ipad screen" style="width: 30%">
 <img src="readme/pages/edit_profile_desktop.png" alt="edit_profile page on desktop screen" style="width: 48%">
@@ -217,7 +217,7 @@ The edit profile page is where the user can add a profile picture, change userna
     * Content | The post content.
     * Image | The image that will be posted with the post text content.
 <br>
-<div style="display: flex; align-items: start; justify-content: space-between;">
+<div style="display: flex; align-items: flex-start; justify-content: space-between;">
 <img src="readme/pages/create_post_mobile.png" alt="create_post page on mobile screen" style="width: 20%">
 <img src="readme/pages/create_post_ipad.png" alt="create_post page on ipad screen" style="width: 30%">
 <img src="readme/pages/create_post_desktop.png" alt="create_post page on desktop screen" style="width: 48%">
@@ -230,7 +230,7 @@ The edit profile page is where the user can add a profile picture, change userna
 * On this page the owner can find all the comments, the name of who has created the comment, the date the comment was created, the comment content, and what post it was commented on.
     * The owner can delete comments from this page.
 <br>
-<div style="display: flex; align-items: start; justify-content: space-between;">
+<div style="display: flex; align-items: flex-start; justify-content: space-between;">
 <img src="readme/pages/admin_mobile.png" alt="admin page on mobile screen" style="width: 20%">
 <img src="readme/pages/admin_ipad.png" alt="admin page on ipad screen" style="width: 30%">
 <img src="readme/pages/admin_desktop.png" alt="admin page on desktop screen" style="width: 48%">
@@ -239,7 +239,7 @@ The edit profile page is where the user can add a profile picture, change userna
 ### 404 page
 * This is the page the user get redirected to if the website does not exist.
 <br>
-<div style="display: flex; align-items: start; justify-content: space-between;">
+<div style="display: flex; align-items: flex-start; justify-content: space-between;">
 <img src="readme/pages/404_mobile.png" alt="404 page on iphonese screen" style="width: 20%">
 <img src="readme/pages/404_ipad.png" alt="404 page on ipadair screen" style="width: 30%">
 <img src="readme/pages/404_desktop.png" alt="404 page on desktop screen" style="width: 48%">
