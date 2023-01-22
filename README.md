@@ -442,19 +442,19 @@ Below are images of the steps taken for testing the Post model in chronological 
 | User/Admin | Description |
 | --- | --- |
 **Site User** As a Site User I can View posts so that I can select one to read |
-* In the home page there are six posts that the user can chose to read.
-* In the blog page all posts are available to the user.
+* In the home page there are six posts that the user can choose to read.
+* On the blog page all posts are available to the user.
 <br>
 
 **Site User** As a site user I can read comments that are made for a specific post so that I can read what people think of the post |
-* In a blog posts detail page a user can leave a comment and also read comments made on that specific blog post.
+* In a blog post detail page a user can leave a comment and also read comments made on that specific blog post.
 <br>
 
 **Site User** As a Site User I can create an account so that I can comment and create content |
 * In the navigation menu there is a link to Sign up.
 <br>
 
-**Site User** As a Site User I can login so that I can create content for the blog that is connected to my account |
+**Site User** As a Site User I can log in so that I can create content for the blog that is connected to my account |
 * In the navigation menu there is a link to Log in.
 <br>
 
@@ -463,12 +463,12 @@ Below are images of the steps taken for testing the Post model in chronological 
 
 <br>
 
-**Site User** As a Site User I can comment posts so that I can write what I think about the post and interact with other blog readers |
+**Site User** As a Site User I can comment on posts so that I can write what I think about the post and interact with other blog readers |
 * When the user has created an account or logged in they can comment on blog posts.
 
 <br>
 
-**Site User** As a site user I can delete comments I have made so that I have control over my comments, and can remove them if I change my mind on the comments |
+**Site User** As a site user I can delete comments I have made so that I have control over my comments, and can remove them if I change my mind in the comments |
 * When a user is logged in and has created a comment, the comment appears under the blog post details page and the comments the logged in user has made have a delete button so the user can delete their own comments.
 <br>
 
@@ -492,23 +492,23 @@ Below are images of the steps taken for testing the Post model in chronological 
 * In the navigation menu there is a link to the admin page.
 <br>
 
-**Site Owner** As a Site Owner I can find all posts and all comments created in one page so that I can manage the content on the website |
+**Site Owner** As a Site Owner I can find all posts and all comments created on one page so that I can manage the content on the website |
 * In the admin page there are 3 boxes with the number of users, posts and comments on them. There are also three buttons below that show all details about posts, comments and users.
-<br>
+<br>|
 
 **Site Owner** As a Site Owner I can go to the Admin Dashboard where I can find all posts made and information about them |
-* In the admin page there is a button with 'All Posts' text on it. When the button is clicked all information about the posts are displayed. The post author, the post title, the article description, a button that redirects the Site owner to the blog post detail page, the date the post was made and a delete button so the site owner can delete the post from the admin dashboard are displayed when the button is clicked.
+* On the admin page there is a button with 'All Posts' text on it. When the button is clicked, all information about the posts are displayed. The post author, the post title, the article description, a button that redirects the Site owner to the blog post detail page, the date the post was made and a delete button so the site owner can delete the post from the admin dashboard are displayed when the button is clicked.
 <br>
 
 **Site Owner** As a Site Owner I can go to the Admin Dashboard where I can find all comments made and information about them |
-* In the admin page there is a button with 'All Comments' text on it. When the button is clicked all information about the comments are displayed. The comment content, the post title of the post that has been commented under, the name of the user that has created the comment, the date the comment was made and a delete button so the site owner can delete the comment from the admin dashboard are displayed when the button is clicked. 
+* On the admin page there is a button with 'All Comments' text on it. When the button is clicked, all information about the comments are displayed. The comment content, the post title of the post that has been commented under, the name of the user that has created the comment, the date the comment was made and a delete button so the site owner can delete the comment from the admin dashboard are displayed when the button is clicked. 
 <br>
 
 **Site Owner** As a Site Owner I can go to the Admin Dashboard where I can find all users and information about them |
-* In the admin page there is button with 'All Users' text on it. When the button is clicked all information about the users are displayed. When the button is clicked the user name, email and date of when the user was createdis displayed.
+* In the admin page there is a button with 'All Users' text on it. When the button is clicked, all information about the users are displayed. When the button is clicked the user name, email and date of when the user was created is displayed.
 <br>
 
-**Site Owner** As a Site Owner I can I can delete the posts and comments from the admin page so that I can manage a secure environment for the users |
+**Site Owner** As a Site Owner I can delete the posts and comments from the admin page so that I can manage a secure environment for the users |
 * In the admin page the site owner can delete the posts and comments made.  
 
 <br>
@@ -901,6 +901,23 @@ Save all the files and add, commit and push the project to GitHub by writing the
 </details> 
 
 <br>
+
+
+# Cloning
+
+1. Open the GitHub repository.
+2. Click the green 'Code' button and copy the given URL.
+<img src="readme/deployment/cloning.png" alt="step of deployment" style="width: 100%">
+
+3. Open Git Bash and change directory to where you want the cloned directory.
+4. Write 'git clone' and paste the URL that was copied in Github and then click 'enter'.
+5. In Git Bash locate the cloned directory.
+6. Type 'code .' this will launch the project in VSCode.
+7. Install the requirements by typing this command:
+* pip3 install --local > requirements.txt
+8. Create an 'env.py' file in the top level directory.
+9. Now run this command:
+* python3 manage.py migrate
 
 
 # Credits
