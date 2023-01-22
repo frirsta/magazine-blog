@@ -7,6 +7,20 @@ This is the live link to [Magazine](https://magazine-blog-frirsta.herokuapp.com/
 
 <img src="readme/all_devices.png" alt="website on all devices" style="width: 100%">
 
+
+* [**Project**](<#Project>)
+* [**Project Management**](<#Project-Management>)
+* [**Wireframes**](<#Wireframes>)
+* [**User Experience UX**](<#user-experience-ux>)
+* [**Features**](<#Features>)
+* [**Features left to Implement**](<#Features-left-to-Implement>)
+* [**Testing**](<#Testing>)
+* [**Technologies Used**](<#Technologies-Used>)
+* [**Unfixed Bugs**](<#Unfixed-Bugs>)
+* [**Deployed**](<#Deployed>)
+* [**Credits**](<#Credits>)
+* [**Acknowledgement**](<#Acknowledgement>)
+
 # Project
 
 ## Site Owner Goal
@@ -248,6 +262,7 @@ The edit profile page is where the user can add a profile picture, change userna
 # Features left to Implement
 * Add more automated testing
 * Add search functionality so the user can find posts or other users.
+
 # Testing
 [responsivedesignchecker](https://www.responsivedesignchecker.com/)
 [HTML validator](https://validator.w3.org/)
@@ -416,7 +431,6 @@ Below are images of the steps taken for testing the Post model in chronological 
 * pip install coverage
 
 # Unfixed Bugs
-
 
 # Deployment
 
@@ -818,6 +832,6 @@ Bild av Vincent Rivaud: https://www.pexels.com/sv-se/foto/hus-lyx-lampa-hem-2227
 Bild av Victoria Akvarel : https://www.pexels.com/sv-se/foto/hotell-hus-arkitektur-lyx-3315291/
 
 
-# Acknowledgment
+# Acknowledgement
 This website has been made for my 4th Portfolio Project (Full-Stack Toolkit) - Diploma in Full Stack Software Development at [Code Institute](https://codeinstitute.net/).
 I would like to thank my mentor Precious Ijege from Code Institute who helped me develop the website with feedback through the project.
