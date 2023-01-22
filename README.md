@@ -177,6 +177,13 @@ The website have some differences.
 <img src="readme/pages/post_detail_desktop.png" alt="post_detail page on desktop screen" style="width: 48%">
 </div>
 
+#### Comment section
+<div style="display: flex; align-items: flex-start; justify-content: space-between;">
+<img src="readme/pages/comment_mobile.png" alt="comment page on mobile screen" style="width: 20%">
+<img src="readme/pages/comment_ipad.png" alt="comment page on ipad screen" style="width: 30%">
+<img src="readme/pages/comment_desktop.png" alt="comment page on desktop screen" style="width: 48%">
+</div>
+
 ### Sign up
 * The SignUp page displays a form where the user writes their information to create an account.
 <br>
@@ -288,6 +295,7 @@ I have tested the responsiveness manually with [DevTool](https://developer.chrom
 
 ### Microsoft Edge 109.0.1518.61
 ### Google Chrome 109.0.5414.75
+### Apple Safari 14.2.1
 
 [Code Institute Pep8](https://pep8ci.herokuapp.com/)
 <details><summary>Pep8</summary>
