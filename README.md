@@ -916,6 +916,8 @@ Save all the files and add, commit and push the project to GitHub by writing the
 7. Install the requirements by typing this command:
 * pip3 install --local > requirements.txt
 8. Create an 'env.py' file in the top level directory.
+8. Add the os.environ as shown in the image with their respective values.
+* <img src="readme/deployment/step-37.png" alt="step of deployment" style="width: 100%">
 9. Now run this command:
 * python3 manage.py migrate
 
