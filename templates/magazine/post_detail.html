@@ -20,12 +20,12 @@
       <p>{{ object.content }}</p>
     </div>
     {% if object.author == request.user %}
-    <div class="container">
+    <div class="container post-buttons">
       <a class="btn btn-outline-dark" href="{% url 'magazine:post_delete' object.pk object.slug %}">Delete</a>
       <a class="btn btn-outline-dark" href="{% url 'magazine:post_update' object.pk object.slug %}">Edit</a>
     </div>
     {% elif user.is_superuser %}
-    <div class="container">
+    <div class="container post-buttons">
       <a class="btn btn-outline-dark" href="{% url 'magazine:admin_post_delete' object.pk object.slug %}">Delete</a>
     </div>
     {% endif %}

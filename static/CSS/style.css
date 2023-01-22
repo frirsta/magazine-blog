@@ -412,6 +412,13 @@ tr {
         padding-left: 10px;
     }
 
+    /* post detail */
+    .post-detail-container {
+       max-width: 70%
+    }
+    .post-image-detail {
+       width: 100%;
+    }
     /* forms */
     .form, form {
         width: 80vw;
@@ -565,13 +572,7 @@ tr {
         height: unset;
     }
 
-    .post-detail-container {
-        width: 735px;
-    }
 
-    .post-image-detail {
-        width: 730px;
-    }
 
     /* admin page */
     td {
@@ -626,7 +627,11 @@ tr {
         flex-direction: column;
         height: fit-content;
     }
+    /* post detail */
 
+    .post-buttons {
+        margin-bottom: 5px!important;
+    }
 
 }
 
@@ -653,6 +658,7 @@ tr {
         max-width: 375px;
         height: 300px;
     }
+
 
     /* home page posts and blog page posts */
     .blog-post-container {
@@ -724,7 +730,7 @@ tr {
 
     /* post detail */
     .post-detail-container {
-        width: 355px;
+        max-width: 355px;
     }
 
     .post-image-detail {
@@ -734,6 +740,7 @@ tr {
     .post-detail-image {
         width: 350px;
     }
+
 
     /* comment section */
     .comment-profile-image {
