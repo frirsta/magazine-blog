@@ -264,7 +264,6 @@ The edit profile page is where the user can add a profile picture, change userna
 * Add search functionality so the user can find posts or other users.
 
 # Testing
-[responsivedesignchecker](https://www.responsivedesignchecker.com/)
 [HTML validator](https://validator.w3.org/)
 <img src="readme/testing/html_validator.png" alt="html validator" style="width: 100%">
 [CSS validator](https://jigsaw.w3.org/css-validator/)
@@ -272,6 +271,13 @@ The edit profile page is where the user can add a profile picture, change userna
 [Jshint](https://jshint.com/)
 <img src="readme/testing/js_validator.png" alt="js validator" style="width: 100%">
 
+## Responsiveness Testing
+I have tested the responsiveness manually with [DevTool](https://developer.chrome.com/docs/devtools/)
+
+## Browser Compatibility
+
+### Microsoft Edge 109.0.1518.61
+### Google Chrome 109.0.5414.75
 
 [Code Institute Pep8](https://pep8ci.herokuapp.com/)
 <details><summary>Pep8</summary>

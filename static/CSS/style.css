@@ -537,6 +537,22 @@ height: 600px;
     }
 }
 
+@media screen and (max-width: 390px) { 
+    .logo {
+        font-size: 50px;
+    }
+    .blog-post-container {
+        width: 100%;
+        flex-direction: column;
+    }
+    .post-container {
+        margin: 0;
+    }
+    .post-image {
+        width: 90%;
+    }
+}
+
 @media screen and (max-width: 376px) {
     .hero {
         background: url("https://res.cloudinary.com/magazine-blog/image/upload/f_auto/v1672830657/static/img/hero/hero-max-width-375px.8e594e7e8837.jpg") no-repeat center center;
