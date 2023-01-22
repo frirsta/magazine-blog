@@ -167,6 +167,16 @@ The website have some differences.
 <img src="readme/pages/blog_desktop.png" alt="blog page on desktop screen" style="width: 48%">
 </div>
 
+### Post detail
+* When the user chooses a blog to read they get redirected to the blog posts detail page where they can read the full post.
+* They can also read comments and leave comments.
+ <br>
+<div style="display: flex; align-items: flex-start; justify-content: space-between;">
+<img src="readme/pages/post_detail_mobile.png" alt="post_detail page on mobile screen" style="width: 20%">
+<img src="readme/pages/post_detail_ipad.png" alt="post_detail page on ipad screen" style="width: 30%">
+<img src="readme/pages/post_detail_desktop.png" alt="post_detail page on desktop screen" style="width: 48%">
+</div>
+
 ### Sign up
 * The SignUp page displays a form where the user writes their information to create an account.
 <br>
@@ -836,6 +846,7 @@ Bild av Pixabay: https://www.pexels.com/sv-se/foto/barnkammare-dekor-design-golv
 Bild av Mathilde Langevin: https://www.pexels.com/sv-se/foto/dekoration-bage-spegel-vas-14320924/
 Bild av Vincent Rivaud: https://www.pexels.com/sv-se/foto/hus-lyx-lampa-hem-2227832/
 Bild av Victoria Akvarel : https://www.pexels.com/sv-se/foto/hotell-hus-arkitektur-lyx-3315291/
+Bild av cottonbro studio: https://www.pexels.com/sv-se/foto/ljus-konst-kontor-vagg-4067759/
 
 
 # Acknowledgement
