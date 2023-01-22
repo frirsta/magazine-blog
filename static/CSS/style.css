@@ -451,11 +451,6 @@ tr {
         font-size: 140px;
     }
 
-    .btn {
-        margin-bottom: 0px;
-        font-size: 12px;
-        padding: 5px;
-    }
 
     .delete-button {
         font-size: 12px;
@@ -583,7 +578,9 @@ tr {
         padding: 2px !important;
     }
 
-    .admin-post-button{
+    .admin-post-button {
+        margin-bottom: 0px;
+        font-size: 12px;
         padding: 3px;
     }
 }
@@ -591,6 +588,12 @@ tr {
 @media screen and (max-width: 390px) {
     .logo {
         font-size: 50px;
+    }
+
+    .btn {
+        margin-bottom: 0px;
+        font-size: 12px;
+        padding: 5px;
     }
 
     .blog-post-container {
@@ -623,6 +626,8 @@ tr {
         flex-direction: column;
         height: fit-content;
     }
+
+
 }
 
 @media screen and (max-width: 376px) {
