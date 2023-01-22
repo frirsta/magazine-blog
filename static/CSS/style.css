@@ -551,6 +551,20 @@ height: 600px;
     .post-image {
         width: 90%;
     }
+    .admin-post-button, .delete-button {
+        width: 60px;
+        font-size: 10px;
+        padding: 2px;
+    }
+    .info-card-container {
+        width: 250px;
+        height: 80px;
+        margin: 10px;
+    }
+    .info-container {
+        flex-direction: column;
+        height: fit-content;
+    }
 }
 
 @media screen and (max-width: 376px) {
@@ -696,44 +710,6 @@ height: 600px;
         font-size: 80%;
     }
 
-    /* admin page */
-    .admin-post-information-button {
-        padding: 5px!important;
-        font-size: 10px!important;
-    }
-    .btn {
-        font-size: 10px;
-        padding: 3px;
-    }
-    .table {
-        font-size: 8px;
-    }
-
-    tbody,
-    td,
-    tfoot,
-    th,
-    thead,
-    tr {
-        width: 0%;
-    }
-
-    .info-container {
-        flex-direction: column;
-        justify-content: space-evenly;
-        height: 400px;
-    }
-
-    /* admin page */
-    .admin-title-button,
-    .delete-button {
-        font-size: 85%;
-        padding: 2px;
-        margin: 0;
-        width: 50px;
-        margin-bottom: 2px;
-        overflow: hidden;
-    }
     /* 404 */
     .error-container {
         height: 500px;
