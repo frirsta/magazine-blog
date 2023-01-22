@@ -27,10 +27,12 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link {% if request.path == '/' %}active{% endif %}" aria-current="page" href="{% url 'magazine:home' %}">Home</a>
+            <a class="nav-link {% if request.path == '/' %}active{% endif %}" aria-current="page"
+              href="{% url 'magazine:home' %}">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link {% if request.path == '/posts/' %}active{% endif %}" href="{% url 'magazine:posts' %}">Blog</a>
+            <a class="nav-link {% if request.path == '/posts/' %}active{% endif %}"
+              href="{% url 'magazine:posts' %}">Blog</a>
           </li>
           {% if request.user.is_authenticated %}
           <li class="nav-item">
@@ -111,15 +113,15 @@
       </div>
     </div>
   </footer>
-  <script>
-    setTimeout(function() {
-      let messages = document.getElementById("messages");
-      let alert = new bootstrap.Alert(messages);
-      alert.close();
-    }, 3000);
-  </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js">
+  </script>
+  <script>
+    setTimeout(function () {
+      $('#messages').alert('close');
+    }, 3000);
   </script>
 </body>
 
