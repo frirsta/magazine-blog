@@ -267,6 +267,24 @@ The edit profile page is where the user can add a profile picture, change userna
 <img src="readme/pages/admin_desktop.png" alt="admin page on desktop screen" style="width: 48%">
 </div>
 
+### Post confirm delete page
+* When a site user or site owner deletes a post they get redirected to this page to confirm that they want to delete the post.
+<br>
+<div style="display: flex; align-items: flex-start; justify-content: space-between;">
+<img src="readme/pages/admin_delete_post_mobile.png" alt="404 page on iphonese screen" style="width: 20%">
+<img src="readme/pages/admin_delete_post_ipad.png" alt="404 page on ipadair screen" style="width: 30%">
+<img src="readme/pages/admin_delete_post_desktop.png" alt="404 page on desktop screen" style="width: 48%">
+</div>
+
+### Comment confirm delete page
+* When a site user or site owner deletes a comment they get redirected to this page to confirm that they want to delete the comment.
+<br>
+<div style="display: flex; align-items: flex-start; justify-content: space-between;">
+<img src="readme/pages/admin_delete_comment_mobile.png" alt="404 page on iphonese screen" style="width: 20%">
+<img src="readme/pages/admin_delete_comment_ipad.png" alt="404 page on ipadair screen" style="width: 30%">
+<img src="readme/pages/admin_delete_comment_desktop.png" alt="404 page on desktop screen" style="width: 48%">
+</div>
+
 ### 404 page
 * This is the page the user get redirected to if the website does not exist.
 <br>
@@ -275,6 +293,7 @@ The edit profile page is where the user can add a profile picture, change userna
 <img src="readme/pages/404_ipad.png" alt="404 page on ipadair screen" style="width: 30%">
 <img src="readme/pages/404_desktop.png" alt="404 page on desktop screen" style="width: 48%">
 </div>
+
 
 # Features left to Implement
 * Add more automated testing
@@ -342,76 +361,89 @@ The website has also been tested with the Chrome developer tool Google Lighthous
 
 ### Home page 
 #### Desktop
-<img src="readme/testing/lighthouse/home_desktop.png" alt="lighthouse score for home page on desktop device" style="width: 100%">
+<img src="readme/testing/lighthouse/lighthouse_home_desktop.png" alt="lighthouse score for home page on desktop device" style="width: 100%">
 
 #### Mobile
-<img src="readme/testing/lighthouse/home_mobile.png" alt="lighthouse score for home page on mobile device" style="width: 100%">
+<img src="readme/testing/lighthouse/lighthouse_home_mobile.png" alt="lighthouse score for home page on mobile device" style="width: 100%">
 
 <br>
 
 ### Blog page 
 #### Desktop
-<img src="readme/testing/lighthouse/blog_desktop.png" alt="lighthouse score for blog page on desktop device" style="width: 100%">
+<img src="readme/testing/lighthouse/lighthouse_blog_desktop.png" alt="lighthouse score for blog page on desktop device" style="width: 100%">
 
 #### Mobile
-<img src="readme/testing/lighthouse/blog_mobile.png" alt="lighthouse score for blog page on mobile device" style="width: 100%">
+<img src="readme/testing/lighthouse/lighthouse_blog_mobile.png" alt="lighthouse score for blog page on mobile device" style="width: 100%">
 
 ### Signup page 
 #### Desktop
-<img src="readme/testing/lighthouse/signup_desktop.png" alt="lighthouse score for signup page on desktop device" style="width: 100%">
+<img src="readme/testing/lighthouse/lighthouse_signup_desktop.png" alt="lighthouse score for signup page on desktop device" style="width: 100%">
 
 #### Mobile
-<img src="readme/testing/lighthouse/signup_mobile.png" alt="lighthouse score for signup page on mobile device" style="width: 100%">
+<img src="readme/testing/lighthouse/lighthouse_signup_mobile.png" alt="lighthouse score for signup page on mobile device" style="width: 100%">
 
 ### Login page 
 #### Desktop
-<img src="readme/testing/lighthouse/login_desktop.png" alt="lighthouse score for login page on desktop device" style="width: 100%">
+<img src="readme/testing/lighthouse/lighthouse_login_desktop.png" alt="lighthouse score for login page on desktop device" style="width: 100%">
 
 #### Mobile
-<img src="readme/testing/lighthouse/login_mobile.png" alt="lighthouse score for login page on mobile device" style="width: 100%">
+<img src="readme/testing/lighthouse/lighthouse_login_mobile.png" alt="lighthouse score for login page on mobile device" style="width: 100%">
 
 ### Create post page 
 #### Desktop
-<img src="readme/testing/lighthouse/create_post_desktop.png" alt="lighthouse score for create_post page on desktop device" style="width: 100%">
+<img src="readme/testing/lighthouse/lighthouse_create_post_desktop.png" alt="lighthouse score for create_post page on desktop device" style="width: 100%">
 
 #### Mobile
-<img src="readme/testing/lighthouse/create_post_mobile.png" alt="lighthouse score for create_post page on mobile device" style="width: 100%">
+<img src="readme/testing/lighthouse/lighthouse_create_post_mobile.png" alt="lighthouse score for create_post page on mobile device" style="width: 100%">
 
 ### Profile page 
 #### Desktop
-<img src="readme/testing/lighthouse/profile_desktop.png" alt="lighthouse score for profile page on desktop device" style="width: 100%">
+<img src="readme/testing/lighthouse/lighthouse_profile_desktop.png" alt="lighthouse score for profile page on desktop device" style="width: 100%">
 
 #### Mobile
-<img src="readme/testing/lighthouse/profile_mobile.png" alt="lighthouse score for profile page on mobile device" style="width: 100%">
+<img src="readme/testing/lighthouse/lighthouse_profile_mobile.png" alt="lighthouse score for profile page on mobile device" style="width: 100%">
 
 ### Edit profile page 
 #### Desktop
-<img src="readme/testing/lighthouse/edit_profile_desktop.png" alt="lighthouse score for edit_profile page on desktop device" style="width: 100%">
+<img src="readme/testing/lighthouse/lighthouse_edit_profile_desktop.png" alt="lighthouse score for edit_profile page on desktop device" style="width: 100%">
 
 #### Mobile
-<img src="readme/testing/lighthouse/edit_profile_mobile.png" alt="lighthouse score for edit_profile page on mobile device" style="width: 100%">
+<img src="readme/testing/lighthouse/lighthouse_edit_profile_mobile.png" alt="lighthouse score for edit_profile page on mobile device" style="width: 100%">
 
 ### Change password page 
 #### Desktop
-<img src="readme/testing/lighthouse/change_password_desktop.png" alt="lighthouse score for change_password page on desktop device" style="width: 100%">
+<img src="readme/testing/lighthouse/lighthouse_change_password_desktop.png" alt="lighthouse score for change_password page on desktop device" style="width: 100%">
 
 #### Mobile
-<img src="readme/testing/lighthouse/change_password_mobile.png" alt="lighthouse score for change_password page on mobile device" style="width: 100%">
+<img src="readme/testing/lighthouse/lighthouse_change_password_mobile.png" alt="lighthouse score for change_password page on mobile device" style="width: 100%">
 
 ### User posts page 
 #### Desktop
-<img src="readme/testing/lighthouse/user_posts_desktop.png" alt="lighthouse score for user_posts page on desktop device" style="width: 100%">
+<img src="readme/testing/lighthouse/lighthouse_user_posts_desktop.png" alt="lighthouse score for user_posts page on desktop device" style="width: 100%">
 
 #### Mobile
-<img src="readme/testing/lighthouse/user_posts_mobile.png" alt="lighthouse score for user_posts page on mobile device" style="width: 100%">
+<img src="readme/testing/lighthouse/lighthouse_user_posts_mobile.png" alt="lighthouse score for user_posts page on mobile device" style="width: 100%">
 
 ### Admin page 
 #### Desktop
-<img src="readme/testing/lighthouse/admin_desktop.png" alt="lighthouse score for admin page on desktop device" style="width: 100%">
+<img src="readme/testing/lighthouse/lighthouse_admin_desktop.png" alt="lighthouse score for admin page on desktop device" style="width: 100%">
 
 #### Mobile
-<img src="readme/testing/lighthouse/admin_mobile.png" alt="lighthouse score for admin page on mobile device" style="width: 100%">
+<img src="readme/testing/lighthouse/lighthouse_admin_mobile.png" alt="lighthouse score for admin page on mobile device" style="width: 100%">
 
+### Confirm post delete
+#### Desktop
+<img src="readme/testing/lighthouse/lighthouse_admin_delete_comment_desktop.png" alt="lighthouse score for post_confirm_delete page on mobile device" style="width: 100%">
+
+#### Mobile
+<img src="readme/testing/lighthouse/lighthouse_admin_delete_comment.mobile.png" alt="lighthouse score for post_confirm_delete page on mobile device" style="width: 100%">
+
+### Confirm comment delete
+#### Desktop
+<img src="readme/testing/lighthouse/lighthouse_admin_delete_post_desktop.png" alt="lighthouse score for comment_confirm_delete page on mobile device" style="width: 100%">
+
+#### Mobile
+<img src="readme/testing/lighthouse/lighthouse_admin_delete_post.mobile.png" alt="lighthouse score for comment_confirm_delete page on mobile device" style="width: 100%">
 
 </details>
 
@@ -513,10 +545,8 @@ Below are images of the steps taken for testing the Post model in chronological 
 
 <br>
 
-# Features
-<br>
-
 # Technologies Used
+
 * Python - For functionality of the website
 * JavaScript - Used to make website interactive
 * Django - Model-View-Template framework
