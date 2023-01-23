@@ -358,11 +358,18 @@ tr {
 }
 
 .admin-post-information-button {
-    width: 100%;
+    width: 95vw;
     font-size: 25px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+}
+
+.admin-buttons-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
