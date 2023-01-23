@@ -300,12 +300,44 @@ The edit profile page is where the user can add a profile picture, change userna
 * Add search functionality so the user can find posts or other users.
 
 # Testing
-[HTML validator](https://validator.w3.org/)
-<img src="readme/testing/html_validator.png" alt="html validator" style="width: 100%">
 [CSS validator](https://jigsaw.w3.org/css-validator/)
 <img src="readme/testing/css_validator.png" alt="css validator" style="width: 100%">
 [Jshint](https://jshint.com/)
 <img src="readme/testing/js_validator.png" alt="js validator" style="width: 100%">
+
+[HTML validator](https://validator.w3.org/)
+### Home page
+<img src="readme/testing/html_validator_home.png" alt="home page html validator" style="width: 100%">
+
+### Blog page
+<img src="readme/testing/html_validator_blog.png" alt="blog page html validator" style="width: 100%">
+
+### Post detail page
+<img src="readme/testing/html_validator_post_detail.png" alt="post_detail page html validator" style="width: 100%">
+
+### Login page
+<img src="readme/testing/html_validator_login.png" alt="login page html validator" style="width: 100%">
+
+### Signup page
+<img src="readme/testing/html_validator_signup.png" alt="signup page html validator" style="width: 100%">
+
+### Create post page
+<img src="readme/testing/html_validator_create_post.png" alt="create_post page html validator" style="width: 100%">
+
+### Profile page
+<img src="readme/testing/html_validator_profile.png" alt="profile page html validator" style="width: 100%">
+
+### User posts page
+<img src="readme/testing/html_validator_user_posts.png" alt="user_posts page html validator" style="width: 100%">
+
+### Edit profile page
+<img src="readme/testing/html_validator_edit_profile.png" alt="edit_profile page html validator" style="width: 100%">
+
+### Password change page
+<img src="readme/testing/html_validator_password_change.png" alt="password_change page html validator" style="width: 100%">
+
+### Admin page
+<img src="readme/testing/html_validator_admin.png" alt="admin page html validator" style="width: 100%">
 
 ## Responsiveness Testing
 I have tested the responsiveness manually with [DevTool](https://developer.chrome.com/docs/devtools/)
