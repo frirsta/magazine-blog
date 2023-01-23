@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+{% if request.user.is_superuser %}
+<h1>Delete Post admin</h1>
+<div class="form-container">
+<form class="form" method="POST" enctype="multipart/form-data">
+
+    {% csrf_token %}
+<p>Are you sure you want to delete <span>{{ object }}</span>?</p>
+<div class="button-container">
+<button type="submit" value="Delete" class="btn btn-outline-dark">Delete</button>
+<a href="{% url 'magazine:admin_page' %}" class="btn btn-outline-dark">Cancel</a>
+</div>
+</form>
+</div>
+
+{% endif %}
+{% endblock content %}

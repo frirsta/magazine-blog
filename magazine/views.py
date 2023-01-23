@@ -267,7 +267,8 @@ class AdminDeletePost(LoginRequiredMixin, DeleteView):
     This class allows the user that has created a post to delete it.
     """
     model = Post
-    success_url = reverse_lazy('magazine:home')
+    template_name = 'admin/admin_post_confirm_delete.html'
+    success_url = reverse_lazy('magazine:admin_page')
 
 
 class AdminDeleteComment(LoginRequiredMixin, DeleteView):
@@ -275,4 +276,5 @@ class AdminDeleteComment(LoginRequiredMixin, DeleteView):
     This class allows the user that has created a comment to delete it.
     """
     model = Comment
-    success_url = reverse_lazy('magazine:home')
+    template_name = 'admin/admin_comment_confirm_delete.html'
+    success_url = reverse_lazy('magazine:admin_page')

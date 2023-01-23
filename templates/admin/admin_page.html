@@ -59,7 +59,7 @@
           <td scope="col">{{ post.post_created }}</td>
 
           <td><a class="btn btn-outline-dark delete-button"
-              href="{% url 'magazine:post_delete' post.pk post.slug %}">Delete</a></td>
+              href="{% url 'magazine:admin_post_delete' post.pk post.slug %}">Delete</a></td>
         </tr>
 
       </tbody>
@@ -88,7 +88,7 @@
           <td scope="col">{{ comment.content }}</td>
           <td scope="col">{{ comment.comment_created }}</td>
           <td><a class="btn btn-outline-dark delete-button"
-              href="{% url 'magazine:comment_delete' comment.id %}">Delete</a></td>
+              href="{% url 'magazine:admin_comment_delete' comment.id %}">Delete</a></td>
         </tr>
       </tbody>
       {% endfor %}
