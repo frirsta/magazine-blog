@@ -31,3 +31,4 @@ if settings.DEBUG:
 
 
 handler404 = 'magazine.views.error_404'
+handler500 = 'magazine.views.error_500'
