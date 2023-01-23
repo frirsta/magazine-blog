@@ -529,13 +529,13 @@ Below are images of the steps taken for testing the Post model in chronological 
 * Heroku - The platform where the application is deployed
 
 ## Libraries
-* pip3 install Pillow -  For ImageField in models.py
-* pip3 install 'django<4' gunicorn - Installs Django and Gunicorn is the server that will run in heroku, handles everything that happens between the web server and the web application
-* pip3 install dj_database_url==0.5.0 psycopg2 - Installs PostgreSQL and psycopg2
-* pip3 install dj3-cloudinary-storage - Cloudinary handles all the static files and the images uploaded by users
-* pip install pyparsing pydot - To create a graph of the database
-* pip install django-extensions - Supporting library of Graph models
-* pip install coverage
+* pip3 install Pillow -  For ImageField in models.py.
+* pip3 install 'django<4' gunicorn - Installs Django and Gunicorn is the server that will run in heroku, handles everything that happens between the web server and the web application.
+* pip3 install dj_database_url==0.5.0 psycopg2 - Installs PostgreSQL and psycopg2.
+* pip3 install dj3-cloudinary-storage - Cloudinary handles all the static files and the images uploaded by users.
+* pip install pyparsing pydot - To create a graph of the database.
+* pip install django-extensions - Supporting library of Graph models.
+* pip install coverage - For testing.
 
 # Unfixed Bugs
 
