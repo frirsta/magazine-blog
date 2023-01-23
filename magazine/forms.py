@@ -8,13 +8,13 @@ class SignUpForm(UserCreationForm):
         label='Password', widget=forms.PasswordInput(
             attrs={
                 'class': 'input-area form-control',
-                'placeholder': 'Password', 'label': 'Password', }))
+                'placeholder': 'Password', }))
     password2 = forms.CharField(
         label='Confirm Password', widget=forms.PasswordInput(
             attrs={
                 'class': 'input-area form-control',
                 'placeholder': 'Confirm Password',
-                'label': 'Confirm Password', }))
+                }))
 
     class Meta:
         model = User
