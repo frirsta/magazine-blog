@@ -301,9 +301,26 @@ The edit profile page is where the user can add a profile picture, change userna
 * Add search functionality so the user can find posts or other users.
 
 # Testing
-[CSS validator](https://jigsaw.w3.org/css-validator/)
+## [CSS validator](https://jigsaw.w3.org/css-validator/)
 <img src="readme/testing/css_validator.png" alt="css validator" style="width: 100%">
-[Jshint](https://jshint.com/)
+<p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+</p>
+
+<p>
+<a href="http://jigsaw.w3.org/css-validator/check/referer">
+    <img style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="Valid CSS!" />
+    </a>
+</p>
+      
+
+## [Jshint](https://jshint.com/)
 <img src="readme/testing/js_validator.png" alt="js validator" style="width: 100%">
 
 ## [HTML validator](https://validator.w3.org/)
@@ -1015,7 +1032,6 @@ From this website I have gotten methods and attributes for the class-based views
 [Hero Image by Nugroho  Wahyu](https://www.pexels.com/sv-se/foto/inne-tra-design-rum-3119180/)
 
 These pictures are included in the features pictures.
-
 
 Photo by: Element5 Digital: https://www.pexels.com/sv-se/foto/tra-lampor-skrivbord-lampa-1125136/
 <br>
