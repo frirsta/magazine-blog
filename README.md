@@ -401,17 +401,20 @@ The edit profile page is where the user can add a profile picture, change userna
 ## Responsiveness Testing
 I have tested the responsiveness manually with [DevTool](https://developer.chrome.com/docs/devtools/)
 
-## Browser Compatibility
+* Ipad Air Width: 820px
+* 
 
+## Browser Compatibility
+I have tested the browser manually on these browsers:
 ### Microsoft Edge 109.0.1518.61
 ### Google Chrome 109.0.5414.75
 ### Apple Safari 14.2.1
 
 <br>
 
-## [Code Institute Pep8](https://pep8ci.herokuapp.com/)
+## [Python Validation](https://pep8ci.herokuapp.com/)
 
-<details><summary>Pep8</summary>
+<details><summary>Python Validation</summary>
 
 ### admin.py file
 <img src="readme/testing/pep8/pep8_admin.png" alt="python validator admin file" style="width: 100%">

@@ -564,7 +564,7 @@ tr {
 
     /* post_detail page, home page posts and blog page posts */
     .logo {
-        font-size: 50px;
+        font-size: 100px;
     }
 
     .blog-post-container {
@@ -591,6 +591,12 @@ tr {
         font-size: 12px;
         padding: 3px;
     }
+}
+
+@media screen and (max-width: 522px) {
+  .logo{
+    font-size: 70px;
+  }
 }
 
 @media screen and (max-width: 390px) {
