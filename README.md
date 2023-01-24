@@ -126,7 +126,6 @@ The website have some differences.
 
 # Features
 <br>
-<details><summary>Features</summary>
 
 ### Features on all pages
 * Navigation Bar
@@ -135,73 +134,90 @@ The website have some differences.
   * When the user is logged in the navigation bar also links to Create Post page, Profile page, and it has a Log out link so the user can easily log out from their account.
   * When the website owner is logged in the same links as the logged in user will display as well as an Admin link for the Admin dashboard.
 <br>
+<details><summary>Navbar</summary>
 <div style="display: flex; align-items: flex-start; justify-content: space-between;">
 <img src="readme/pages/navbar.png" alt="navbar page when no user is logged in" style="width: 30%">
 <img src="readme/pages/navbar_user.png" alt="navbar page when user is logged in" style="width: 30%">
 <img src="readme/pages/navbar_admin.png" alt="navbar page when admin is logged in" style="width: 30%">
 </div>
+</details>
 
 * The footer
   * The footer links to Magazine's social media accounts.
-  <div style="display: flex; align-items: flex-start; justify-content: space-between;">
+<details><summary>Footer</summary>
+<div style="display: flex; align-items: flex-start; justify-content: space-between;">
 <img src="readme/pages/footer_mobile.png" alt="footer on mobile screen" style="width: 30%">
 <img src="readme/pages/footer_ipad.png" alt="footer on ipad screen" style="width: 30%">
 <img src="readme/pages/footer_desktop.png" alt="footer on desktop screen" style="width: 30%">
 </div>
 
+</details>
+
 ### The Landing/home page
   * The landing page has an image of furniture and text that says 'MAGAZINE' and 'Interior & Lifestyle' This lets the user know what the website is about.
   * The home page displays the six latest posts made so the user can see what the latest interior trends are and also so they can see examples of what type of content they will find on the page. 
 <br>
+<details><summary>Home</summary>
 <div style="display: flex; align-items: flex-start; justify-content: space-between;">
 <img src="readme/pages/home_mobile.png" alt="home page on mobile screen" style="width: 20%">
 <img src="readme/pages/home_ipad.png" alt="home page on ipad screen" style="width: 30%">
 <img src="readme/pages/home_desktop.png" alt="home page on desktop screen" style="width: 48%">
 </div>
+</details
  
 ### Blog
  * The blog page displays all posts made with the latest ones on top of the page.
  <br>
+<details><summary>Blog</summary>
 <div style="display: flex; align-items: flex-start; justify-content: space-between;">
 <img src="readme/pages/blog_mobile.png" alt="blog page on mobile screen" style="width: 20%">
 <img src="readme/pages/blog_ipad.png" alt="blog page on ipad screen" style="width: 30%">
 <img src="readme/pages/blog_desktop.png" alt="blog page on desktop screen" style="width: 48%">
 </div>
+</details
 
 ### Post detail
 * When the user chooses a blog to read they get redirected to the blog posts detail page where they can read the full post.
 * They can also read comments and leave comments.
  <br>
+<details><summary>Post detail</summary>
 <div style="display: flex; align-items: flex-start; justify-content: space-between;">
 <img src="readme/pages/post_detail_mobile.png" alt="post_detail page on mobile screen" style="width: 20%">
 <img src="readme/pages/post_detail_ipad.png" alt="post_detail page on ipad screen" style="width: 30%">
 <img src="readme/pages/post_detail_desktop.png" alt="post_detail page on desktop screen" style="width: 48%">
 </div>
+</details
 
 #### Comment section
+<details><summary>Comment section</summary>
 <div style="display: flex; align-items: flex-start; justify-content: space-between;">
 <img src="readme/pages/comment_mobile.png" alt="comment page on mobile screen" style="width: 20%">
 <img src="readme/pages/comment_ipad.png" alt="comment page on ipad screen" style="width: 30%">
 <img src="readme/pages/comment_desktop.png" alt="comment page on desktop screen" style="width: 48%">
 </div>
+</details
 
 ### Sign up
 * The SignUp page displays a form where the user writes their information to create an account.
 <br>
+<details><summary>Sign up</summary>
 <div style="display: flex; align-items: flex-start; justify-content: space-between;">
 <img src="readme/pages/signup_mobile.png" alt="signup page on mobile screen" style="width: 20%">
 <img src="readme/pages/signup_ipad.png" alt="signup page on ipad screen" style="width: 30%">
 <img src="readme/pages/signup_desktop.png" alt="signup page on desktop screen" style="width: 48%">
 </div>
+</details
 
 ### Log in
 * The log in page displays a form where the user writes their username and password to log in to their account.
 <br>
+<details><summary>Log in</summary>
 <div style="display: flex; align-items: flex-start; justify-content: space-between;">
 <img src="readme/pages/login_mobile.png" alt="login page on mobile screen" style="width: 20%">
 <img src="readme/pages/login_ipad.png" alt="login page on ipad screen" style="width: 30%">
 <img src="readme/pages/login_desktop.png" alt="login page on desktop screen" style="width: 48%">
 </div>
+</details
 
 ### Profile
 * The profile page displays the user profile picture, user bio and three buttons.
@@ -209,38 +225,46 @@ The website have some differences.
     * The Change password button leads to a page where they can change their password.
     * The My Posts button leads to a page where they can find all posts they have created.
     <br>
+<details><summary>Profile</summary>
 <div style="display: flex; align-items: flex-start; justify-content: space-between;">
 <img src="readme/pages/profile_mobile.png" alt="profile page on mobile screen" style="width: 20%">
 <img src="readme/pages/profile_ipad.png" alt="profile page on ipad screen" style="width: 30%">
 <img src="readme/pages/profile_desktop.png" alt="profile page on desktop screen" style="width: 48%">
 </div>
+</details
 
 ### User posts
 * The logged in user can find all the posts they have created in this page.
 <br>
+<details><summary>User posts</summary>
 <div style="display: flex; align-items: flex-start; justify-content: space-between;">
 <img src="readme/pages/user_posts_mobile.png" alt="user_posts page on mobile screen" style="width: 20%">
 <img src="readme/pages/user_posts_ipad.png" alt="user_posts page on ipad screen" style="width: 30%">
 <img src="readme/pages/user_posts_desktop.png" alt="user_posts page on desktop screen" style="width: 48%">
 </div>
+</details
 
 ### Change Password
 * The change password page is where the user can change their password.
 <br>
+<details><summary>Change Password</summary>
 <div style="display: flex; align-items: flex-start; justify-content: space-between;">
 <img src="readme/pages/change_password_mobile.png" alt="change_password page on mobile screen" style="width: 20%">
 <img src="readme/pages/change_password_ipad.png" alt="change_password page on ipad screen" style="width: 30%">
 <img src="readme/pages/change_password_desktop.png" alt="change_password page on desktop screen" style="width: 48%">
 </div>
+</details
 
 ### Edit Profile
 The edit profile page is where the user can add a profile picture, change username and write text about themselves.
 <br>
+<details><summary>Edit Profile</summary>
 <div style="display: flex; align-items: flex-start; justify-content: space-between;">
 <img src="readme/pages/edit_profile_mobile.png" alt="edit_profile page on mobile screen" style="width: 20%">
 <img src="readme/pages/edit_profile_ipad.png" alt="edit_profile page on ipad screen" style="width: 30%">
 <img src="readme/pages/edit_profile_desktop.png" alt="edit_profile page on desktop screen" style="width: 48%">
 </div>
+</details
 
 ### Create Post
 * In the create post page a user can create a post by adding text and image to the create post form. The form has four fields.
@@ -249,11 +273,13 @@ The edit profile page is where the user can add a profile picture, change userna
     * Content | The post content.
     * Image | The image that will be posted with the post text content.
 <br>
+<details><summary>Create Post</summary>
 <div style="display: flex; align-items: flex-start; justify-content: space-between;">
 <img src="readme/pages/create_post_mobile.png" alt="create_post page on mobile screen" style="width: 20%">
 <img src="readme/pages/create_post_ipad.png" alt="create_post page on ipad screen" style="width: 30%">
 <img src="readme/pages/create_post_desktop.png" alt="create_post page on desktop screen" style="width: 48%">
 </div>
+</details
 
 ### Admin Dashboard
 * In the admin the website owner can see how many posts have been made, how many accounts have been created and how many comments have been made.
@@ -262,39 +288,47 @@ The edit profile page is where the user can add a profile picture, change userna
 * On this page the owner can find all the comments, the name of who has created the comment, the date the comment was created, the comment content, and what post it was commented on.
     * The owner can delete comments from this page.
 <br>
+<details><summary>Admin Dashboard</summary>
 <div style="display: flex; align-items: flex-start; justify-content: space-between;">
 <img src="readme/pages/admin_mobile.png" alt="admin page on mobile screen" style="width: 20%">
 <img src="readme/pages/admin_ipad.png" alt="admin page on ipad screen" style="width: 30%">
 <img src="readme/pages/admin_desktop.png" alt="admin page on desktop screen" style="width: 48%">
 </div>
+</details
 
 ### Post confirm delete page
 * When a site user or site owner deletes a post they get redirected to this page to confirm that they want to delete the post.
 <br>
+<details><summary>Post confirm delete</summary>
 <div style="display: flex; align-items: flex-start; justify-content: space-between;">
 <img src="readme/pages/admin_delete_post_mobile.png" alt="404 page on iphonese screen" style="width: 20%">
 <img src="readme/pages/admin_delete_post_ipad.png" alt="404 page on ipadair screen" style="width: 30%">
 <img src="readme/pages/admin_delete_post_desktop.png" alt="404 page on desktop screen" style="width: 48%">
 </div>
+</details
 
 ### Comment confirm delete page
 * When a site user or site owner deletes a comment they get redirected to this page to confirm that they want to delete the comment.
 <br>
+<details><summary>Comment confirm delete</summary>
 <div style="display: flex; align-items: flex-start; justify-content: space-between;">
 <img src="readme/pages/admin_delete_comment_mobile.png" alt="404 page on iphonese screen" style="width: 20%">
 <img src="readme/pages/admin_delete_comment_ipad.png" alt="404 page on ipadair screen" style="width: 30%">
 <img src="readme/pages/admin_delete_comment_desktop.png" alt="404 page on desktop screen" style="width: 48%">
 </div>
+</details
 
 ### 404 page
 * This is the page the user get redirected to if the website does not exist.
 <br>
+<details><summary>Features</summary>
 <div style="display: flex; align-items: flex-start; justify-content: space-between;">
 <img src="readme/pages/404_mobile.png" alt="404 page on iphonese screen" style="width: 20%">
 <img src="readme/pages/404_ipad.png" alt="404 page on ipadair screen" style="width: 30%">
 <img src="readme/pages/404_desktop.png" alt="404 page on desktop screen" style="width: 48%">
 </div>
-</details>
+</details
+
 
 # Features left to Implement
 * Add more automated testing
