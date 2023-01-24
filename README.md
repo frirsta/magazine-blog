@@ -126,6 +126,7 @@ The website have some differences.
 
 # Features
 <br>
+<details><summary>Features</summary>
 
 ### Features on all pages
 * Navigation Bar
@@ -293,7 +294,7 @@ The edit profile page is where the user can add a profile picture, change userna
 <img src="readme/pages/404_ipad.png" alt="404 page on ipadair screen" style="width: 30%">
 <img src="readme/pages/404_desktop.png" alt="404 page on desktop screen" style="width: 48%">
 </div>
-
+</details>
 
 # Features left to Implement
 * Add more automated testing
@@ -306,6 +307,8 @@ The edit profile page is where the user can add a profile picture, change userna
 <img src="readme/testing/js_validator.png" alt="js validator" style="width: 100%">
 
 ## [HTML validator](https://validator.w3.org/)
+<details><summary>HTML Validator</summary>
+
 ### Home page
 <img src="readme/testing/html_validator/html_validator_home.png" alt="home page html validator" style="width: 100%">
 
@@ -342,6 +345,8 @@ The edit profile page is where the user can add a profile picture, change userna
 ### 404 page
 <img src="readme/testing/html_validator/html_validator_404.png" alt="404 page html validator" style="width: 100%">
 
+</details>
+
 ## Responsiveness Testing
 I have tested the responsiveness manually with [DevTool](https://developer.chrome.com/docs/devtools/)
 
@@ -353,10 +358,10 @@ I have tested the responsiveness manually with [DevTool](https://developer.chrom
 
 <br>
 
-[Code Institute Pep8](https://pep8ci.herokuapp.com/)
+## [Code Institute Pep8](https://pep8ci.herokuapp.com/)
+
 <details><summary>Pep8</summary>
 
-## Pep8
 ### admin.py file
 <img src="readme/testing/pep8/pep8_admin.png" alt="python validator admin file" style="width: 100%">
 
@@ -996,6 +1001,7 @@ Sources that have helped build the website:
 [Django blog tutorial](https://dontrepeatyourself.org/post/django-blog-tutorial-part-1-project-configuration/)
 In the python files I have left a comment ("# Rouizi") above the functions that I have gotten from the blog tutorial.
 <br>
+
 [Class-Based Views](https://ccbv.co.uk/)
 From this website I have gotten methods and attributes for the class-based views.
 
@@ -1005,26 +1011,29 @@ From this website I have gotten methods and attributes for the class-based views
 ### Images
 [Default Profile Image by rawpixel.com](https://www.rawpixel.com/image/6012980/illustration-png-social-media-logo)
 <br>
+
 [Hero Image by Nugroho  Wahyu](https://www.pexels.com/sv-se/foto/inne-tra-design-rum-3119180/)
 
-Bild av Element5 Digital: https://www.pexels.com/sv-se/foto/tra-lampor-skrivbord-lampa-1125136/
-Bild av Taryn Elliott: https://www.pexels.com/sv-se/foto/sovrum-interior-heminredning-skandinavisk-4440213/
-Bild av Polina Kovaleva: https://www.pexels.com/sv-se/foto/sang-sovrum-lampa-design-5644277/
-Bild av Emre Can Acer: https://www.pexels.com/sv-se/foto/tra-bocker-hus-bord-2079249/
-Bild av Maksim Goncharenok: https://www.pexels.com/sv-se/foto/tra-vagg-bord-lyx-4352247/
-Bild av Jean van der Meulen: https://www.pexels.com/sv-se/foto/hotell-hus-glas-lyx-1457847/
-Bild av PNW Production: https://www.pexels.com/sv-se/foto/sang-vaxt-vit-design-8251666/
-Bild av Maria Orlova: https://www.pexels.com/sv-se/foto/kreativ-vagg-hus-vaxt-4915834/
-Bild av Olena Bohovyk: https://www.pexels.com/sv-se/foto/romantisk-mork-vinter-hus-5686478/
-Bild av Zsófia Fehér: https://www.pexels.com/sv-se/foto/byggnad-arkitektur-resa-utomhus-14532811/
-Bild av Dilruba Sarıçimen: https://www.pexels.com/sv-se/foto/dryck-dricksglas-vertikalt-skott-narbild-8851505/
-Bild av Element5 Digital: https://www.pexels.com/sv-se/foto/tra-lampor-skrivbord-lampa-1125136/
-Bild av Max Vakhtbovych: https://www.pexels.com/sv-se/foto/mat-stad-restaurang-manniskor-6434622/
-Bild av Pixabay: https://www.pexels.com/sv-se/foto/barnkammare-dekor-design-golv-462235/
-Bild av Mathilde Langevin: https://www.pexels.com/sv-se/foto/dekoration-bage-spegel-vas-14320924/
-Bild av Vincent Rivaud: https://www.pexels.com/sv-se/foto/hus-lyx-lampa-hem-2227832/
-Bild av Victoria Akvarel : https://www.pexels.com/sv-se/foto/hotell-hus-arkitektur-lyx-3315291/
-Bild av cottonbro studio: https://www.pexels.com/sv-se/foto/ljus-konst-kontor-vagg-4067759/
+These pictures are included in the features pictures.
+
+Photo by Element5 Digital: https://www.pexels.com/sv-se/foto/tra-lampor-skrivbord-lampa-1125136/
+Photo by Taryn Elliott: https://www.pexels.com/sv-se/foto/sovrum-interior-heminredning-skandinavisk-4440213/
+Photo by Polina Kovaleva: https://www.pexels.com/sv-se/foto/sang-sovrum-lampa-design-5644277/
+Photo by Emre Can Acer: https://www.pexels.com/sv-se/foto/tra-bocker-hus-bord-2079249/
+Photo by Maksim Goncharenok: https://www.pexels.com/sv-se/foto/tra-vagg-bord-lyx-4352247/
+Photo by Jean van der Meulen: https://www.pexels.com/sv-se/foto/hotell-hus-glas-lyx-1457847/
+Photo by PNW Production: https://www.pexels.com/sv-se/foto/sang-vaxt-vit-design-8251666/
+Photo by Maria Orlova: https://www.pexels.com/sv-se/foto/kreativ-vagg-hus-vaxt-4915834/
+Photo by Olena Bohovyk: https://www.pexels.com/sv-se/foto/romantisk-mork-vinter-hus-5686478/
+Photo by Zsófia Fehér: https://www.pexels.com/sv-se/foto/byggnad-arkitektur-resa-utomhus-14532811/
+Photo by Dilruba Sarıçimen: https://www.pexels.com/sv-se/foto/dryck-dricksglas-vertikalt-skott-narbild-8851505/
+Photo by Element5 Digital: https://www.pexels.com/sv-se/foto/tra-lampor-skrivbord-lampa-1125136/
+Photo by Max Vakhtbovych: https://www.pexels.com/sv-se/foto/mat-stad-restaurang-manniskor-6434622/
+Photo by Pixabay: https://www.pexels.com/sv-se/foto/barnkammare-dekor-design-golv-462235/
+Photo by Mathilde Langevin: https://www.pexels.com/sv-se/foto/dekoration-bage-spegel-vas-14320924/
+Photo by Vincent Rivaud: https://www.pexels.com/sv-se/foto/hus-lyx-lampa-hem-2227832/
+Photo by Victoria Akvarel : https://www.pexels.com/sv-se/foto/hotell-hus-arkitektur-lyx-3315291/
+Photo by cottonbro studio: https://www.pexels.com/sv-se/foto/ljus-konst-kontor-vagg-4067759/
 
 
 # Acknowledgement
