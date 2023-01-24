@@ -246,7 +246,7 @@ span {
     height: 100px;
     margin: 5px;
     border-radius: 50%;
-    border: 1px solid;
+
 }
 
 .comment-image-name {
@@ -395,7 +395,7 @@ tr {
     }
 
     .hero {
-        background: url("http://res.cloudinary.com/magazine-blog/image/upload/f_auto/v1674566974/static/img/hero_1280px_cs0lhb.jpg") no-repeat center center;
+        background: url("https://res.cloudinary.com/magazine-blog/image/upload/f_auto/v1674566974/static/img/hero_1280px_cs0lhb.jpg") no-repeat center center;
     
     }
 
@@ -583,7 +583,9 @@ tr {
     .post-container {
         height: unset;
     }
-
+    .comment-delete-button {
+        margin: 2px;
+    }
 
 
     /* admin page */
@@ -602,6 +604,23 @@ tr {
   .logo{
     font-size: 70px;
   }
+
+  /* post detail */
+  
+
+.user-comment {
+    width: 350px;
+    margin: 10px;
+    padding: 0px;
+}
+.comment-profile-image {
+    width: 50px;
+    height: 50px;
+}
+.comment-delete-button {
+    font-size: 13px;
+}
+
 }
 
 @media screen and (max-width: 390px) {
@@ -626,6 +645,10 @@ tr {
 
     .post-image {
         width: 90%;
+    }
+
+    .comment-delete-button{
+        margin-bottom: 2px;
     }
 
     .admin-post-button,
@@ -761,10 +784,6 @@ tr {
 
 
     /* comment section */
-    .comment-profile-image {
-        width: 50px;
-        height: 50px;
-    }
 
     .user-comment {
         width: 350px;

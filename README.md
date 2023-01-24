@@ -410,14 +410,14 @@ I have tested the responsiveness manually with [DevTool](https://developer.chrom
 | Content Cell  | Content Cell  |
 | Content Cell  | Content Cell  |
 
-| First Header  | Second Header |
+| Tablet  | Second Header |
 | ------------- | ------------- |
 | Content Cell  | Content Cell  |
 | Content Cell  | Content Cell  |
 
-| First Header  | Second Header |
+| Mobile  | Second Header |
 | ------------- | ------------- |
-| Content Cell  | Content Cell  |
+| Samsung Galaxy A51/71 width:412px  | home blog post detail |
 | Content Cell  | Content Cell  |
 
 ## Browser Compatibility
