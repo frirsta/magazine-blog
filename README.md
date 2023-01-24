@@ -508,8 +508,6 @@ Below are images of the steps taken for testing the Post model in chronological 
 
 ### Site User
 
-| User/Admin | Description |
-| --- | --- |
 **Site User** As a Site User, I can View posts so that I can select one to read |
 * In the home page there are six posts that the user can choose to read.
 * On the blog page all posts are available to the user.
@@ -551,9 +549,6 @@ Below are images of the steps taken for testing the Post model in chronological 
 <br>
 
 ### Site Owner
-
-| User/Admin | Description |
-| --- | --- |
 
 **Site Owner** All Site User stories apply to the Site Owner |
 
