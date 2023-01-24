@@ -398,95 +398,95 @@ The website has also been tested with the Chrome developer tool Google Lighthous
 
 ### Home page 
 #### Desktop
-<img src="readme/testing/lighthouse/lighthous_home_desktop.png" alt="lighthouse score for home page on desktop device" style="width: 100%">
+<img src="readme/testing/lighthouse/lighthouse_desktop_home.png" alt="lighthouse score for home page on desktop device" style="width: 100%">
 
 #### Mobile
-<img src="readme/testing/lighthouse/lighthous_home_mobile.png" alt="lighthouse score for home page on mobile device" style="width: 100%">
+<img src="readme/testing/lighthouse/lighthouse_mobile_home.png" alt="lighthouse score for home page on mobile device" style="width: 100%">
 
 <br>
 
 ### Blog page 
 #### Desktop
-<img src="readme/testing/lighthouse/lighthous_blog_desktop.png" alt="lighthouse score for blog page on desktop device" style="width: 100%">
+<img src="readme/testing/lighthouse/lighthouse_desktop_blog.png" alt="lighthouse score for blog page on desktop device" style="width: 100%">
 
 #### Mobile
-<img src="readme/testing/lighthouse/lighthous_blog_mobile.png" alt="lighthouse score for blog page on mobile device" style="width: 100%">
+<img src="readme/testing/lighthouse/lighthouse_mobile_blog.png" alt="lighthouse score for blog page on mobile device" style="width: 100%">
 
 ### Signup page 
 #### Desktop
-<img src="readme/testing/lighthouse/lighthous_signup_desktop.png" alt="lighthouse score for signup page on desktop device" style="width: 100%">
+<img src="readme/testing/lighthouse/lighthouse_desktop_signup.png" alt="lighthouse score for signup page on desktop device" style="width: 100%">
 
 #### Mobile
-<img src="readme/testing/lighthouse/lighthous_signup_mobile.png" alt="lighthouse score for signup page on mobile device" style="width: 100%">
+<img src="readme/testing/lighthouse/lighthouse_mobile_signup.png" alt="lighthouse score for signup page on mobile device" style="width: 100%">
 
 ### Login page 
 #### Desktop
-<img src="readme/testing/lighthouse/lighthous_login_desktop.png" alt="lighthouse score for login page on desktop device" style="width: 100%">
+<img src="readme/testing/lighthouse/lighthouse_desktop_login.png" alt="lighthouse score for login page on desktop device" style="width: 100%">
 
 #### Mobile
-<img src="readme/testing/lighthouse/lighthous_login_mobile.png" alt="lighthouse score for login page on mobile device" style="width: 100%">
+<img src="readme/testing/lighthouse/lighthouse_mobile_login.png" alt="lighthouse score for login page on mobile device" style="width: 100%">
 
 ### Create post page 
 #### Desktop
-<img src="readme/testing/lighthouse/lighthous_create_post_desktop.png" alt="lighthouse score for create_post page on desktop device" style="width: 100%">
+<img src="readme/testing/lighthouse/lighthouse_desktop_create_post.png" alt="lighthouse score for create_post page on desktop device" style="width: 100%">
 
 #### Mobile
-<img src="readme/testing/lighthouse/lighthous_create_post_mobile.png" alt="lighthouse score for create_post page on mobile device" style="width: 100%">
+<img src="readme/testing/lighthouse/lighthouse_mobile_create_post.png" alt="lighthouse score for create_post page on mobile device" style="width: 100%">
 
 ### Profile page 
 #### Desktop
-<img src="readme/testing/lighthouse/lighthous_profile_desktop.png" alt="lighthouse score for profile page on desktop device" style="width: 100%">
+<img src="readme/testing/lighthouse/lighthouse_desktop_profile.png" alt="lighthouse score for profile page on desktop device" style="width: 100%">
 
 #### Mobile
-<img src="readme/testing/lighthouse/lighthous_profile_mobile.png" alt="lighthouse score for profile page on mobile device" style="width: 100%">
+<img src="readme/testing/lighthouse/lighthouse_mobile_profile.png" alt="lighthouse score for profile page on mobile device" style="width: 100%">
 
 ### Edit profile page 
 #### Desktop
-<img src="readme/testing/lighthouse/lighthous_edit_profile_desktop.png" alt="lighthouse score for edit_profile page on desktop device" style="width: 100%">
+<img src="readme/testing/lighthouse/lighthouse_desktop_edit_profile.png" alt="lighthouse score for edit_profile page on desktop device" style="width: 100%">
 
 #### Mobile
-<img src="readme/testing/lighthouse/lighthous_edit_profile_mobile.png" alt="lighthouse score for edit_profile page on mobile device" style="width: 100%">
+<img src="readme/testing/lighthouse/lighthouse_mobile_edit_profile.png" alt="lighthouse score for edit_profile page on mobile device" style="width: 100%">
 
 ### Change password page 
 #### Desktop
-<img src="readme/testing/lighthouse/lighthous_change_password_desktop.png" alt="lighthouse score for change_password page on desktop device" style="width: 100%">
+<img src="readme/testing/lighthouse/lighthouse_desktop_change_password.png" alt="lighthouse score for change_password page on desktop device" style="width: 100%">
 
 #### Mobile
-<img src="readme/testing/lighthouse/lighthous_change_password_mobile.png" alt="lighthouse score for change_password page on mobile device" style="width: 100%">
+<img src="readme/testing/lighthouse/lighthouse_mobile_change_password.png" alt="lighthouse score for change_password page on mobile device" style="width: 100%">
 
 ### User posts page 
 #### Desktop
-<img src="readme/testing/lighthouse/lighthous_user_posts_desktop.png" alt="lighthouse score for user_posts page on desktop device" style="width: 100%">
+<img src="readme/testing/lighthouse/lighthouse_desktop_user_posts.png" alt="lighthouse score for user_posts page on desktop device" style="width: 100%">
 
 #### Mobile
-<img src="readme/testing/lighthouse/lighthous_user_posts_mobile.png" alt="lighthouse score for user_posts page on mobile device" style="width: 100%">
+<img src="readme/testing/lighthouse/lighthouse_mobile_user_posts.png" alt="lighthouse score for user_posts page on mobile device" style="width: 100%">
 
 ### Admin page 
 #### Desktop
-<img src="readme/testing/lighthouse/lighthous_admin_desktop.png" alt="lighthouse score for admin page on desktop device" style="width: 100%">
+<img src="readme/testing/lighthouse/lighthouse_desktop_admin_page.png" alt="lighthouse score for admin page on desktop device" style="width: 100%">
 
 #### Mobile
-<img src="readme/testing/lighthouse/lighthous_admin_mobile.png" alt="lighthouse score for admin page on mobile device" style="width: 100%">
+<img src="readme/testing/lighthouse/lighthouse_mobile_admin_page.png" alt="lighthouse score for admin page on mobile device" style="width: 100%">
 
 ### Confirm post delete
 #### Desktop
-<img src="readme/testing/lighthouse/lighthous_admin_delete_comment_desktop.png" alt="lighthouse score for post_confirm_delete page on mobile device" style="width: 100%">
+<img src="readme/testing/lighthouse/lighthouse_desktop_admin_delete_comment.png" alt="lighthouse score for post_confirm_delete page on mobile device" style="width: 100%">
 
 #### Mobile
-<img src="readme/testing/lighthouse/lighthous_admin_delete_comment.mobile.png" alt="lighthouse score for post_confirm_delete page on mobile device" style="width: 100%">
+<img src="readme/testing/lighthouse/lighthouse_mobile_admin_delete_comment.png" alt="lighthouse score for post_confirm_delete page on mobile device" style="width: 100%">
 
 ### Confirm comment delete
 #### Desktop
-<img src="readme/testing/lighthouse/lighthous_admin_delete_post_desktop.png" alt="lighthouse score for comment_confirm_delete page on mobile device" style="width: 100%">
+<img src="readme/testing/lighthouse/lighthouse_desktop_admin_delete_post.png" alt="lighthouse score for comment_confirm_delete page on mobile device" style="width: 100%">
 
 #### Mobile
-<img src="readme/testing/lighthouse/lighthous_admin_delete_post.mobile.png" alt="lighthouse score for comment_confirm_delete page on mobile device" style="width: 100%">
+<img src="readme/testing/lighthouse/lighthouse_mobile_admin_delete_post.png" alt="lighthouse score for comment_confirm_delete page on mobile device" style="width: 100%">
 
 </details>
 
 <br>
 
-### Testing with Coverage
+## Testing with Coverage
 Due to prioritizing other tasks, I haven't had time for a lot of testing. Using Coverage, I have tested the Post model. The coverage report shows that 70% of testing has been done.
 Below are images of the steps taken for testing the Post model in chronological order
 <details><summary>Coverage</summary>
@@ -585,7 +585,7 @@ Below are images of the steps taken for testing the Post model in chronological 
 
 ## Known Bugs
 When testing the html in [HTML validator](https://validator.w3.org/), the error shown in the image appeared.
-<img src="readme/testing/html_validation/signup_error.png" alt="bug in html validator when testing signup page" style="width: 100%">
+<img src="readme/testing/bugs/signup_error.png" alt="bug in html validator when testing signup page" style="width: 100%">
 I had forgotten that I had added a label attribute to the SignUp form in forms.py.
 <img src="readme/testing/bugs/signup_error.png" alt="bug in signup form in forms.py" style="width: 100%">
 The bug is now corrected.
