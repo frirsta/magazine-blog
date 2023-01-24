@@ -417,8 +417,8 @@ I have tested the responsiveness manually with [DevTool](https://developer.chrom
 
 | Mobile  | Second Header |
 | ------------- | ------------- |
-| Samsung Galaxy A51/71 width:412px  | home blog post detail |
-| Content Cell  | Content Cell  |
+| Samsung Galaxy A51/71 width:412px  | Pass |
+| Surface Duo  | Content Cell  |
 
 ## Browser Compatibility
 I have tested the browser manually on these browsers:
