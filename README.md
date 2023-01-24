@@ -402,7 +402,23 @@ The edit profile page is where the user can add a profile picture, change userna
 I have tested the responsiveness manually with [DevTool](https://developer.chrome.com/docs/devtools/)
 
 * Ipad Air Width: 820px
-* 
+* Ipad Mini Width: 768px
+* Iphone SE Width: 375px
+
+| Desktop  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
 
 ## Browser Compatibility
 I have tested the browser manually on these browsers:
