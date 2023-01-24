@@ -1016,25 +1016,42 @@ From this website I have gotten methods and attributes for the class-based views
 
 These pictures are included in the features pictures.
 
-Photo by Element5 Digital: https://www.pexels.com/sv-se/foto/tra-lampor-skrivbord-lampa-1125136/
-Photo by Taryn Elliott: https://www.pexels.com/sv-se/foto/sovrum-interior-heminredning-skandinavisk-4440213/
-Photo by Polina Kovaleva: https://www.pexels.com/sv-se/foto/sang-sovrum-lampa-design-5644277/
-Photo by Emre Can Acer: https://www.pexels.com/sv-se/foto/tra-bocker-hus-bord-2079249/
-Photo by Maksim Goncharenok: https://www.pexels.com/sv-se/foto/tra-vagg-bord-lyx-4352247/
-Photo by Jean van der Meulen: https://www.pexels.com/sv-se/foto/hotell-hus-glas-lyx-1457847/
-Photo by PNW Production: https://www.pexels.com/sv-se/foto/sang-vaxt-vit-design-8251666/
-Photo by Maria Orlova: https://www.pexels.com/sv-se/foto/kreativ-vagg-hus-vaxt-4915834/
-Photo by Olena Bohovyk: https://www.pexels.com/sv-se/foto/romantisk-mork-vinter-hus-5686478/
-Photo by Zsófia Fehér: https://www.pexels.com/sv-se/foto/byggnad-arkitektur-resa-utomhus-14532811/
-Photo by Dilruba Sarıçimen: https://www.pexels.com/sv-se/foto/dryck-dricksglas-vertikalt-skott-narbild-8851505/
-Photo by Element5 Digital: https://www.pexels.com/sv-se/foto/tra-lampor-skrivbord-lampa-1125136/
-Photo by Max Vakhtbovych: https://www.pexels.com/sv-se/foto/mat-stad-restaurang-manniskor-6434622/
-Photo by Pixabay: https://www.pexels.com/sv-se/foto/barnkammare-dekor-design-golv-462235/
-Photo by Mathilde Langevin: https://www.pexels.com/sv-se/foto/dekoration-bage-spegel-vas-14320924/
-Photo by Vincent Rivaud: https://www.pexels.com/sv-se/foto/hus-lyx-lampa-hem-2227832/
-Photo by Victoria Akvarel : https://www.pexels.com/sv-se/foto/hotell-hus-arkitektur-lyx-3315291/
-Photo by cottonbro studio: https://www.pexels.com/sv-se/foto/ljus-konst-kontor-vagg-4067759/
 
+Photo by: Element5 Digital: https://www.pexels.com/sv-se/foto/tra-lampor-skrivbord-lampa-1125136/
+<br>
+Photo by: Taryn Elliott: https://www.pexels.com/sv-se/foto/sovrum-interior-heminredning-skandinavisk-4440213/
+<br>
+Photo by: Polina Kovaleva: https://www.pexels.com/sv-se/foto/sang-sovrum-lampa-design-5644277/
+<br>
+Photo by: Emre Can Acer: https://www.pexels.com/sv-se/foto/tra-bocker-hus-bord-2079249/
+<br>
+Photo by: Maksim Goncharenok: https://www.pexels.com/sv-se/foto/tra-vagg-bord-lyx-4352247/
+<br>
+Photo by: Jean van der Meulen: https://www.pexels.com/sv-se/foto/hotell-hus-glas-lyx-1457847/
+<br>
+Photo by: PNW Production: https://www.pexels.com/sv-se/foto/sang-vaxt-vit-design-8251666/
+<br>
+Photo by: Maria Orlova: https://www.pexels.com/sv-se/foto/kreativ-vagg-hus-vaxt-4915834/
+<br>
+Photo by: Olena Bohovyk: https://www.pexels.com/sv-se/foto/romantisk-mork-vinter-hus-5686478/
+<br>
+Photo by: Zsófia Fehér: https://www.pexels.com/sv-se/foto/byggnad-arkitektur-resa-utomhus-14532811/
+<br>
+Photo by: Dilruba Sarıçimen: https://www.pexels.com/sv-se/foto/dryck-dricksglas-vertikalt-skott-narbild-8851505/
+<br>
+Photo by: Element5 Digital: https://www.pexels.com/sv-se/foto/tra-lampor-skrivbord-lampa-1125136/
+<br>
+Photo by: Max Vakhtbovych: https://www.pexels.com/sv-se/foto/mat-stad-restaurang-manniskor-6434622/
+<br>
+Photo by: Pixabay: https://www.pexels.com/sv-se/foto/barnkammare-dekor-design-golv-462235/
+<br>
+Photo by: Mathilde Langevin: https://www.pexels.com/sv-se/foto/dekoration-bage-spegel-vas-14320924/
+<br>
+Photo by: Vincent Rivaud: https://www.pexels.com/sv-se/foto/hus-lyx-lampa-hem-2227832/
+<br>
+Photo by: Victoria Akvarel : https://www.pexels.com/sv-se/foto/hotell-hus-arkitektur-lyx-3315291/
+<br>
+Photo by: cottonbro studio: https://www.pexels.com/sv-se/foto/ljus-konst-kontor-vagg-4067759/
 
 # Acknowledgement
 This website has been made for my 4th Portfolio Project (Full-Stack Toolkit) - Diploma in Full Stack Software Development at [Code Institute](https://codeinstitute.net/).
