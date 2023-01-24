@@ -394,6 +394,11 @@ tr {
         font-size: 150px;
     }
 
+    .hero {
+        background: url("http://res.cloudinary.com/magazine-blog/image/upload/f_auto/v1674566974/static/img/hero_1280px_cs0lhb.jpg") no-repeat center center;
+    
+    }
+
     .navbar {
         font-size: 30px;
         padding: 0;
