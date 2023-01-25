@@ -455,6 +455,9 @@ tr {
         width: 30vw;
         line-height: 1.3;
     }
+    .admin-post-button, .delete-button{
+        font-size: 12px;
+    }
 }
 
 @media screen and (max-width: 821px) {
@@ -474,10 +477,6 @@ tr {
         font-size: 140px;
     }
 
-
-    .delete-button {
-        font-size: 12px;
-    }
 
     /* admin page */
     tbody,
@@ -564,9 +563,6 @@ tr {
         font-size: 90%;
     }
 
-    .delete-button {
-        font-size: 90%;
-    }
 }
 
 @media screen and (max-width: 770px) {
@@ -654,9 +650,14 @@ tr {
 
     .delete-button,
     .admin-post-button {
-        font-size: 11px;
+        font-size: 10px;
         padding: 4px;
     }
+    .comment-delete-button,
+    .post-buttons {
+        margin-bottom: 2px;
+    }
+
 
 }
 
@@ -836,7 +837,6 @@ tr {
     }
 
     .comment-delete-button {
-        margin-bottom: 0;
         font-size: 10px;
     }
 
@@ -855,5 +855,10 @@ tr {
     .error-container {
         height: 500px;
 
+    }
+    /* admin */
+
+    .table {
+        font-size: 9px;
     }
 }

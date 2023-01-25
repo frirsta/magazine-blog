@@ -26,7 +26,7 @@
     </div>
     {% elif user.is_superuser %}
     <div class="container post-buttons">
-      <a class="btn btn-outline-dark" href="{% url 'magazine:admin_post_delete' object.pk object.slug %}">Delete</a>
+      <a class="btn btn-outline-dark" href="{% url 'magazine:post_delete' object.pk object.slug %}">Delete</a>
     </div>
     {% endif %}
   </div>
@@ -52,7 +52,7 @@
         {% if comment.user == request.user %}
         <a class="btn btn-outline-dark comment-delete-button" href="{% url 'magazine:comment_delete' comment.pk %}">Delete</a>
         {% elif user.is_superuser %}
-        <a class="btn btn-outline-dark comment-delete-button" href="{% url 'magazine:admin_comment_delete' comment.pk %}">Delete</a>
+        <a class="btn btn-outline-dark comment-delete-button" href="{% url 'magazine:comment_delete' comment.pk %}">Delete</a>
         {% endif %}
       </div>
     </div>

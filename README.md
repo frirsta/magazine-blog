@@ -405,21 +405,34 @@ I have tested the responsiveness manually with [DevTool](https://developer.chrom
 * Ipad Mini Width: 768px
 * Iphone SE Width: 375px
 
-| Desktop  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+| Desktop  | Width | |
+| ------------- | ------------- | ------------- |
+| Laptop L | Width: 1440px  | Pass |
+| Laptop: | Width: 1348  | Pass  |
+| Laptop: | Width: 1024  | Pass  |
 
-| Tablet  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
 
-| Mobile  | Second Header |
-| ------------- | ------------- |
-| Samsung Galaxy A51/71 width:412px  | Pass |
-| Surface Duo  | Content Cell  |
+| Tablet  | Width | |
+| ------------- | ------------- | ------------- |
+| Surface Pro 7 | Width: 912px | Pass  |
+| Ipad Air | Width: 820px  | Pass  |
+| Ipad Mini | Width: 768px  | Pass  |
+| Nest Hub | Width: 1024px  | Pass |
+| Nest Hub Max | Width: 1280px | Pass  |
+| Surface Pro 7 | Width: 912px | Pass  |
+| Ipad Pro | Width: 1024  | Pass  | 
 
+| Mobile  | Width | |
+| ------------- | ------------- | ------------- |
+| Iphone 6/7/8 | Width: 375  | Pass  |
+| Iphone 6/7/8 Plus: | Width: 414  | Pass  |
+| Samsung Galaxy A51/71 | Width:412px  | Pass |
+| Surface Duo | Width: 540px | Pass |
+| Iphone SE | Width: 375px | 
+| Iphone XR | Width: 414px | Pass | 
+| Iphone 12 PRO: | Width: 390px | Pass |
+| Galaxy s8+ | Width: 360px | Pass |
+ 
 ## Browser Compatibility
 I have tested the browser manually on these browsers:
 ### Microsoft Edge 109.0.1518.61

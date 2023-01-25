@@ -207,7 +207,7 @@ class DeletePost(LoginRequiredMixin, DeleteView):
     success_url = reverse_lazy('magazine:home')
 
     def get_queryset(self):
-        return self.model.objects.filter(author=self.request.user)
+        return self.model.objects.all()
 
 
 class UserPosts(ListView):
@@ -234,7 +234,7 @@ class DeleteComment(LoginRequiredMixin, DeleteView):
     success_url = reverse_lazy('magazine:home')
 
     def get_queryset(self):
-        return self.model.objects.filter(user=self.request.user)
+        return self.model.objects.all()
 
 
 class AdminPage(LoginRequiredMixin, ListView):
