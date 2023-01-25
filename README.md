@@ -401,9 +401,6 @@ The edit profile page is where the user can add a profile picture, change userna
 ## Responsiveness Testing
 I have tested the responsiveness manually with [DevTool](https://developer.chrome.com/docs/devtools/)
 
-* Ipad Air Width: 820px
-* Ipad Mini Width: 768px
-* Iphone SE Width: 375px
 
 | Desktop  | Width | |
 | ------------- | ------------- | ------------- |
@@ -414,24 +411,24 @@ I have tested the responsiveness manually with [DevTool](https://developer.chrom
 
 | Tablet  | Width | |
 | ------------- | ------------- | ------------- |
-| Surface Pro 7 | Width: 912px | Pass  |
 | Ipad Air | Width: 820px  | Pass  |
 | Ipad Mini | Width: 768px  | Pass  |
+| Ipad Pro | Width: 1024  | Pass  | 
 | Nest Hub | Width: 1024px  | Pass |
 | Nest Hub Max | Width: 1280px | Pass  |
 | Surface Pro 7 | Width: 912px | Pass  |
-| Ipad Pro | Width: 1024  | Pass  | 
+| Surface Pro 7 | Width: 912px | Pass  |
 
 | Mobile  | Width | |
 | ------------- | ------------- | ------------- |
 | Iphone 6/7/8 | Width: 375  | Pass  |
 | Iphone 6/7/8 Plus: | Width: 414  | Pass  |
-| Samsung Galaxy A51/71 | Width:412px  | Pass |
-| Surface Duo | Width: 540px | Pass |
 | Iphone SE | Width: 375px | 
 | Iphone XR | Width: 414px | Pass | 
 | Iphone 12 PRO: | Width: 390px | Pass |
+| Surface Duo | Width: 540px | Pass |
 | Galaxy s8+ | Width: 360px | Pass |
+| Samsung Galaxy A51/71 | Width:412px  | Pass |
  
 ## Browser Compatibility
 I have tested the browser manually on these browsers:
@@ -1066,17 +1063,22 @@ Save all the files and add, commit and push the project to GitHub by writing the
 <img src="readme/deployment/cloning.png" alt="step of deployment" style="width: 100%">
 
 3. Open Git Bash and change directory to where you want the cloned directory.
-4. Write 'git clone' and paste the URL that was copied in Github and then click 'enter'.
+4. Write: <pre>git clone
+</pre> and paste the URL that was copied in Github and then click 'enter'.
 5. In Git Bash locate the cloned directory.
-6. Type 'code .' this will launch the project in VSCode.
-7. Install the requirements by typing this command:
-* pip3 install --local > requirements.txt
+6. Type:
+<pre>code .</pre> this will launch the project in VSCode.
+7. Now install the requirements needed to run the project by typing this command:
+<pre>pip3 install -r requirements.txt</pre>
 8. Create an 'env.py' file in the top level directory.
-8. Add the os.environ as shown in the image with their respective values.
-* <img src="readme/deployment/step-37.png" alt="step of deployment" style="width: 100%">
+Add the os.environ as shown in the image with their respective values.
+9. Add the variables from the env.py file in Herokus Config Vars when it is time for deployment.
+<img src="readme/deployment/step-37.png" alt="step of deployment" style="width: 100%">
 9. Now run this command:
-* python3 manage.py migrate
-
+<pre>python manage.py migrate</pre>
+10. Run this command:
+<pre>python manage.py runserver</pre>
+If everything is working as expected the project will launch and be ready for development.
 
 # Credits
 Sources that have helped build the website:
