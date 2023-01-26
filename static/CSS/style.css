@@ -262,6 +262,7 @@ span {
     flex-direction: column;
     font-weight: 300;
     padding-top: 2px;
+    max-width: 290px;
 }
 
 .comment-created {
@@ -624,6 +625,18 @@ tr {
         font-size: 13px;
     }
 
+    .comment-user-created{
+        width: 220px;
+    }
+    .comment-image-name{
+        font-size: 10px;
+    }
+    .comment-text{
+        font-size: 10px;
+    }
+    .comment-delete-button{
+        padding: 3px;
+    }
     /* profile */
     .profile-container {
         flex-direction: column;
