@@ -16,7 +16,7 @@ This is the live link to [Magazine](https://magazine-blog-frirsta.herokuapp.com/
 * [**Features left to Implement**](<#Features-left-to-Implement>)
 * [**Testing**](<#Testing>)
 * [**Technologies Used**](<#Technologies-Used>)
-* [**Unfixed Bugs**](<#Unfixed-Bugs>)
+* [**Known Bugs**](<#Known-Bugs>)
 * [**Deployment**](<#Deployment>)
 * [**Credits**](<#Credits>)
 * [**Acknowledgement**](<#Acknowledgement>)
