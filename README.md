@@ -313,9 +313,9 @@ The edit profile page is where the user can add a profile picture, change userna
 <br>
 <details><summary>Post confirm delete</summary>
 <div style="display: flex; align-items: flex-start; justify-content: space-between;">
-<img src="readme/pages/delete_post_mobile_user.png" alt="post_confirm_delete page on mobile screen" style="width: 20%">
-<img src="readme/pages/delete_post_ipad_user.png" alt="post_confirm_delete page on ipad screen" style="width: 30%">
-<img src="readme/pages/delete_post_desktop_user.png" alt="comment_confirm_delete page on desktop screen" style="width: 48%">
+<img src="readme/pages/delete_post_user_mobile.png" alt="post_confirm_delete page on mobile screen" style="width: 20%">
+<img src="readme/pages/delete_post_user_ipad.png" alt="post_confirm_delete page on ipad screen" style="width: 30%">
+<img src="readme/pages/delete_post_user_desktop.png" alt="post_confirm_delete page on desktop screen" style="width: 48%">
 </div>
 </details>
 
@@ -324,9 +324,9 @@ The edit profile page is where the user can add a profile picture, change userna
 <br>
 <details><summary>Comment confirm delete</summary>
 <div style="display: flex; align-items: flex-start; justify-content: space-between;">
-<img src="readme/pages/delete_comment_mobile_user.png" alt="comment_confirm_delete page on mobile screen" style="width: 20%">
-<img src="readme/pages/delete_comment_ipad_user.png" alt="comment_confirm_delete page on ipad screen" style="width: 30%">
-<img src="readme/pages/delete_comment_desktop_user.png" alt="comment_confirm_delete page on desktop screen" style="width: 48%">
+<img src="readme/pages/delete_comment_user_mobile.png" alt="comment_confirm_delete page on mobile screen" style="width: 20%">
+<img src="readme/pages/delete_comment_user_ipad.png" alt="comment_confirm_delete page on ipad screen" style="width: 30%">
+<img src="readme/pages/delete_comment_user_desktop.png" alt="comment_confirm_delete page on desktop screen" style="width: 48%">
 </div>
 </details>
 
