@@ -187,7 +187,7 @@ The website have some differences.
 </details
 
 ### Post detail
-* When the user chooses a blog to read they get redirected to the blog posts detail page where they can read the full post.
+* When the user chooses a blog to read they get redirected to the blog post detail page where they can read the full post.
 * They can also read comments and leave comments.
  <br>
 <details><summary>Post detail</summary>
@@ -304,23 +304,23 @@ The edit profile page is where the user can add a profile picture, change userna
 </details>
 
 ### User post confirm delete page
-* When a site user deletes a post they get redirected to this page to confirm they want to delete the post.
+* When a site user deletes a post, they get redirected to this page to confirm they want to delete the post.
 <br>
 <details><summary>Post confirm delete</summary>
 <div style="display: flex; align-items: flex-start; justify-content: space-between;">
-<img src="readme/pages/delete_post_mobile_user.png" alt="post_confirm_delete page on iphonese screen" style="width: 20%">
-<img src="readme/pages/delete_post_ipad_user.png" alt="post_confirm_delete page on ipadair screen" style="width: 30%">
+<img src="readme/pages/delete_post_mobile_user.png" alt="post_confirm_delete page on mobile screen" style="width: 20%">
+<img src="readme/pages/delete_post_ipad_user.png" alt="post_confirm_delete page on ipad screen" style="width: 30%">
 <img src="readme/pages/delete_post_desktop_user.png" alt="comment_confirm_delete page on desktop screen" style="width: 48%">
 </div>
 </details>
 
 ### User comment confirm delete page
-* When a site user deletes a comment they get redirected to this page to confirm they want to delete the comment.
+* When a site user deletes a comment, they get redirected to this page to confirm they want to delete the comment.
 <br>
 <details><summary>Comment confirm delete</summary>
 <div style="display: flex; align-items: flex-start; justify-content: space-between;">
-<img src="readme/pages/delete_comment_mobile_user.png" alt="comment_confirm_delete page on iphonese screen" style="width: 20%">
-<img src="readme/pages/delete_comment_ipad_user.png" alt="comment_confirm_delete page on ipadair screen" style="width: 30%">
+<img src="readme/pages/delete_comment_mobile_user.png" alt="comment_confirm_delete page on mobile screen" style="width: 20%">
+<img src="readme/pages/delete_comment_ipad_user.png" alt="comment_confirm_delete page on ipad screen" style="width: 30%">
 <img src="readme/pages/delete_comment_desktop_user.png" alt="comment_confirm_delete page on desktop screen" style="width: 48%">
 </div>
 </details>
@@ -341,34 +341,34 @@ The edit profile page is where the user can add a profile picture, change userna
 </details>
 
 ### Admin post confirm delete page
-* When the admin/site owner deletes a post from the admin page they get redirected to this page to confirm they want to delete the post.
+* When the admin/site owner deletes a post from the admin page, they get redirected to this page to confirm they want to delete the post.
 <br>
 <details><summary>Post confirm delete</summary>
 <div style="display: flex; align-items: flex-start; justify-content: space-between;">
-<img src="readme/pages/admin_delete_post_mobile.png" alt="admin_post_confirm_delete page on iphonese screen" style="width: 20%">
-<img src="readme/pages/admin_delete_post_ipad.png" alt="admin_post_confirm_delete page on ipadair screen" style="width: 30%">
+<img src="readme/pages/admin_delete_post_mobile.png" alt="admin_post_confirm_delete page on mobile screen" style="width: 20%">
+<img src="readme/pages/admin_delete_post_ipad.png" alt="admin_post_confirm_delete page on ipad screen" style="width: 30%">
 <img src="readme/pages/admin_delete_post_desktop.png" alt="admin_comment_confirm_delete page on desktop screen" style="width: 48%">
 </div>
 </details>
 
 ### Admin comment confirm delete page
-* When the admin/site owner deletes a comment from the admin page they get redirected to this page to confirm they want to delete the comment.
+* When the admin/site owner deletes a comment from the admin page, they get redirected to this page to confirm they want to delete the comment.
 <br>
 <details><summary>Comment confirm delete</summary>
 <div style="display: flex; align-items: flex-start; justify-content: space-between;">
-<img src="readme/pages/admin_delete_comment_mobile.png" alt="admin_comment_confirm_delete page on iphonese screen" style="width: 20%">
-<img src="readme/pages/admin_delete_comment_ipad.png" alt="admin_comment_confirm_delete page on ipadair screen" style="width: 30%">
+<img src="readme/pages/admin_delete_comment_mobile.png" alt="admin_comment_confirm_delete page on mobile screen" style="width: 20%">
+<img src="readme/pages/admin_delete_comment_ipad.png" alt="admin_comment_confirm_delete page on ipad screen" style="width: 30%">
 <img src="readme/pages/admin_delete_comment_desktop.png" alt="admin_comment_confirm_delete page on desktop screen" style="width: 48%">
 </div>
 </details>
 
 ### 404 page
-* This is the page the user get redirected to if the website does not exist.
+* This is the page the user gets redirected to if the website does not exist.
 <br>
 <details><summary>Features</summary>
 <div style="display: flex; align-items: flex-start; justify-content: space-between;">
-<img src="readme/pages/404_mobile.png" alt="404 page on iphonese screen" style="width: 20%">
-<img src="readme/pages/404_ipad.png" alt="404 page on ipadair screen" style="width: 30%">
+<img src="readme/pages/404_mobile.png" alt="404 page on mobile screen" style="width: 20%">
+<img src="readme/pages/404_ipad.png" alt="404 page on ipad screen" style="width: 30%">
 <img src="readme/pages/404_desktop.png" alt="404 page on desktop screen" style="width: 48%">
 </div>
 </details>
@@ -498,6 +498,7 @@ I have tested the browser manually on these browsers:
 
 ### models.py file
 <img src="readme/testing/pep8/pep8_models.png" alt="python validator models file" style="width: 100%">
+I could not fix the length of the link because it would stop working.
 
 <br>
 
@@ -513,6 +514,16 @@ I have tested the browser manually on these browsers:
 
 ### views.py file
 <img src="readme/testing/pep8/pep8_views.png" alt="python validator views file" style="width: 100%">
+
+<br>
+
+### views.py file
+<img src="readme/testing/pep8/pep8_model.png" alt="python validator model file" style="width: 100%">
+
+<br>
+
+### views.py file
+<img src="readme/testing/pep8/pep8_apps.png" alt="python validator apps file" style="width: 100%">
 </details>
 
 ## Lighthouse
