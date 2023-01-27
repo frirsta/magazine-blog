@@ -522,12 +522,12 @@ I could not fix the length of the link because it would stop working.
 
 <br>
 
-### views.py file
+### model.py file
 <img src="readme/testing/pep8/pep8_model.png" alt="python validator model file" style="width: 100%">
 
 <br>
 
-### views.py file
+### apps.py file
 <img src="readme/testing/pep8/pep8_apps.png" alt="python validator apps file" style="width: 100%">
 </details>
 
