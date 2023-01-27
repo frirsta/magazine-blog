@@ -90,7 +90,6 @@ The website have some differences.
 
 <p>
 
-#### Wireframes
 </p>
 </details>
 <br>
