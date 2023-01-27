@@ -1227,12 +1227,16 @@ From this website I have gotten methods and attributes for the class-based views
 
 These pictures are included in the features pictures.
 
-Fake profiles
+#### Fake profiles
 <br>
 Photo by Spencer Selover: https://www.pexels.com/sv-se/foto/affarsman-mode-man-person-428364/
+<br>
 Photo by Min An: https://www.pexels.com/sv-se/foto/person-kvinna-avslappning-flicka-1547971/
+<br>
 Photo by Andrea Piacquadio: https://www.pexels.com/sv-se/foto/person-kvinna-staende-kansla-774909/
+<br>
 
+#### Posts
 Photo by: Element5 Digital: https://www.pexels.com/sv-se/foto/tra-lampor-skrivbord-lampa-1125136/
 <br>
 Photo by: Taryn Elliott: https://www.pexels.com/sv-se/foto/sovrum-interior-heminredning-skandinavisk-4440213/
