@@ -404,31 +404,31 @@ I have tested the responsiveness manually with [DevTool](https://developer.chrom
 
 | Desktop  | Width | |
 | ------------- | ------------- | ------------- |
-| Laptop L | Width: 1440px  | Pass |
-| Laptop: | Width: 1348  | Pass  |
-| Laptop: | Width: 1024  | Pass  |
+| Laptop L | Width: 1440px | Pass |
+| Laptop: | Width: 1348px | Pass  |
+| Laptop: | Width: 1024px | Pass  |
 
 
 | Tablet  | Width | |
 | ------------- | ------------- | ------------- |
-| Ipad Air | Width: 820px  | Pass  |
-| Ipad Mini | Width: 768px  | Pass  |
-| Ipad Pro | Width: 1024  | Pass  | 
-| Nest Hub | Width: 1024px  | Pass |
+| Ipad Air | Width: 820px | Pass  |
+| Ipad Mini | Width: 768px | Pass  |
+| Ipad Pro | Width: 1024px | Pass  | 
+| Nest Hub | Width: 1024px | Pass |
 | Nest Hub Max | Width: 1280px | Pass  |
 | Surface Pro 7 | Width: 912px | Pass  |
 | Surface Pro 7 | Width: 912px | Pass  |
 
 | Mobile  | Width | |
 | ------------- | ------------- | ------------- |
-| Iphone 6/7/8 | Width: 375  | Pass  |
-| Iphone 6/7/8 Plus: | Width: 414  | Pass  |
+| Iphone 6/7/8 | Width: 375px | Pass  |
+| Iphone 6/7/8 Plus: | Width: 414px | Pass  |
 | Iphone SE | Width: 375px | 
 | Iphone XR | Width: 414px | Pass | 
 | Iphone 12 PRO: | Width: 390px | Pass |
 | Surface Duo | Width: 540px | Pass |
 | Galaxy s8+ | Width: 360px | Pass |
-| Samsung Galaxy A51/71 | Width:412px  | Pass |
+| Samsung Galaxy A51/71 | Width: 412px  | Pass |
  
 ## Browser Compatibility
 I have tested the browser manually on these browsers:
