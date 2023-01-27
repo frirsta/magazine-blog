@@ -370,7 +370,7 @@ The edit profile page is where the user can add a profile picture, change userna
 ### 404 page
 * This is the page the user gets redirected to if the website does not exist.
 <br>
-<details><summary>Features</summary>
+<details><summary>404</summary>
 <div style="display: flex; align-items: flex-start; justify-content: space-between;">
 <img src="readme/pages/404_mobile.png" alt="404 page on mobile screen" style="width: 20%">
 <img src="readme/pages/404_ipad.png" alt="404 page on ipad screen" style="width: 30%">
