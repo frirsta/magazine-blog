@@ -804,10 +804,11 @@ This website was deployed to [Heroku](https://heroku.com/). To deploy the websit
 <br>
 
 4. In the terminal type the following commands to install Django and its supporting libraries:
-* pip3 install 'django<4' gunicorn
-* pip3 install dj_database_url==0.5.0 psycopg2
-* pip3 install dj3-cloudinary-storage
-
+<pre>
+"pip3 install 'django<4' gunicorn"
+"pip3 install dj_database_url==0.5.0 psycopg2"
+"pip3 install dj3-cloudinary-storage"
+</pre>
 <details><summary>Heroku Deployment - Step 4:</summary>
 <img src="readme/deployment/deployment-1.png" alt="'pip3 install 'django<4' gunicorn' typed in the terminal" style="width: 100%">
 <img src="readme/deployment/deployment-2.png" alt="'pip3 install dj_database_url==0.5.0 psycopg2' typed in the terminal" style="width: 100%">
@@ -816,7 +817,9 @@ This website was deployed to [Heroku](https://heroku.com/). To deploy the websit
 <br>
 
 5. After the libraries have been installed, type the following command to create a requirements.txt file:
-* pip3 freeze --local > requirements.txt
+<pre>
+"pip3 freeze --local > requirements.txt"
+</pre>
 <details><summary>Heroku Deployment - Step 5:</summary>
 <img src="readme/deployment/deployment-4.png" alt="'pip3 freeze --local > requirements.txt' typed in the terminal" style="width: 100%">
 <img src="readme/deployment/step-5.png" alt="step of deployment" style="width: 100%">
@@ -825,7 +828,9 @@ This website was deployed to [Heroku](https://heroku.com/). To deploy the websit
 <br>
 
 6. Create the Django project by typing the following command:
-* "django-admin startproject PROJECT_NAME ." - Don't forget the dot at the end.
+<pre>
+"django-admin startproject PROJECT_NAME ."
+</pre> - Don't forget the dot at the end.
 <details><summary>Heroku Deployment - Step 6:</summary>
 <img src="readme/deployment/step-6.png" alt="step of deployment" style="width: 100%">
 After typing the command this 'blog' folder with files will be displayed in the directory.
@@ -835,7 +840,9 @@ After typing the command this 'blog' folder with files will be displayed in the 
 <br>
 
 7. Create the Django application by typing the following command:
-* "python3 manage.py startapp APP_NAME"
+<pre>
+"python3 manage.py startapp APP_NAME"
+</pre>
 <details><summary>Heroku Deployment - Step 7:</summary>
 <img src="readme/deployment/step-8.png" alt="step of deployment" style="width: 100%">
 After typing the command this 'magazine' with files will be displayed in the directory.
@@ -852,7 +859,9 @@ After typing the command this 'magazine' with files will be displayed in the dir
 
 9. Next, the first migrations will be made. 
 In the terminal type:
-* python3 manage.py migrate
+<pre>
+"python3 manage.py migrate"
+</pre>
 <details><summary>Heroku Deployment - Step 9:</summary>
 <img src="readme/deployment/step-11.png" alt="step of deployment" style="width: 100%">
 </details>  
@@ -860,7 +869,9 @@ In the terminal type:
 
 
 10. To see if everything works as expected. In the terminal type:
-* 'python3 manage.py runserver' and click 'Open Browser'.
+<pre>
+"'python3 manage.py runserver' and click 'Open Browser'"
+</pre>
 <details><summary>Heroku Deployment - Step 10:</summary>
 <img src="readme/deployment/step-12.png" alt="step of deployment" style="width: 100%">
  
@@ -896,10 +907,12 @@ Create or login to [Heroku](https://www.heroku.com/)
 <br>
 
 14. In the 'Deploy' page, follow these steps as shown on the image:
+<pre>
     1. Click the GitHub logo.
     2. Search for the GitHub repository that was made for this project.
     3. When the repository is found click 'Connect'.
-  <details><summary>Heroku Deployment - Step 14:</summary>
+    </pre>
+<details><summary>Heroku Deployment - Step 14:</summary>
 <img src="readme/deployment/step-17.png" alt="step of deployment" style="width: 100%">
 <br>
 When the repository is connected, this is what the page look like.
@@ -962,9 +975,10 @@ Click the instance that has been created.
 <br>
 
 23. Add the following text in the env.py file:
-* Import os
-* os.environ["DATABASE_URL"]
-* Paste the url that was copied earlier in the red area that is shown below.
+<pre>"Import os"
+"os.environ["DATABASE_URL"]"
+Paste the url that was copied earlier in the red area that is shown below.
+</pre>
 <details><summary>Heroku Deployment - Step 23:</summary>
 <img src="readme/deployment/step-26.png" alt="step of deployment" style="width: 100%">
 </details> 
@@ -978,18 +992,22 @@ Click the instance that has been created.
 <br>
 
 25. Add the following text in the env.py file:
-* os.environ["SECRET_KEY"]
-* Paste the "SECRET_KEY" value that was copied from the 'settings.py' as value for 'os.environ["SECRET_KEY"]'.
+<pre>
+"os.environ["SECRET_KEY"]"
+Paste the "SECRET_KEY" value that was copied from the 'settings.py' as value for 'os.environ["SECRET_KEY"]'.
+</pre>
 <details><summary>Heroku Deployment - Step 25:</summary>
 <img src="readme/deployment/step-28.png" alt="step of deployment" style="width: 100%"> 
 </details>
 <br>
 
 26. Add the following text on top of the 'setting.py' file:
-* import os
-* import dj_database_url
-* <pre>if os.path.isfile('env.py'):
+<pre>
+"import os"
+"import dj_database_url"
+<pre>if os.path.isfile('env.py'):
         import os</pre>
+</pre>
 <details><summary>Heroku Deployment - Step 26:</summary>
 <img src="readme/deployment/step-29.png" alt="step of deployment" style="width: 100%"> 
 </details>
@@ -1055,9 +1073,11 @@ Create an account or log in.
 
 35. In the 'settings.py' file add 'cloudinary_storage' and 'cloudinary' as shown below to 'INSTALLED_APPS'.
 The apps have to be written in the following order:
+<pre>
     1. 'cloudinary_storage'
     2. 'django.contrib.staticfiles'
     3. 'cloudinary'
+    </pre>
 <details><summary>Heroku Deployment - Step 35:</summary>
 <img src="readme/deployment/step-38.png" alt="step of deployment" style="width: 100%">
 </details> 
@@ -1088,17 +1108,21 @@ The apps have to be written in the following order:
 <br>
 
 40. Create these folders in the top level directory:
-* media
-* templates
-* static
+<pre>
+media
+templates
+static
+</pre>
 <details><summary>Heroku Deployment - Step 40:</summary>
 <img src="readme/deployment/step-43.png" alt="step of deployment" style="width: 100%">
 </details> 
 <br>
 
 41. In the application in Heroku in 'Config Vars'. Add 'CLOUDINARY_URL' and as value (the red area) add the url. Also, add the following keys and values:
-* key: PORT - value: 8000
-* key: DISABLE_COLLECTSTATIC - value: 1
+<pre>
+key: PORT - value: 8000
+key: DISABLE_COLLECTSTATIC - value: 1
+</pre>
 <details><summary>Heroku Deployment - Step 41:</summary>
 <img src="readme/deployment/step-44.png" alt="step of deployment" style="width: 100%">
 </details> 
@@ -1111,7 +1135,9 @@ The apps have to be written in the following order:
 <br>
 
 43. In the 'Procfile' file add the following text:
-* web: gunicorn PROJECT_NAME.wsgi
+<pre>
+"web: gunicorn PROJECT_NAME.wsgi"
+</pre>
 <details><summary>Heroku Deployment - Step 43:</summary>
 <img src="readme/deployment/step-45.png" alt="step of deployment" style="width: 100%">
 </details>
@@ -1119,9 +1145,11 @@ The apps have to be written in the following order:
 
 
 Save all the files and add, commit and push the project to GitHub by writing these commands:
-* git add .
-* git commit -m "Deployment Commit"
-* git push
+<pre>
+"git add ."
+"git commit -m "Deployment Commit""
+"git push"
+</pre>
 
 44. In the application in Heroku navigate to the deploy page and scroll to the bottom of the page.
 <details><summary>Heroku Deployment - Step 44:</summary>
@@ -1151,21 +1179,31 @@ Save all the files and add, commit and push the project to GitHub by writing the
 <img src="readme/deployment/cloning.png" alt="step of deployment" style="width: 100%">
 
 3. Open Git Bash and change directory to where you want the cloned directory.
-4. Write: <pre>git clone
+4. Write:
+<pre>
+"git clone"
 </pre> and paste the URL that was copied in Github and then click 'enter'.
 5. In Git Bash locate the cloned directory.
 6. Type:
-<pre>code .</pre> this will launch the project in VSCode.
+<pre>
+"code ."
+</pre> this will launch the project in VSCode.
 7. Now install the requirements needed to run the project by typing this command:
-<pre>pip3 install -r requirements.txt</pre>
+<pre>
+"pip3 install -r requirements.txt"
+</pre>
 8. Create an 'env.py' file in the top level directory.
 Add the os.environ as shown in the image with their respective values.
 9. Add the variables from the env.py file in Herokus Config Vars when it is time for deployment.
 <img src="readme/deployment/step-37.png" alt="step of deployment" style="width: 100%">
 9. Now run this command:
-<pre>python manage.py migrate</pre>
+<pre>
+"python manage.py migrate"
+</pre>
 10. Run this command:
-<pre>python manage.py runserver</pre>
+<pre>
+"python manage.py runserver"
+</pre>
 If everything is working as expected the project will launch and be ready for development.
 
 # Credits
@@ -1189,10 +1227,10 @@ From this website I have gotten methods and attributes for the class-based views
 
 These pictures are included in the features pictures.
 
-fake profile
-Bild av Spencer Selover: https://www.pexels.com/sv-se/foto/affarsman-mode-man-person-428364/
-Bild av Min An: https://www.pexels.com/sv-se/foto/person-kvinna-avslappning-flicka-1547971/
-Bild av Andrea Piacquadio: https://www.pexels.com/sv-se/foto/person-kvinna-staende-kansla-774909/
+Fake profiles
+Photo by Spencer Selover: https://www.pexels.com/sv-se/foto/affarsman-mode-man-person-428364/
+Photo by Min An: https://www.pexels.com/sv-se/foto/person-kvinna-avslappning-flicka-1547971/
+Photo by Andrea Piacquadio: https://www.pexels.com/sv-se/foto/person-kvinna-staende-kansla-774909/
 
 Photo by: Element5 Digital: https://www.pexels.com/sv-se/foto/tra-lampor-skrivbord-lampa-1125136/
 <br>
@@ -1229,6 +1267,8 @@ Photo by: Vincent Rivaud: https://www.pexels.com/sv-se/foto/hus-lyx-lampa-hem-22
 Photo by: Victoria Akvarel : https://www.pexels.com/sv-se/foto/hotell-hus-arkitektur-lyx-3315291/
 <br>
 Photo by: cottonbro studio: https://www.pexels.com/sv-se/foto/ljus-konst-kontor-vagg-4067759/
+<br>
+Photo by Pixabay: https://www.pexels.com/sv-se/foto/ljus-skrivbord-vagg-bord-509922/
 
 # Acknowledgement
 This website has been made for my 4th Portfolio Project (Full-Stack Toolkit) - Diploma in Full Stack Software Development at [Code Institute](https://codeinstitute.net/).
