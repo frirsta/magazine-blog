@@ -134,16 +134,22 @@ The website have some differences.
   * When the website owner is logged in the same links as the logged in user will display as well as an Admin link for the Admin dashboard.
 <br>
 <details><summary>Navbar</summary>
+
+#### Navbar
 <div style="display: flex; align-items: flex-start; justify-content: space-between;">
 <img src="readme/pages/menu_desktop.png" alt="navbar page on a desktop device" style="width: 30%">
 <img src="readme/pages/menu_ipad.png" alt="navbar page on an ipad device" style="width: 30%">
 <img src="readme/pages/menu_mobile.png" alt="navbar page on a mobile device" style="width: 30%">
 </div>
+
+#### User Navbar
 <div style="display: flex; align-items: flex-start; justify-content: space-between;">
 <img src="readme/pages/user_menu_desktop.png" alt="navbar page on a desktop device when a user is logged in" style="width: 30%">
 <img src="readme/pages/user_menu_ipad.png" alt="navbar page on an ipad device when a user is logged in" style="width: 30%">
 <img src="readme/pages/user_menu_mobile.png" alt="navbar page on a mobile device when a user is logged in" style="width: 30%">
 </div>
+
+#### Admin Navbar
 <div style="display: flex; align-items: flex-start; justify-content: space-between;">
 <img src="readme/pages/admin_menu_desktop.png" alt="navbar page on a desktop device when the admin is logged in" style="width: 30%">
 <img src="readme/pages/admin_menu_ipad.png" alt="navbar page on an ipad device when the admin is logged in" style="width: 30%">
