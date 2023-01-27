@@ -497,6 +497,13 @@ The website has also been tested with the Chrome developer tool Google Lighthous
 #### Mobile
 <img src="readme/testing/lighthouse/lighthouse_mobile_blog.png" alt="lighthouse score for blog page on mobile device" style="width: 100%">
 
+### Post Detail
+#### Desktop
+<img src="readme/testing/lighthouse/lighthouse_desktop_post_detail.png" alt="lighthouse score for post_detail page on desktop device" style="width: 100%">
+
+#### Mobile
+<img src="readme/testing/lighthouse/lighthouse_mobile_post_detail.png" alt="lighthouse score for post_detail page on mobile device" style="width: 100%">
+
 ### Signup page 
 #### Desktop
 <img src="readme/testing/lighthouse/lighthouse_desktop_signup.png" alt="lighthouse score for signup page on desktop device" style="width: 100%">
@@ -553,19 +560,40 @@ The website has also been tested with the Chrome developer tool Google Lighthous
 #### Mobile
 <img src="readme/testing/lighthouse/lighthouse_mobile_admin_page.png" alt="lighthouse score for admin page on mobile device" style="width: 100%">
 
-### Confirm post delete
+### User Confirm post delete
 #### Desktop
-<img src="readme/testing/lighthouse/lighthouse_desktop_admin_delete_comment.png" alt="lighthouse score for post_confirm_delete page on mobile device" style="width: 100%">
+<img src="readme/testing/lighthouse/lighthouse_desktop_user_delete_post.png" alt="lighthouse score for user post_confirm_delete page on desktop device" style="width: 100%">
 
 #### Mobile
-<img src="readme/testing/lighthouse/lighthouse_mobile_admin_delete_comment.png" alt="lighthouse score for post_confirm_delete page on mobile device" style="width: 100%">
+<img src="readme/testing/lighthouse/lighthouse_mobile_user_delete_post.png" alt="lighthouse score for user post_confirm_delete page on mobile device" style="width: 100%">
 
-### Confirm comment delete
+### User Confirm comment delete
 #### Desktop
-<img src="readme/testing/lighthouse/lighthouse_desktop_admin_delete_post.png" alt="lighthouse score for comment_confirm_delete page on mobile device" style="width: 100%">
+<img src="readme/testing/lighthouse/lighthouse_desktop_user_delete_comment.png" alt="lighthouse score for admin comment_confirm_delete page on desktop device" style="width: 100%">
 
 #### Mobile
-<img src="readme/testing/lighthouse/lighthouse_mobile_admin_delete_post.png" alt="lighthouse score for comment_confirm_delete page on mobile device" style="width: 100%">
+<img src="readme/testing/lighthouse/lighthouse_mobile_user_delete_comment.png" alt="lighthouse score for admin comment_confirm_delete page on mobile device" style="width: 100%">
+
+### Confirm post delete Admin
+#### Desktop
+<img src="readme/testing/lighthouse/lighthouse_desktop_admin_delete_post.png" alt="lighthouse score for admin post_confirm_delete page on desktop device" style="width: 100%">
+
+#### Mobile
+<img src="readme/testing/lighthouse/lighthouse_mobile_admin_delete_post.png" alt="lighthouse score for admin post_confirm_delete page on mobile device" style="width: 100%">
+
+### Confirm comment delete Admin
+#### Desktop
+<img src="readme/testing/lighthouse/lighthouse_desktop_admin_delete_comment.png" alt="lighthouse score for admin comment_confirm_delete page on desktop device" style="width: 100%">
+
+#### Mobile
+<img src="readme/testing/lighthouse/lighthouse_mobile_admin_delete_comment.png" alt="lighthouse score for admin comment_confirm_delete page on mobile device" style="width: 100%">
+
+### 404 page
+#### Desktop
+<img src="readme/testing/lighthouse/lighthouse_desktop_error.png" alt="lighthouse score for error page on desktop device" style="width: 100%">
+
+#### Mobile
+<img src="readme/testing/lighthouse/lighthouse_mobile_error.png" alt="lighthouse score for error page on mobile device" style="width: 100%">
 
 </details>
 
