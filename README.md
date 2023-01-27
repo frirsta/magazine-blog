@@ -751,7 +751,7 @@ Below are images of the steps taken for testing the Post model in chronological 
 
 ## Known Bugs
 When testing the html in [HTML validator](https://validator.w3.org/), the error shown in the image appeared.
-<img src="readme/testing/bugs/signup_error.png" alt="bug in html validator when testing signup page" style="width: 100%">
+<img src="readme/testing/bugs/html_validator_signup_error.png" alt="bug in html validator when testing signup page" style="width: 100%">
 I had forgotten that I had added a label attribute to the SignUp form in forms.py.
 <img src="readme/testing/bugs/signup_error.png" alt="bug in signup form in forms.py" style="width: 100%">
 The bug is now corrected.
