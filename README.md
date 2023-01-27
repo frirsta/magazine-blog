@@ -136,9 +136,19 @@ The website have some differences.
 <br>
 <details><summary>Navbar</summary>
 <div style="display: flex; align-items: flex-start; justify-content: space-between;">
-<img src="readme/pages/navbar.png" alt="navbar page when no user is logged in" style="width: 30%">
-<img src="readme/pages/navbar_user.png" alt="navbar page when user is logged in" style="width: 30%">
-<img src="readme/pages/navbar_admin.png" alt="navbar page when admin is logged in" style="width: 30%">
+<img src="readme/pages/menu_desktop.png" alt="navbar page on a desktop device" style="width: 30%">
+<img src="readme/pages/menu_ipad.png" alt="navbar page on an ipad device" style="width: 30%">
+<img src="readme/pages/menu_mobile.png" alt="navbar page on a mobile device" style="width: 30%">
+</div>
+<div style="display: flex; align-items: flex-start; justify-content: space-between;">
+<img src="readme/pages/user_menu_desktop.png" alt="navbar page on a desktop device when a user is logged in" style="width: 30%">
+<img src="readme/pages/user_menu_ipad.png" alt="navbar page on an ipad device when a user is logged in" style="width: 30%">
+<img src="readme/pages/user_menu_mobile.png" alt="navbar page on a mobile device when a user is logged in" style="width: 30%">
+</div>
+<div style="display: flex; align-items: flex-start; justify-content: space-between;">
+<img src="readme/pages/admin_menu_desktop.png" alt="navbar page on a desktop device when the admin is logged in" style="width: 30%">
+<img src="readme/pages/admin_menu_ipad.png" alt="navbar page on an ipad device when the admin is logged in" style="width: 30%">
+<img src="readme/pages/admin_menu_mobile.png" alt="navbar page on a mobile device when the admin is logged in" style="width: 30%">
 </div>
 </details>
 
@@ -253,7 +263,7 @@ The website have some differences.
 <img src="readme/pages/change_password_ipad.png" alt="change_password page on ipad screen" style="width: 30%">
 <img src="readme/pages/change_password_desktop.png" alt="change_password page on desktop screen" style="width: 48%">
 </div>
-</details
+</details>
 
 ### Edit Profile
 The edit profile page is where the user can add a profile picture, change username and write text about themselves.
@@ -264,7 +274,7 @@ The edit profile page is where the user can add a profile picture, change userna
 <img src="readme/pages/edit_profile_ipad.png" alt="edit_profile page on ipad screen" style="width: 30%">
 <img src="readme/pages/edit_profile_desktop.png" alt="edit_profile page on desktop screen" style="width: 48%">
 </div>
-</details
+</details>
 
 ### Create Post
 * In the create post page a user can create a post by adding text and image to the create post form. The form has four fields.
@@ -279,7 +289,41 @@ The edit profile page is where the user can add a profile picture, change userna
 <img src="readme/pages/create_post_ipad.png" alt="create_post page on ipad screen" style="width: 30%">
 <img src="readme/pages/create_post_desktop.png" alt="create_post page on desktop screen" style="width: 48%">
 </div>
-</details
+</details>
+
+### Edit Post
+* In the edit post page a user can edit the posts they have created.
+
+<br>
+<details><summary>Edit Post</summary>
+<div style="display: flex; align-items: flex-start; justify-content: space-between;">
+<img src="readme/pages/edit_post_mobile.png" alt="edit_post page on mobile screen" style="width: 20%">
+<img src="readme/pages/edit_post_ipad.png" alt="edit_post page on ipad screen" style="width: 30%">
+<img src="readme/pages/edit_post_desktop.png" alt="edit_post page on desktop screen" style="width: 48%">
+</div>
+</details>
+
+### User post confirm delete page
+* When a site user deletes a post they get redirected to this page to confirm they want to delete the post.
+<br>
+<details><summary>Post confirm delete</summary>
+<div style="display: flex; align-items: flex-start; justify-content: space-between;">
+<img src="readme/pages/delete_post_mobile_user.png" alt="post_confirm_delete page on iphonese screen" style="width: 20%">
+<img src="readme/pages/delete_post_ipad_user.png" alt="post_confirm_delete page on ipadair screen" style="width: 30%">
+<img src="readme/pages/delete_post_desktop_user.png" alt="comment_confirm_delete page on desktop screen" style="width: 48%">
+</div>
+</details>
+
+### User comment confirm delete page
+* When a site user deletes a comment they get redirected to this page to confirm they want to delete the comment.
+<br>
+<details><summary>Comment confirm delete</summary>
+<div style="display: flex; align-items: flex-start; justify-content: space-between;">
+<img src="readme/pages/delete_comment_mobile_user.png" alt="comment_confirm_delete page on iphonese screen" style="width: 20%">
+<img src="readme/pages/delete_comment_ipad_user.png" alt="comment_confirm_delete page on ipadair screen" style="width: 30%">
+<img src="readme/pages/delete_comment_desktop_user.png" alt="comment_confirm_delete page on desktop screen" style="width: 48%">
+</div>
+</details>
 
 ### Admin Dashboard
 * In the admin the website owner can see how many posts have been made, how many accounts have been created and how many comments have been made.
@@ -294,29 +338,29 @@ The edit profile page is where the user can add a profile picture, change userna
 <img src="readme/pages/admin_ipad.png" alt="admin page on ipad screen" style="width: 30%">
 <img src="readme/pages/admin_desktop.png" alt="admin page on desktop screen" style="width: 48%">
 </div>
-</details
+</details>
 
-### Post confirm delete page
-* When a site user or site owner deletes a post they get redirected to this page to confirm that they want to delete the post.
+### Admin post confirm delete page
+* When the admin/site owner deletes a post from the admin page they get redirected to this page to confirm they want to delete the post.
 <br>
 <details><summary>Post confirm delete</summary>
 <div style="display: flex; align-items: flex-start; justify-content: space-between;">
-<img src="readme/pages/admin_delete_post_mobile.png" alt="404 page on iphonese screen" style="width: 20%">
-<img src="readme/pages/admin_delete_post_ipad.png" alt="404 page on ipadair screen" style="width: 30%">
-<img src="readme/pages/admin_delete_post_desktop.png" alt="404 page on desktop screen" style="width: 48%">
+<img src="readme/pages/admin_delete_post_mobile.png" alt="admin_post_confirm_delete page on iphonese screen" style="width: 20%">
+<img src="readme/pages/admin_delete_post_ipad.png" alt="admin_post_confirm_delete page on ipadair screen" style="width: 30%">
+<img src="readme/pages/admin_delete_post_desktop.png" alt="admin_comment_confirm_delete page on desktop screen" style="width: 48%">
 </div>
-</details
+</details>
 
-### Comment confirm delete page
-* When a site user or site owner deletes a comment they get redirected to this page to confirm that they want to delete the comment.
+### Admin comment confirm delete page
+* When the admin/site owner deletes a comment from the admin page they get redirected to this page to confirm they want to delete the comment.
 <br>
 <details><summary>Comment confirm delete</summary>
 <div style="display: flex; align-items: flex-start; justify-content: space-between;">
-<img src="readme/pages/admin_delete_comment_mobile.png" alt="404 page on iphonese screen" style="width: 20%">
-<img src="readme/pages/admin_delete_comment_ipad.png" alt="404 page on ipadair screen" style="width: 30%">
-<img src="readme/pages/admin_delete_comment_desktop.png" alt="404 page on desktop screen" style="width: 48%">
+<img src="readme/pages/admin_delete_comment_mobile.png" alt="admin_comment_confirm_delete page on iphonese screen" style="width: 20%">
+<img src="readme/pages/admin_delete_comment_ipad.png" alt="admin_comment_confirm_delete page on ipadair screen" style="width: 30%">
+<img src="readme/pages/admin_delete_comment_desktop.png" alt="admin_comment_confirm_delete page on desktop screen" style="width: 48%">
 </div>
-</details
+</details>
 
 ### 404 page
 * This is the page the user get redirected to if the website does not exist.
@@ -327,7 +371,7 @@ The edit profile page is where the user can add a profile picture, change userna
 <img src="readme/pages/404_ipad.png" alt="404 page on ipadair screen" style="width: 30%">
 <img src="readme/pages/404_desktop.png" alt="404 page on desktop screen" style="width: 48%">
 </div>
-</details
+</details>
 
 
 # Features left to Implement
