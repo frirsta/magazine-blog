@@ -16,7 +16,7 @@ This is the live link to [Magazine](https://magazine-blog-frirsta.herokuapp.com/
 * [**Features left to Implement**](<#Features-left-to-Implement>)
 * [**Testing**](<#Testing>)
 * [**Technologies Used**](<#Technologies-Used>)
-* [**Known Bugs**](<#Known-Bugs>)
+* [**Bugs**](<#Bugs>)
 * [**Deployment**](<#Deployment>)
 * [**Credits**](<#Credits>)
 * [**Acknowledgement**](<#Acknowledgement>)
@@ -749,7 +749,7 @@ Below are images of the steps taken for testing the Post model in chronological 
 <br>
 
 
-## Known Bugs
+# Bugs
 When testing the html in [HTML validator](https://validator.w3.org/), the error shown in the image appeared.
 <img src="readme/testing/bugs/html_validator_signup_error.png" alt="bug in html validator when testing signup page" style="width: 100%">
 I had forgotten that I had added a label attribute to the SignUp form in forms.py.
