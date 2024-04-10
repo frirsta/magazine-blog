@@ -34,7 +34,8 @@ class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     first_name = models.CharField(max_length=150, blank=True)
     last_name = models.CharField(max_length=150, blank=True)
-    image = models.ImageField(upload_to='magazine', default='avatar_default')
+    image = models.ImageField(null=False, blank=False, upload_to='magazine/',
+                              default='magazine/default_avatar')
     bio = models.CharField(max_length=500, blank=True)
 
     def __str__(self):
