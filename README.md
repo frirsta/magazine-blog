@@ -3,7 +3,7 @@ Magazine is a website where people share and get inspired by interior designs. T
 All website users can create an account and share what their homes look like or anything regarding interior design.
 
 The website owner can delete comments and posts, if it is inappropriate. This is done from the Admin Dashboard that is only accessible to the Website owner when they log in.
-This is the live link to [Magazine](https://magazine-blog-frirsta.herokuapp.com/)
+This is the live link to [Magazine](https://magazine-5aec9e3ca90c.herokuapp.com/)
 
 <img src="readme/all_devices.png" alt="website on all devices" style="width: 100%">
 

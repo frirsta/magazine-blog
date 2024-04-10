@@ -34,9 +34,7 @@ class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     first_name = models.CharField(max_length=150, blank=True)
     last_name = models.CharField(max_length=150, blank=True)
-    image = CloudinaryField(
-        'static/img',
-        default='https://res.cloudinary.com/magazine-blog/image/upload/v1672740868/static/img/default-profile.8c3e2b017043.png')
+    image = models.ImageField(upload_to='magazine', default='avatar_default')
     bio = models.CharField(max_length=500, blank=True)
 
     def __str__(self):
